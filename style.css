@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    background: url(./imagens_pi/logos/gamer-logo-about\ 1.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-heart {
+    /* Heart */
+    height: 23.88px;
+    width: 33.88px;
+    left: 72.8%;
+    right: 25.96%;
+    top: 36.62%;
+    bottom: 34.27%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* Group */
+    left: 72.8%;
+    right: 25.96%;
+    top: 36.62%;
+    bottom: 34.27%;
+    /* Vector */
+    left: 72.8%;
+    right: 25.96%;
+    top: 36.62%;
+    bottom: 34.27%;
+    background: url(./imagens_pi/logos/Heart.png)
+}
+
+.btn-shopping-cart {
+    /* Shopping Cart */
+    height: 23.88px;
+    width: 33.88px;
+    left: 76.68%;
+    right: 22.07%;
+    top: 38.03%;
+    bottom: 33.21%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* Group */
+    left: 76.68%;
+    right: 22.07%;
+    top: 38.03%;
+    bottom: 33.21%;
+    /* Vector */
+    left: 76.91%;
+    right: 22.07%;
+    top: 41.26%;
+    bottom: 40.76%;
+    /* Vector */
+    left: 77.18%;
+    right: 22.74%;
+    top: 64.63%;
+    bottom: 33.21%;
+    /* Vector */
+    left: 77.58%;
+    right: 22.34%;
+    top: 64.63%;
+    bottom: 33.21%;
+    /* Vector */
+    left: 77.48%;
+    right: 22.15%;
+    top: 50.25%;
+    bottom: 49.75%;
+    /* Vector */
+    left: 76.68%;
+    right: 23.09%;
+    top: 38.03%;
+    bottom: 58.61%;
+    background: url(./imagens_pi/logos/Shopping\ Cart.png);
+}
+
+.btn-user {
+    /* icon */
+    height: 23.88px;
+    width: 33.88px;
+    left: 1546.9px;
+    top: 26.73px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* Vector */
+    left: 80.57%;
+    right: 18.5%;
+    top: 55.34%;
+    bottom: 34.62%;
+    /* Vector */
+    left: 81.28%;
+    right: 18.23%;
+    top: 49.79%;
+    bottom: 37.04%;
+    background: url(./imagens_pi/logos/icon.png);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #150737;
+    height: 8vh;
+}
+
+main {
+    background: url(./imagens_pi/pexels-pixabay-159393.jpg) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.input-nav {
+    /* Rectangle 21 */
+    width: 384px;
+    height: 34px;
+    left: 970px;
+    top: 19px;
+    background: #F7F7F7;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+}
+
+.nav-cadastro {
+    /* Faça seu login ou cadastre-se */
+    letter-spacing: 3px;
+    width: 127px;
+    height: 38px;
+    left: 1592px;
+    top: 17px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: red;
+}
