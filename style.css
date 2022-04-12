@@ -1,18 +1,6 @@
-/* config geral */
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: grid;
-    place-items: center;
-}
-
-main {
-    background-color: #E2E8F0;
 }
 
 a {
@@ -20,28 +8,24 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: none;
+.logo {
+    width: 55px;
+    height: 55px;
+    background: url(./imagens_pi/logos/gamer-logo-about\ 1.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* mediaquerie-1 */
-
-@media (max-width: 790px) {
-    #fdp1 {
-        display: none;
-    }
-    #fdp2 {
-        display: none;
-    }
-    #fdp3 {
-        display: none;
-    }
-    #fdp-logo {
-        display: none;
-    }
+.mobile-menu {
+    display: none;
+    cursor: pointer;
 }
 
-/* mediaquerie-2 */
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
 
 @media (max-width: 1500px) {
     body {
@@ -73,87 +57,20 @@ a:hover {
     }
 }
 
-
-
-
-/* config navbar */
-
-
-nav {
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: transparent;
-    height: 8vh;
-    width: 100vw;
+@media (max-width: 790px) {
+    #fdp1 {
+        display: none;
+    }
+    #fdp2 {
+        display: none;
+    }
+    #fdp3 {
+        display: none;
+    }
+    #fdp-logo {
+        display: none;
+    }
 }
-
-
-/* config padrão */
-
-.logo {
-    width: 55px;
-    height: 55px;
-    background: url(./imagens_pi/logos/gamer-logo-about\ 1.png);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-
-
-/* config mobile menu  */
-
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-    opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-}
-
-.mobile-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-}
-
-/* lista navbar */
-
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-
-/* Rectangle 21 */
-.input-nav {
-    width: 384px;
-    height: 34px;
-    left: 970px;
-    top: 19px;
-    background: #F7F7F7;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 13px;
-}
-
-/* botões navbar */
 
 .btn-heart {
     /* Heart */
@@ -239,8 +156,42 @@ nav {
     background: url(./imagens_pi/logos/icon.png);
 }
 
- /* Faça seu login ou cadastre-se */
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: transparent;
+    height: 8vh;
+    width: 100vw;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.input-nav {
+    /* Rectangle 21 */
+    width: 384px;
+    height: 34px;
+    left: 970px;
+    top: 19px;
+    background: #F7F7F7;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+}
+
 .nav-cadastro {
+    /* Faça seu login ou cadastre-se */
     letter-spacing: 3px;
     width: 127px;
     height: 38px;
@@ -255,9 +206,6 @@ nav {
     align-items: center;
     color: red;
 }
-
-
-/* carrossel-1 */
 
 .carousel {
     width: 100vw;
@@ -283,6 +231,21 @@ nav {
     width: 19.9%;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
 
 @keyframes animacao {
     0% {
@@ -332,8 +295,6 @@ hr {
     background-color: rgb(102, 94, 94);
 }
 
-/* divisão do container navbar */
-
 .barra-divisao-container {
     height: 50px;
     width: 100vw;
@@ -354,12 +315,12 @@ hr {
     color: #fff;
     font-size: 25px;
 }
-
 /* carrossel-promoções */
 
 .boxprincipal {
     flex: none;
     border: solid 1px green;
+    width: 100vw;
     
     
 }
