@@ -9,6 +9,8 @@ main {
     ;
 }
 
+
+/* lembrar de criar uma classe ou id para a lista da nav bar não implicar nas outras listas pelo site */
 a {
     color: #ffff;
     text-decoration: none;
@@ -580,5 +582,35 @@ h6 {
 
 }
 
+footer{
+    background-color: #150737;
+    color: white;
+    position: relative;
+}
+.container-footer ul{
+    list-style-type: none;
 
+}
+
+.caixaContato{
+    width: 40%;
+    height: 60px;
+    position: absolute;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    top: -28px;
+    left: 10%;
+    justify-content: space-evenly;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 1px;
+    width: 50%;
+}
 
