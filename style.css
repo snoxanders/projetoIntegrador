@@ -181,6 +181,7 @@ nav {
     background: #150737;
     height: 8vh;
     width: 100vw;
+    z-index: 2;
 }
 
 .nav-list {
@@ -379,35 +380,16 @@ hr {
     flex-direction: row;
     flex-wrap: nowrap;
 
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
     
 }
+
 
 .buttons-carrossel {
     display: flex;
     justify-content: center;
     overflow: hidden;
     
-}
-.buttons-carrossel > .box1 > .box2 > .box3 > .box4 {
-    transition: all 500ms ease;
-} 
-
-.buttons-carrossel > input[type="radio"]:nth-child(1):checked ~ .box1 {
-    transform: translateX(0%);
-}
-
-.buttons-carrossel > input[type=radio]:nth-child(2):checked ~ .box2 {
-    transform: translateX(-100%);
-}
-
-.buttons-carrossel > input[type="radio"]:nth-child(3):checked ~ .box3 {
-    transform: translateX(-200%);
-}
-
-.buttons-carrossel > input[type="radio"]:nth-child(4):checked ~ .box4 {
-    transform: translateX(-300%);
 }
 
 input[type="radio"] {
