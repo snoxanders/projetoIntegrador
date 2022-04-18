@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Raleway';
 }
 
 main {
@@ -10,10 +11,39 @@ main {
 }
 
 
-/* lembrar de criar uma classe ou id para a lista da nav bar não implicar nas outras listas pelo site */
+/* NAVBAR - ALEXANDRE */
+
+/* THAY FEZ ESSA ALTERAÇÃO COM ESSA CLASSE ABAIXO */
+.navbar{
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Raleway';
+    font-size: 18px;
+}
 a {
     color: #ffff;
     text-decoration: none;
+}
+
+
+/* THAY FEZ ESSE ID ABAIXO */
+#cadastre {
+    width: 200px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+
+/* THAY TAMBÉM FEZ ESSE ID ABAIXO */
+#cadastre-color {
+    color:#ED1C24;
 }
 
 .logo {
@@ -215,6 +245,8 @@ nav {
     color: red;
 }
 
+/* CARROSSEL -DIEGO */
+
 .carousel {
     width: 100vw;
     height: 800px;
@@ -303,6 +335,8 @@ hr {
     background-color: rgb(102, 94, 94);
 }
 
+/* DIVISÃO CONTEINER - DIEGO */
+
 .barra-divisao-container {
     height: 50px;
     width: 100vw;
@@ -323,7 +357,7 @@ hr {
     color: #fff;
     font-size: 25px;
 }
-/* carrossel-promoções */ 
+/* CARROSSEL PROMOÇÕES - THAYANE */ 
 
 .boxprincipal {
     display: flex;
@@ -587,6 +621,8 @@ h6 {
     color: #FFFFFF;
 
 }
+
+/* FOOTER - JEF */
 
 footer{
     background-color: #150737;
