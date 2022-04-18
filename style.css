@@ -1,12 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
 
 main {
     background-color: #E2E8F0;
-    ;
+    overflow-x: hidden;
 }
 
 a {
@@ -324,11 +324,13 @@ hr {
 /* carrossel-promoções */
 
 .boxprincipal {
-    flex: none;
+    display: flex;
     border: solid 1px green;
     width: 100vw;
-    
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -350,11 +352,15 @@ hr {
 }
 
 .carrossel {
-    width: 100vw;
+    width: 90vw;
     height: 500px;
     border: solid 1px blue;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+
+    overflow-x: hidden;
+    
     
 }
 
@@ -362,6 +368,7 @@ hr {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    
 }
 .buttons-carrossel > .box1 > .box2 > .box3 > .box4 {
     transition: all 500ms ease;
@@ -410,7 +417,6 @@ input[type="radio"]:checked {
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    scroll-snap-align: start;
     padding: 10%;
 
 }
