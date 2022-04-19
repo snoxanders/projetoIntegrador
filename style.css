@@ -678,7 +678,7 @@ footer {
     height: 30px;
     margin: 8px;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: solid 1px #8135CE;
 }
 
@@ -688,7 +688,7 @@ footer {
     text-align: center;
     padding: 8px 30px;
     margin: 2px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: solid 1px #8135CE;
     color: #F7F7F7;
     background-color: #ED1C24;
