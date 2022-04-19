@@ -498,7 +498,7 @@ input[type="radio"]:checked {
 #titlebox {
     color: #000000;
     width: 235px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -509,7 +509,7 @@ input[type="radio"]:checked {
 }
 
 #preçoantigo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -522,7 +522,7 @@ input[type="radio"]:checked {
 }
 
 #preçoreal {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
@@ -534,7 +534,7 @@ input[type="radio"]:checked {
 }
 
 #legenda {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -575,7 +575,7 @@ input[type="radio"]:checked {
 }
 
 h6 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
