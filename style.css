@@ -190,7 +190,7 @@ nav {
 
 .nav-list li {
     line-height: 21px;
-    font-weight: 1000;
+    font-weight: 400;
     font-style: normal;
     align-items: center;
     display: flex;
@@ -208,6 +208,7 @@ nav {
     top: 19px;
     background: #F7F7F7;
     border: 1px solid #000000;
+    padding-left: 10px;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 13px;
@@ -222,7 +223,7 @@ nav {
     top: 17px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-weight: 1000;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     display: flex;
@@ -498,7 +499,7 @@ input[type="radio"]:checked {
 
 #titlebox {
     color: #000000;
-    width: 235px;
+    width: 210px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -516,7 +517,7 @@ input[type="radio"]:checked {
     font-size: 14px;
     line-height: 16px;
     position: relative;
-    right: 80px;
+    right: 65px;
     text-decoration-line: line-through;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #D3D3D3;
