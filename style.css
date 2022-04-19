@@ -588,7 +588,6 @@ h6 {
 }
 
 .categorias-principais {
-    background-color: crimson;
     padding: 1.9%;
     width: 100vw;
 }
@@ -601,6 +600,7 @@ h6 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1.5%;
 }
 
 .cat {
