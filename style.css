@@ -235,19 +235,22 @@ nav {
 
 .carousel {
     width: 100vw;
-    height: 800px;
+    height: 75vh;
     box-sizing: border-box;
     padding: 0px;
+    background-color: #000000;
 }
 
 .galeria {
-    width: 100vw;
+    width: 101%;
     height: 100%;
     overflow: hidden;
+    padding: 0%;
 }
 
 .galeria .fotos {
     width: 500%;
+    padding: 0px;
     animation-name: animacao;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -270,7 +273,7 @@ a:hover {
 }
 
 .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+    transform: rotate(60deg) translate(-5px, -7px);
 }
 
 @keyframes animacao {
@@ -295,11 +298,8 @@ a:hover {
     75% {
         margin-left: -300%;
     }
-    95% {
-        margin-left: -300%;
-    }
     100% {
-        margin-left: -400%;
+        margin-left: -300%;
     }
 }
 
@@ -585,6 +585,30 @@ h6 {
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+}
+
+.categorias-principais {
+    background-color: crimson;
+    padding: 1.9%;
+    width: 100vw;
+}
+
+.cat-principal-flex {
+    display: flex;
+    border: solid 1px yellow;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 
