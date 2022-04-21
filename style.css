@@ -632,6 +632,15 @@ h6 {
 
 /* CATEGORIAS PRINCIPAIS - DIEGO */
 
+.textoh2 {
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+}
+
 .categorias-principais {
     padding: 1.9%;
     width: 100vw;
