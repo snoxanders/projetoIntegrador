@@ -180,6 +180,7 @@ nav {
     background: #150737;
     height: 8vh;
     width: 100vw;
+    z-index: 2;
 }
 
 .nav-list {
@@ -207,6 +208,7 @@ nav {
     top: 19px;
     background: #F7F7F7;
     border: 1px solid #000000;
+    padding-left: 10px;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 13px;
@@ -235,19 +237,22 @@ nav {
 
 .carousel {
     width: 100vw;
-    height: 800px;
+    height: 75vh;
     box-sizing: border-box;
     padding: 0px;
+    background-color: #000000;
 }
 
 .galeria {
-    width: 100vw;
+    width: 101%;
     height: 100%;
     overflow: hidden;
+    padding: 0%;
 }
 
 .galeria .fotos {
     width: 500%;
+    padding: 0px;
     animation-name: animacao;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -270,7 +275,7 @@ a:hover {
 }
 
 .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+    transform: rotate(60deg) translate(-5px, -7px);
 }
 
 @keyframes animacao {
@@ -295,11 +300,8 @@ a:hover {
     75% {
         margin-left: -300%;
     }
-    95% {
-        margin-left: -300%;
-    }
     100% {
-        margin-left: -400%;
+        margin-left: -300%;
     }
 }
 
@@ -385,6 +387,7 @@ hr {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    <<<<<<< HEAD
 }
 
 .buttons-carrossel>.box1>.box2>.box3>.box4 {
@@ -405,6 +408,7 @@ hr {
 
 .buttons-carrossel>input[type="radio"]:nth-child(4):checked~.box4 {
     transform: translateX(-300%);
+    =======>>>>>>>d17cbafb037bd6fe5113a2667fee1ccae4d4179d
 }
 
 input[type="radio"] {
@@ -432,42 +436,52 @@ input[type="radio"]:checked {
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 10%;
+    <<<<<<< HEAD=======box-sizing: border-box;
+    animation-name: slidesposition;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    >>>>>>>d17cbafb037bd6fe5113a2667fee1ccae4d4179d
 }
 
 .box2 {
-    width: 98.5vw;
+    width: 100vw;
     height: 100%;
     border: solid 1px red;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    scroll-snap-align: start;
+    <<<<<<< HEAD scroll-snap-align: start;
+    =======padding: 10%;
+    box-sizing: border-box;
+    >>>>>>>d17cbafb037bd6fe5113a2667fee1ccae4d4179d
 }
 
 .box3 {
-    width: 98.5vw;
+    width: 100vw;
     height: 100%;
     border: solid 1px red;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    scroll-snap-align: start;
+    padding: 10%;
+    box-sizing: border-box;
 }
 
 .box4 {
-    width: 98.5vw;
+    width: 100vw;
     height: 100%;
     border: solid 1px red;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    scroll-snap-align: start;
+    padding: 10%;
+    box-sizing: border-box;
 }
 
 .carrossel-box {
@@ -497,7 +511,9 @@ input[type="radio"]:checked {
 
 #titlebox {
     color: #000000;
-    width: 235px;
+    <<<<<<< HEAD=======width: 210px;
+    font-family: 'Raleway';
+    >>>>>>>d17cbafb037bd6fe5113a2667fee1ccae4d4179d width: 235px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -514,8 +530,9 @@ input[type="radio"]:checked {
     font-weight: 800;
     font-size: 14px;
     line-height: 16px;
+    width: 210px;
     position: relative;
-    right: 80px;
+    left: 2px;
     text-decoration-line: line-through;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #D3D3D3;
@@ -589,13 +606,91 @@ h6 {
     color: #FFFFFF;
 }
 
+<<<<<<< HEAD=======.box1.active {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
 
+.box2.active {
+    opacity: 0;
+}
+
+.box3.active {
+    transform: rotate(60deg) translate(-5px, -7px);
+}
+
+@keyframes slidesposition {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 0;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    75% {
+        margin-left: -200%;
+    }
+    85% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+@keyframes efeitocarrossel {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* CATEGORIAS PRINCIPAIS - DIEGO */
+
+.categorias-principais {
+    padding: 1.9%;
+    width: 100vw;
+}
+
+.cat-principal-flex {
+    display: flex;
+    border: solid 1px yellow;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5%;
+}
+
+.cat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+>>>>>>>d17cbafb037bd6fe5113a2667fee1ccae4d4179d
 /* FOOTER - JEF */
 
 footer {
     background-color: #150737;
     color: white;
     position: relative;
+    box-sizing: border-box;
 }
 
 .container-footer ul {
@@ -606,12 +701,13 @@ footer {
     width: 40%;
     height: 60px;
     position: absolute;
-    background-color: purple;
+    background-color: #8135CE;
     display: flex;
     align-items: center;
     border-radius: 12px;
     left: 10%;
     justify-content: space-evenly;
+    top: -30px;
 }
 
 .contato {
@@ -621,4 +717,57 @@ footer {
     margin: 5px;
     padding: 1px;
     width: 50%;
+    <<<<<<< HEAD=======
+}
+
+.boxForm {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 60px;
+    position: absolute;
+    justify-content: space-evenly;
+    background-color: #8135CE;
+    height: 50px;
+    align-items: center;
+    border: 30px;
+}
+
+#nome input {
+    width: 20vw;
+    height: 30px;
+    margin: 8px;
+    padding: 15px;
+    border-radius: 12px;
+    border: solid 1px #8135CE;
+}
+
+#mail input {
+    width: 20vw;
+    height: 30px;
+    margin: 8px;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px #8135CE;
+}
+
+.ofertas button {
+    width: 100%;
+    margin: 8px;
+    text-align: center;
+    padding: 8px 30px;
+    margin: 2px;
+    border-radius: 10px;
+    border: solid 1px #8135CE;
+    color: #F7F7F7;
+    background-color: #ED1C24;
+}
+
+.ofertas button:hover {
+    background-color: #ED1C24;
+    >>>>>>>d17cbafb037bd6fe5113a2667fee1ccae4d4179d
 }
