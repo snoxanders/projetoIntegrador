@@ -237,19 +237,22 @@ nav {
 
 .carousel {
     width: 100vw;
-    height: 800px;
+    height: 75vh;
     box-sizing: border-box;
     padding: 0px;
+    background-color: #000000;
 }
 
 .galeria {
-    width: 100vw;
+    width: 101%;
     height: 100%;
     overflow: hidden;
+    padding: 0%;
 }
 
 .galeria .fotos {
     width: 500%;
+    padding: 0px;
     animation-name: animacao;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -272,7 +275,7 @@ a:hover {
 }
 
 .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+    transform: rotate(60deg) translate(-5px, -7px);
 }
 
 @keyframes animacao {
@@ -297,11 +300,8 @@ a:hover {
     75% {
         margin-left: -300%;
     }
-    95% {
-        margin-left: -300%;
-    }
     100% {
-        margin-left: -400%;
+        margin-left: -300%;
     }
 }
 
@@ -389,26 +389,6 @@ hr {
     overflow: hidden;
 }
 
-.buttons-carrossel>.box1>.box2>.box3>.box4 {
-    transition: all 500ms ease;
-}
-
-.buttons-carrossel>input[type="radio"]:nth-child(1):checked~.box1 {
-    transform: translateX(0%);
-}
-
-.buttons-carrossel>input[type=radio]:nth-child(2):checked~.box2 {
-    transform: translateX(-100%);
-}
-
-.buttons-carrossel>input[type="radio"]:nth-child(3):checked~.box3 {
-    transform: translateX(-200%);
-}
-
-.buttons-carrossel>input[type="radio"]:nth-child(4):checked~.box4 {
-    transform: translateX(-300%);
-}
-
 input[type="radio"] {
     all: unset;
     border: #989898 1px solid;
@@ -434,42 +414,49 @@ input[type="radio"]:checked {
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 10%;
+    box-sizing: border-box;
+    animation-name: slidesposition;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
 }
 
 .box2 {
-    width: 98.5vw;
+    width: 100vw;
     height: 100%;
     border: solid 1px red;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    scroll-snap-align: start;
+    padding: 10%;
+    box-sizing: border-box;
 }
 
 .box3 {
-    width: 98.5vw;
+    width: 100vw;
     height: 100%;
     border: solid 1px red;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    scroll-snap-align: start;
+    padding: 10%;
+    box-sizing: border-box;
 }
 
 .box4 {
-    width: 98.5vw;
+    width: 100vw;
     height: 100%;
     border: solid 1px red;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    scroll-snap-align: start;
+    padding: 10%;
+    box-sizing: border-box;
 }
 
 .carrossel-box {
@@ -501,6 +488,8 @@ input[type="radio"]:checked {
     color: #000000;
     width: 210px;
     font-family: 'Raleway';
+    width: 235px;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -511,20 +500,21 @@ input[type="radio"]:checked {
 }
 
 #preçoantigo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 16px;
+    width: 210px;
     position: relative;
-    right: 65px;
+    left: 2px;
     text-decoration-line: line-through;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #D3D3D3;
 }
 
 #preçoreal {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
@@ -536,7 +526,7 @@ input[type="radio"]:checked {
 }
 
 #legenda {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -577,7 +567,7 @@ input[type="radio"]:checked {
 }
 
 h6 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -587,6 +577,83 @@ h6 {
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+}
+
+.box1.active {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.box2.active {
+    opacity: 0;
+}
+
+.box3.active {
+    transform: rotate(60deg) translate(-5px, -7px);
+}
+
+@keyframes slidesposition {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 0;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    75% {
+        margin-left: -200%;
+    }
+    85% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+@keyframes efeitocarrossel {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* CATEGORIAS PRINCIPAIS - DIEGO */
+
+.categorias-principais {
+    padding: 1.9%;
+    width: 100vw;
+}
+
+.cat-principal-flex {
+    display: flex;
+    border: solid 1px yellow;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5%;
+}
+
+.cat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 
@@ -607,7 +674,7 @@ footer {
     width: 40%;
     height: 60px;
     position: absolute;
-    background-color: purple;
+    background-color: #8135CE;
     display: flex;
     align-items: center;
     border-radius: 12px;
@@ -623,4 +690,55 @@ footer {
     margin: 5px;
     padding: 1px;
     width: 50%;
+}
+
+.boxForm {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 60px;
+    position: absolute;
+    justify-content: space-evenly;
+    background-color: #8135CE;
+    height: 50px;
+    align-items: center;
+    border: 30px;
+}
+
+#nome input {
+    width: 20vw;
+    height: 30px;
+    margin: 8px;
+    padding: 15px;
+    border-radius: 12px;
+    border: solid 1px #8135CE;
+}
+
+#mail input {
+    width: 20vw;
+    height: 30px;
+    margin: 8px;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px #8135CE;
+}
+
+.ofertas button {
+    width: 100%;
+    margin: 8px;
+    text-align: center;
+    padding: 8px 30px;
+    margin: 2px;
+    border-radius: 10px;
+    border: solid 1px #8135CE;
+    color: #F7F7F7;
+    background-color: #ED1C24;
+}
+
+.ofertas button:hover {
+    background-color: #ED1C24;
 }
