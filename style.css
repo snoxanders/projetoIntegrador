@@ -666,6 +666,12 @@ footer {
     box-sizing: border-box;
 }
 
+.container-footer {
+    border: red solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+
 .container-footer ul {
     list-style-type: none;
 }
@@ -740,5 +746,5 @@ footer {
 }
 
 .ofertas button:hover {
-    background-color: #ED1C24;
+    background-color: #b13236;
 }
