@@ -674,18 +674,25 @@ footer {
     color: white;
     position: relative;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 26px;
 }
 
 .container-footer {
-    top: 200px;
+    width: 60%;
     border: red solid 1px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .container-footer ul {
     list-style-type: none;
+}
+
+.container-footer hr {
+    margin-bottom: 30px;
 }
 
 .caixaContato {
@@ -767,6 +774,10 @@ footer {
     top: 150px;
 }
 
+.main-category {
+    display: flex;
+}
+
 ul.main-category {
     display: flex;
     flex-direction: column;
@@ -776,7 +787,7 @@ ul.main-category {
 
 .main-category li {
     display: flex;
-    padding: 5px;
+    padding-bottom: 13px;
     top: 30px;
     justify-content: flex-start;
 }
@@ -785,15 +796,19 @@ ul.main-category {
     color: #ED1C24;
     position: absolute;
     top: 10px;
+    font-weight: bolder;
 }
 
 .container-cards {
-    margin: 0;
-    display: flex;
-    padding: 0;
-    flex-wrap: wrap;
-    list-style: none;
-    flex-direction: column;
+    border: solid 1px red;
+    margin-left: 40px;
+    margin-top: 7px;
+}
+
+.container-cards p {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #ED1C24;
 }
 
 .cards {
