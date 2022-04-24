@@ -794,6 +794,8 @@ footer {
     position: absolute;
     top: 150px;
     margin: 0% 9%;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .main-category {
