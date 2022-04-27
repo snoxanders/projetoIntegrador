@@ -1,0 +1,78 @@
+Acesso à minha pasta com o projeto pelo terminal.
+
+Como a minha pasta está na área de trabalho, uso:
+cd desktop
+ depois
+cd Projetos
+
+Para inicializar seu repositório git:
+git init
+
+Para indicar ao meu repositório quem está utilizando:
+
+//se estiver usando uma máquina(computador) de outra pessoa:
+git config user.name "seu nome"
+git config user.email "seuEmail"
+
+//se estiver usando sua prórpia máquina:
+git config --global user.name "seu nome"
+git config --global user.email "seuEmail"
+
+//Para conectar o repositório local com o repositório remoto:
+
+Para isso, você deve ter criado previamente um repositório github, e pegar sua url e digitar o seguinte comando:
+
+git remote add origin https://github.com/meu-usuario/nome-do-repo.git
+
+caso não saiba criar: 
+https://prnt.sc/A9D61husvZ_z
+https://prnt.sc/EuImSNc8kyRs
+https://prnt.sc/mwakVN4LUT1I
+
+//Para ver se deu tudo certo, use o comando:
+
+git remote -v
+
+Algo assim deve retornar no terminal:
+
+origin https://github.com/meu-usuario/nome-do-repo.git (fetch)
+
+origin https://github.com/meu-usuario/nome-do-repo.git (push)
+
+//Para adicionar os arquivos modificados:
+git add .     //adiciona todos
+git add nomeArquivo      //adiciona só um
+
+//Para verificar a situação do repositório local:
+git status
+
+//Para registrar e reunir toda essa informação:
+git commit -m "menssagem sobre a alteração"
+git status
+
+//se retornar:
+
+On branch master
+nothing to commit, working tree clean
+//é porque todas as alterações já estão atualizadas no commit
+
+//Para enviar os arquivos(commit) que você tem no repositório local para o repositório remoto:
+git push origin master
+
+//A primeira vez vai pedir para você logar na conta GitHub
+//Conforme o link dado. Se fosse link de outro repositório remoto pediria login em outro link
+
+//Para baixar projetos do GitHub
+git clone https://github.com/meu-usuario/nome-do-repo.git
+1-Primeiro entre em uma pasta de fácil acesso:
+Você pode fazer no desktop:
+cd desktop
+cd Projetos      <-- Crie a pasta você mesmo
+
+//Depois de um tempo se quiser baixar arquivos do GitHub que sofreram modificação, use:
+
+//Para que o repositório local seja atualizado com a última versão enviada para o repositório web.
+git pull origin master
+
+Comandos Git:
+https://drive.google.com/file/d/1-5SEE2gnlfmrPykE87_CdNent7sceva8/view
