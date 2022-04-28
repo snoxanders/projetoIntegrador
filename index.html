@@ -1,12 +1,12 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css" media="screen" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="slider.css" />
-    <link rel="icon" href="/imagens_pi/logos/gamer-logo-about 1.png">
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+    <link rel="icon" href="/public/img/logos/gamer-logo-about 1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
@@ -63,10 +63,10 @@
                 <div>
                     <section class="galeria">
                         <div class="fotos">
-                            <a href="/"><img src="imagens_pi/Carousel1.jpg" alt="foto1"></a>
-                            <a href="/"><img src="imagens_pi/Carousel2.jpg" alt="foto2"></a>
-                            <a href="/"><img src="imagens_pi/Carousel3.jpg" alt="foto3"></a>
-                            <a href="/"><img src="imagens_pi/Carousel4.jpg" alt="foto4"></a>
+                            <a href="/"><img src="/public/img/Carousel1.jpg" alt="foto1"></a>
+                            <a href="/"><img src="/public/img/Carousel2.jpg" alt="foto2"></a>
+                            <a href="/"><img src="/public/img/Carousel3.jpg" alt="foto3"></a>
+                            <a href="/"><img src="/public/img/Carousel4.jpg" alt="foto4"></a>
                         </div>
                 </div>
 
@@ -79,261 +79,280 @@
 
             <!-- carrossel - promoções -->
 
-            <section class="boxprincipal">
-
-                <div class="carrossel">
-
-
-                    <!-- box1 -->
-
-                    <div class="box1">
-
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="imagens_pi/carrossel-promo/Vector.png" id="vector1"></button>
+            <div class="divprincipal">
+                <div class="carouselpromo">
+                    <ul class="slides">
+                        <!-- slide 1 -->
+                        <input type="radio" name="radio-buttons" id="img-1" checked/>
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <!-- colocar aqui div dos boxes com todos os buttons dentro -->
+                                <div class="box1">
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 1.png" id="mouse">
+                                        <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                        <p id="preçoantigo">R$327,90</p>
+                                        <p id="preçoreal">R$209,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 2.png" id="micro">
+                                        <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
+                                        <p id="preçoantigo">R$1099,00</p>
+                                        <p id="preçoreal">R$799,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 3.png" id="fone">
+                                        <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
+                                        <p id="preçoantigo">R$396,90</p>
+                                        <p id="preçoreal">R$259,90</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 4.png" id="stream">
+                                        <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
+                                        <p id="preçoantigo">R$823,00</p>
+                                        <p id="preçoreal">R$699,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 5.png" id="monitor">
+                                        <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
+                                        <p id="preçoantigo">R$1899,00</p>
+                                        <p id="preçoreal">R$1399,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                </div>
+                                <!-- fim dos boxes -->
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-4" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                                <label for="img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                            </div>
+                        </li>
+                        <!-- slide 2 -->
+                        <input type="radio" name="radio-buttons" id="img-2" checked/>
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <!-- colocar aqui div dos boxes com todos os buttons dentro -->
+                                <div class="box2">
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 1.png" id="mouse">
+                                        <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                        <p id="preçoantigo">R$327,90</p>
+                                        <p id="preçoreal">R$209,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 2.png" id="micro">
+                                        <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
+                                        <p id="preçoantigo">R$1099,00</p>
+                                        <p id="preçoreal">R$799,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 3.png" id="fone">
+                                        <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
+                                        <p id="preçoantigo">R$396,90</p>
+                                        <p id="preçoreal">R$259,90</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 4.png" id="stream">
+                                        <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
+                                        <p id="preçoantigo">R$823,00</p>
+                                        <p id="preçoreal">R$699,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 5.png" id="monitor">
+                                        <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
+                                        <p id="preçoantigo">R$1899,00</p>
+                                        <p id="preçoreal">R$1399,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                </div>
+                                <!-- fim dos boxes -->
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                                <label for="img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                            </div>
+                        </li>
+                        <!-- slide 3 -->
+                        <input type="radio" name="radio-buttons" id="img-3" checked/>
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <!-- colocar aqui div dos boxes com todos os buttons dentro -->
+                                <div class="box3">
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 1.png" id="mouse">
+                                        <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                        <p id="preçoantigo">R$327,90</p>
+                                        <p id="preçoreal">R$209,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 2.png" id="micro">
+                                        <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
+                                        <p id="preçoantigo">R$1099,00</p>
+                                        <p id="preçoreal">R$799,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 3.png" id="fone">
+                                        <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
+                                        <p id="preçoantigo">R$396,90</p>
+                                        <p id="preçoreal">R$259,90</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 4.png" id="stream">
+                                        <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
+                                        <p id="preçoantigo">R$823,00</p>
+                                        <p id="preçoreal">R$699,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 5.png" id="monitor">
+                                        <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
+                                        <p id="preçoantigo">R$1899,00</p>
+                                        <p id="preçoreal">R$1399,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                </div>
+                                <!-- fim dos boxes -->
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                                <label for="img-4" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                            </div>
+                        </li>
+                        <!-- slide 4 -->
+                        <input type="radio" name="radio-buttons" id="img-4" checked/>
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <!-- colocar aqui div dos boxes com todos os buttons dentro -->
+                                <div class="box4">
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 1.png" id="mouse">
+                                        <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                        <p id="preçoantigo">R$327,90</p>
+                                        <p id="preçoreal">R$209,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 2.png" id="micro">
+                                        <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
+                                        <p id="preçoantigo">R$1099,00</p>
+                                        <p id="preçoreal">R$799,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 3.png" id="fone">
+                                        <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
+                                        <p id="preçoantigo">R$396,90</p>
+                                        <p id="preçoreal">R$259,90</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 4.png" id="stream">
+                                        <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
+                                        <p id="preçoantigo">R$823,00</p>
+                                        <p id="preçoreal">R$699,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                    <div class="carrossel-box">
+                                        <img src="/public/img/carrossel-promo/image 5.png" id="monitor">
+                                        <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
+                                        <p id="preçoantigo">R$1899,00</p>
+                                        <p id="preçoreal">R$1399,00</p>
+                                        <p id="legenda">Em até 10x sem juros</p><br>
+                                        <button type="button" id="botãobox"><img src="/public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                                    </div>
+                                </div>
+                                <!-- fim dos boxes -->
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                                <label for="img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                            </div>
+                        </li>
+                        <div class="carousel-dots">
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                            <label for="img-4" class="carousel-dot" id="img-dot-3"></label>
+                            <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
                         </div>
-
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 2.png" id="micro">
-                            <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
-                            <p id="preçoantigo">R$1099,00</p>
-                            <p id="preçoreal">R$799,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 3.png" id="fone">
-                            <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
-                            <p id="preçoantigo">R$396,90</p>
-                            <p id="preçoreal">R$259,90</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 4.png" id="stream">
-                            <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
-                            <p id="preçoantigo">R$823,00</p>
-                            <p id="preçoreal">R$699,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 5.png" id="monitor">
-                            <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
-                            <p id="preçoantigo">R$1899,00</p>
-                            <p id="preçoreal">R$1399,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="imagens_pi/carrossel-promo/Vector (1).png" id="vector2"></button>
-                        </div>
-
-                    </div>
-
-                    <!-- box2 -->
-
-                    <div class="box2">
-
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="imagens_pi/carrossel-promo/Vector.png" id="vector1"></button>
-                        </div>
-
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 2.png" id="micro">
-                            <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
-                            <p id="preçoantigo">R$1099,00</p>
-                            <p id="preçoreal">R$799,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 3.png" id="fone">
-                            <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
-                            <p id="preçoantigo">R$396,90</p>
-                            <p id="preçoreal">R$259,90</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 4.png" id="stream">
-                            <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
-                            <p id="preçoantigo">R$823,00</p>
-                            <p id="preçoreal">R$699,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 5.png" id="monitor">
-                            <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
-                            <p id="preçoantigo">R$1899,00</p>
-                            <p id="preçoreal">R$1399,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="imagens_pi/carrossel-promo/Vector (1).png" id="vector2"></button>
-                        </div>
-                    </div>
-
-                    <!-- box3 -->
-
-                    <div class="box3">
-
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="imagens_pi/carrossel-promo/Vector.png" id="vector1"></button>
-                        </div>
-
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 2.png" id="micro">
-                            <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
-                            <p id="preçoantigo">R$1099,00</p>
-                            <p id="preçoreal">R$799,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 3.png" id="fone">
-                            <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
-                            <p id="preçoantigo">R$396,90</p>
-                            <p id="preçoreal">R$259,90</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 4.png" id="stream">
-                            <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
-                            <p id="preçoantigo">R$823,00</p>
-                            <p id="preçoreal">R$699,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 5.png" id="monitor">
-                            <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
-                            <p id="preçoantigo">R$1899,00</p>
-                            <p id="preçoreal">R$1399,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="imagens_pi/carrossel-promo/Vector (1).png" id="vector2"></button>
-                        </div>
-
-                    </div>
-
-                    <!-- box4 -->
-
-                    <div class="box4">
-
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="imagens_pi/carrossel-promo/Vector.png" id="vector1"></button>
-                        </div>
-
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 2.png" id="micro">
-                            <p id="titlebox">Microfone Gamer Hyperx Quadcast - ID #54458966</p>
-                            <p id="preçoantigo">R$1099,00</p>
-                            <p id="preçoreal">R$799,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 3.png" id="fone">
-                            <p id="titlebox">Headset Gamer Razer Kraken X Lite - ID #1548879</p>
-                            <p id="preçoantigo">R$396,90</p>
-                            <p id="preçoreal">R$259,90</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="/imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 4.png" id="stream">
-                            <p id="titlebox">Stream Deck Elgato Médio - ID #7856423</p>
-                            <p id="preçoantigo">R$823,00</p>
-                            <p id="preçoreal">R$699,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="/imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="imagens_pi/carrossel-promo/image 5.png" id="monitor">
-                            <p id="titlebox">Monitor LG 29' IPS, Ultra Wide, Full HD - ID #8562314</p>
-                            <p id="preçoantigo">R$1899,00</p>
-                            <p id="preçoreal">R$1399,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="/imagens_pi/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="invisible-box">
-                            <button type="button" id="seta"><img src="/imagens_pi/carrossel-promo/Vector (1).png" id="vector2"></button>
-                        </div>
-
-                    </div>
-            </section>
-
+                    </ul>
+                </div>
             </div>
-            <div class="buttons-carrossel">
 
-                <input name='slide' type="radio" id="bolinha1" checked>
-                <input name='slide' type="radio" id="bolinha2">
-                <input name='slide' type="radio" id="bolinha3">
-                <input name='slide' type="radio" id="bolinha4">
 
-            </div>
+
 
             <!-- Categorias principais -->
 
             <div class="categorias-principais">
-                
 
-<div class="textoh2"><h2>categorias principais</h2></div>
+
+                <div class="textoh2">
+                    <h2>categorias principais</h2>
+                </div>
                 <div class="cat-principal-flex">
                     <div class="cat">
-                        <a href=""><img src="imagens_pi/categoria-principal/Categoria 1.png"></a>
+                        <a href=""><img src="/public/img/categoria-principal/Categoria 1.png"></a>
                     </div>
                     <div class="cat">
-                        <a href="/"><img src="imagens_pi/categoria-principal/Categoria 2.png"></a>
+                        <a href="/"><img src="/public/img/categoria-principal/Categoria 2.png"></a>
                     </div>
                     <div class="cat">
-                        <a href="/"><img src="imagens_pi/categoria-principal/Categoria 3.png"></a>
+                        <a href="/"><img src="/public/img/categoria-principal/Categoria 3.png"></a>
                     </div>
                     <div class="cat">
-                        <a href="/"><img src="imagens_pi/categoria-principal/Categoria 4.png"></a>
+                        <a href="/"><img src="/public/img/categoria-principal/Categoria 4.png"></a>
                     </div>
                     <div class="cat">
-                        <a href="/"><img src="imagens_pi/categoria-principal/Categoria 5.png"></a>
+                        <a href="/"><img src="/public/img/categoria-principal/Categoria 5.png"></a>
                     </div>
                     <div class="cat">
-                        <a href="/"><img src="imagens_pi/categoria-principal/Categoria 6.png"></a>
+                        <a href="/"><img src="/public/img/categoria-principal/Categoria 6.png"></a>
                     </div>
                 </div>
             </div>
@@ -344,7 +363,7 @@
 
 
 
-            <script src="script.js"></script>
+            <script src="/public/js/script.js"></script>
             <script src="https://kit.fontawesome.com/e1ca05f7a4.js" crossorigin="anonymous"></script>
     </main>
 
@@ -352,17 +371,19 @@
         <div class="container">
             <div class="caixaContato">
                 <div class="contato">
-                    <img src="imagens_pi/Hicon/Call.png" alt="icone de telefone">
-                    <p>(XX)XXXXX-XXXX</p>
+
+                    <img src="/public/img/Hicon/Call.png" alt="icone de telefone">
+                    <p>(11)99999-9999</p>
                 </div>
                 <div class="contato">
-                    <img src="imagens_pi/Hicon/email.png" alt="icone de email">
-                    <p>sac@xxxx.com</p>
+                    <img src="/public/img/Hicon/email.png" alt="icone de email">
+                    <p>sac@foxxer.com</p>
+
                 </div>
             </div>
             <div class="boxForm">
                 <div class="form">
-                    <h4>QUER MANTER SEU SETUP ATUALIZADO? RECEBA NOSSAS OFERTAS!</h4>
+                    <p>QUER MANTER SEU SETUP ATUALIZADO? RECEBA NOSSAS OFERTAS!</p>
                     <div id="nome">
                         <input type="text" placeholder="Qual é o seu nome?">
                     </div>
@@ -378,6 +399,7 @@
                 <div class="container-footer">
                     <ul class="main-category">
                         <h7>INSTITUCIONAL</h7>
+                        <hr>
                         <li> <a href="/"> Quem somos </a></li>
                         <li> <a href="/"> Localização </a></li>
                         <li> <a href="/"> Lojas </a></li>
@@ -386,6 +408,7 @@
                 <div class="container-footer">
                     <ul class="main-category">
                         <h7>DÚVIDAS</h7>
+                        <hr>
                         <li> <a href="/"> Entrega </a></li>
                         <li> <a href="/"> Garantia </a></li>
                         <li> <a href="/"> Como comprar </a></li>
@@ -396,30 +419,32 @@
                 <div class="container-footer">
                     <ul class="main-category">
                         <h7>AJUDA</h7>
+                        <hr>
                         <li> <a href="/"> SAC </a></li>
                         <li> <a href="/"> Fale conosco </a></li>
                         <li> <a href="/"> Termos de aceite </a></li>
                         <li> <a href="/"> Políticas de privacidade </a></li>
                     </ul>
                 </div>
-                <div class="conteiner-cards">
-                    <h7>Pagamento</h7>
+                <div class="container-cards">
+                    <p>Pagamento</p>
+                    <hr>
                     <div class="cards">
-                        <img src="imagens_pi/Hicon/Payment Method/Mastercard.png" alt="bandeira Mastercard">
-                        <img src="imagens_pi/Hicon/Payment Method/Visa.png" alt="bandeira Visa">
-                        <img src="imagens_pi/Hicon/Payment Method/Amex.png" alt="bandeira Amex">
-                        <img src="imagens_pi/Hicon/Payment Method/Bitcoin.png" alt="bandeira Bitcoin">
-                        <img src="imagens_pi/Hicon/Payment Method/PayPal.png" alt="bandeira PayPal">
-                        <img src="imagens_pi/Hicon/Payment Method/Elo.png" alt="bandeira Elo">
-                        <img src="imagens_pi/Hicon/Payment Method/Boleto.png" alt="bandeira Boleto">
-                        <img src="imagens_pi/Hicon/Payment Method/Pix.png" alt="bandeira Pix">
+                        <img src="/public/img/Hicon/Payment Method/Mastercard.png" alt="bandeira Mastercard">
+                        <img src="/public/img/Hicon/Payment Method/Visa.png" alt="bandeira Visa">
+                        <img src="/public/img/Hicon/Payment Method/Amex.png" alt="bandeira Amex">
+                        <img src="/public/img/Hicon/Payment Method/Bitcoin.png" alt="bandeira Bitcoin">
+                        <img src="/public/img/Hicon/Payment Method/PayPal.png" alt="bandeira PayPal">
+                        <img src="/public/img/Hicon/Payment Method/Elo.png" alt="bandeira Elo">
+                        <img src="/public/img/Hicon/Payment Method/Boleto.png" alt="bandeira Boleto">
+                        <img src="/public/img/Hicon/Payment Method/Pix.png" alt="bandeira Pix">
                     </div>
                 </div>
                 <div class="social-media">
                     <div class="logos">
-                        <img src="imagens_pi/Hicon/Instagram_white.png" alt="logo instagram">
-                        <img src="imagens_pi/Hicon/Twitter_white.png" alt="logo twitter">
-                        <img src="imagens_pi/Hicon/Facebook_white.png" alt="logo facebook">
+                        <img src="/public/img/Hicon/Instagram_white.png" alt="logo instagram">
+                        <img src="/public/img/Hicon/Twitter_white.png" alt="logo twitter">
+                        <img src="/public/img/Hicon/Facebook_white.png" alt="logo facebook">
                     </div>
                     <div class="slogan">
                         <h8>DE GAMERS PARA GAMERS ©</h8>
