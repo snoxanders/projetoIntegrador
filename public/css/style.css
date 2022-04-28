@@ -743,6 +743,38 @@ h6 {
 }
 
 
+/* categorias produtos por ordem da thay*/
+
+.container-categoria-produto {
+    width: 100%;
+    height: 200px;
+    background: red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categoria-produto1 {
+    width: 370px;
+    height: 200px;
+    background: url(/public/img/Xbox\ series\ S\ \(1\).png);
+    border-radius: 30px;
+}
+
+.categoria-produto2 {
+    width: 400px;
+    height: 200px;
+    background: yellow;
+    border-radius: 30px;
+}
+
+.categoria-produto3 {
+    width: 400px;
+    height: 200px;
+    background: yellow;
+    border-radius: 30px;
+}
+
+
 /* FOOTER - JEF */
 
 footer {
