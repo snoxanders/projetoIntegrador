@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+    <link rel="icon" href="./public/img/logos/gamer-logo-about 1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Foxxer - de gamers pra gamers</title>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <!-- navbar -->
+            <nav>
+                <a id="fdp-logo" class="logo" href="/"></a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="/">Todas as categorias</a></li>
+                    <li>
+                        <a href="/">Computadores</a></li>
+                    <li>
+                        <a href="/">Notebooks</a></li>
+                    <li>
+                        <a href="/">Mouses</a></li>
+                    <li>
+                        <a href="/">Headsets</a></li>
+
+                </ul>
+                <input class="input-nav" placeholder="     Buscar produto">
+
+
+                <a id="fdp1" class="btn-heart" href="/"></a>
+                <a id="fdp2" class="btn-shopping-cart" href="/"></a>
+                <a id="fdp3" class="btn-user" href="/"></a>
+
+
+
+                <ul class="nav-login">
+                    <li class="nav-cadastro"><a href="/">Faça seu <span class="login-vermelho"> login </span><br> ou <span class="login-vermelho">cadastre-se</span></a></li>
+
+                </ul>
+            </nav>
+
+
+
+            </div>
+
+        </header>
+
+        <!-- corpo do site - finalização de compras -->
+
+        <div class="div-mãe">
+
+            <!-- divisão 1 -->
+
+            <div class="grande-divisor1">
+
+                <div class="passo-a-passo">
+                    <button type="button" id="button1">REMOVER TODOS OS PRODUTOS</button>
+                    <img src="/public/img/carrinhopage/carrinho colorido.png" id="carrinho-colorido" alt="carrinho colorido">
+                    <img src="/public/img/carrinhopage/Arrow 1.png" alt="arrow" id="arrow">
+                    <img src="/public/img/carrinhopage/dados.png" id="dados" alt="dados">
+                    <img src="/public/img/carrinhopage/Arrow 1.png" alt="arrow" id="arrow">
+                    <img src="/public/img/carrinhopage/cartao.png" id="cartao" alt="cartao">
+                    <img src="/public/img/carrinhopage/Arrow 1.png" alt="arrow" id="arrow">
+                    <img src="/public/img/carrinhopage/olho.png" id="olho" alt="olho">
+                    <img src="/public/img/carrinhopage/Arrow 1.png" alt="arrow" id="arrow">
+                    <img src="/public/img/carrinhopage/ok.png" id="ok" alt="ok">
+                </div>
+
+                <div class="produto">
+                    <img src="/public/img/carrinhopage/carrinho.png" id="carrinho" alt="carrinho">
+                    <span id="texto-produto">PRODUTO</span>
+                    <hr>
+                    <div class="bloco">
+                        <div>
+                            <img src="/public/img/carrinhopage/micro.png" id="micro" alt="micro">
+                        </div>
+                        <span id="texto1">Hyper X<br>Microfone Gamer HyperX QuadCast, <br>Antivibração, LED, Preto e Vermelho,<br> Compatível com PC, Mac e Consoles -<br> ID XXXXXXX</span>
+                        <div class="texto-valor">
+                            <span id="texto2">Quantidade</span>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                <input class="quantity" min="1" max="9" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>
+                            <button type="button" id="button-remove"><img src="/public/img/carrinhopage/remover.png" id="remover" alt=""></button></div>
+                        <div>
+                            <span id="preço-a-vista">Preço à vista no PIX:</span><br>
+                            <span id="valor-valor">R$799,90</span></div>
+                    </div>
+                </div>
+
+                <div class="endereço">
+                    <div>
+                        <img src="/public/img/carrinhopage/mapa.png" id="mapa" alt="mapa">
+                        <span id="endereço-title">ENDEREÇO</span></div>
+                    <hr>
+                    <div class="div-mae-end">
+                        <div class="endereço1"><button id="button-endereço" type="button">
+                    <span id="h1">MINHA CASA</span>
+                    <p id="p1">Av. João de Souza Lima, Centro<br>Número: 5<br>CEP:35112-672<br>Frei Inocêncio, MG
+                    </p></button>
+                        </div>
+                        <div class="endereço2"><button id="button-endereço" type="button">
+                    <span id="h2">TRABALHO</span>
+                    <p id="p2">Av. Pedro Alveres Cabral, Liberdade<br>Número: 1264<br>CEP:35162-987<br>Frei Inocêncio, MG
+                    </p></button>
+                        </div>
+                        <button type="button" id="buttonEnd">EDITAR</button>
+                        <button type="button" id="buttonEnd">SELECIONAR OUTRO</button>
+                        <button type="button" id="buttonEnd">NOVO ENDEREÇO</button>
+                    </div>
+                </div>
+
+                <div class="frete">
+                    <img src="/public/img/carrinhopage/caminhao.png" alt="caminhao" id="caminhao">
+                    <span id="frete-title">FRETE</span>
+                    <hr>
+                    <div class="jadlog-box">
+                        <input type="radio" name="radio" id="radio" checked value="jadlog"><label>JADLOG</label>
+                        <div class="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                        </div>
+                        <span id="valores">R$33,78</span>
+                    </div>
+
+                    <div class="correios-box">
+                        <input type="radio" id="radio" name="radio" value="correios"><label>CORREIOS - PAC</label>
+                        <div class="star1">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                        </div>
+                        <span id="valores">R$39,63</span>
+                    </div>
+                    <div class="sedex-box">
+                        <input type="radio" id="radio" value="sedex" name="radio"><label>SEDEX</label>
+                        <div class="star2">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                        </div>
+                        <span id="valores">R$49,04</span>
+                    </div>
+                    <div class="express-box">
+                        <input type="radio" id="radio" value="total-express" name="radio"><label>TOTAL EXPRESS</label>
+                        <div class="star3">
+                            <img src="/public/img/carrinhopage/star 2.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                            <img src="/public/img/carrinhopage/star 1.png" id="star" alt="star">
+                        </div>
+                        <span id="valores">R$35,59</span>
+                    </div>
+                </div>
+
+                <div class="cupom"><input type="text" class="cupom2" placeholder="      CUPOM DE DESCONTO"><button type="submit" id="aplicar">APLICAR</button></div>
+            </div>
+            <!-- divisão 2 -->
+            <div class="grande-divisor2">
+                <div class="revisão">
+                    <div class="divisao1">
+                        <img src="/public/img/carrinhopage/busca.png" alt="busca" id="busca">
+                        <span id="revisao-title">REVISÃO</span>
+                    </div>
+                    <div class="valor-revisao">
+                        <p id="texto-revisao">Valor dos Produtos:</p>
+                        <span id="valor-revisao">R$941,06</span>
+                    </div>
+                    <hr>
+                    <div class="divisao2">
+                        <p id="frete">Frete:</p>
+                        <span id="valor-revisao1">R$33,78</span>
+                    </div>
+                    <div class="divisao3">
+                        <p id="total">Total à prazo:</p>
+                        <span id="valor-revisao2">R$974,84</span><br>
+                        <span id="ate12x">(Em até 12x de R$81,24 sem juros)</span>
+                    </div>
+                </div>
+
+                <div class="valor">
+                    <p id="texto-pix">VALOR NO PIX</p>
+                    <span id="preço">R$833,68</span><br><span id="preço2">(Você economiza: R$141,16)</span>
+                    <br>
+                    <button type="button" id="button-pagamento">IR PARA O PAGAMENTO</button>
+                    <button type="button" id="button-continuar">CONTINUAR COMPRANDO</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="caixaContato">
+                <div class="contato">
+
+                    <img src="./public/img/Hicon/Call.png" alt="icone de telefone">
+                    <p>(11)99999-9999</p>
+                </div>
+                <div class="contato">
+                    <img src="./public/img/Hicon/email.png" alt="icone de email">
+                    <p>sac@foxxer.com</p>
+
+                </div>
+            </div>
+            <div class="boxForm">
+                <div class="form">
+                    <p>QUER MANTER SEU SETUP ATUALIZADO? RECEBA NOSSAS OFERTAS!</p>
+                    <div id="nome">
+                        <input type="text" placeholder="Qual é o seu nome?">
+                    </div>
+                    <div id="mail">
+                        <input type="email" placeholder="Seu email?">
+                    </div>
+                    <div class="ofertas">
+                        <button type="submit">Quero receber</button>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="container-footer">
+                    <ul class="main-category">
+                        <h7>INSTITUCIONAL</h7>
+                        <hr>
+                        <li> <a href="/"> Quem somos </a></li>
+                        <li> <a href="/"> Localização </a></li>
+                        <li> <a href="/"> Lojas </a></li>
+                    </ul>
+                </div>
+                <div class="container-footer">
+                    <ul class="main-category">
+                        <h7>DÚVIDAS</h7>
+                        <hr>
+                        <li> <a href="/"> Entrega </a></li>
+                        <li> <a href="/"> Garantia </a></li>
+                        <li> <a href="/"> Como comprar </a></li>
+                        <li> <a href="/"> Formas de pagamento </a></li>
+                        <li> <a href="/"> Boletos </a></li>
+                    </ul>
+                </div>
+                <div class="container-footer">
+                    <ul class="main-category">
+                        <h7>AJUDA</h7>
+                        <hr>
+                        <li> <a href="/"> SAC </a></li>
+                        <li> <a href="/"> Fale conosco </a></li>
+                        <li> <a href="/"> Termos de aceite </a></li>
+                        <li> <a href="/"> Políticas de privacidade </a></li>
+                    </ul>
+                </div>
+                <div class="container-cards">
+                    <p>Pagamento</p>
+                    <hr>
+                    <div class="cards">
+                        <img src="./public/img/Hicon/Payment Method/Mastercard.png" alt="bandeira Mastercard">
+                        <img src="./public/img/Hicon/Payment Method/Visa.png" alt="bandeira Visa">
+                        <img src="./public/img/Hicon/Payment Method/Amex.png" alt="bandeira Amex">
+                        <img src="./public/img/Hicon/Payment Method/Bitcoin.png" alt="bandeira Bitcoin">
+                        <img src="./public/img/Hicon/Payment Method/PayPal.png" alt="bandeira PayPal">
+                        <img src="./public/img/Hicon/Payment Method/Elo.png" alt="bandeira Elo">
+                        <img src="./public/img/Hicon/Payment Method/Boleto.png" alt="bandeira Boleto">
+                        <img src="./public/img/Hicon/Payment Method/Pix.png" alt="bandeira Pix">
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="logos">
+                        <img src="./public/img/Hicon/Instagram_white.png" alt="logo instagram">
+                        <img src="./public/img/Hicon/Twitter_white.png" alt="logo twitter">
+                        <img src="./public/img/Hicon/Facebook_white.png" alt="logo facebook">
+                    </div>
+                    <div class="slogan">
+                        <h8>DE GAMERS PARA GAMERS ©</h8>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
