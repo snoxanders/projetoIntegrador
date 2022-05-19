@@ -53,132 +53,118 @@
         </nav>
     </header>
     <main>
-        <div class="banner">
-            <img src="/public/img/main/BANNER INTEL.png" alt="banner de processadores INTEL">
-        </div>
-        <article>
-            <section>
-                <div class="conteudo">
 
-                    <!-- seção lateral contendo os filtros -->
+        <!-- banner -->
+        <div class="divisao-maior">
+            <div class="banner">
+                <img src="/public/img/main/BANNER INTEL.png" alt="banner de processadores INTEL">
+            </div>
+            <article>
+                <section class="sectionCategorias">
+                    <div class="conteudo">
 
-                    <aside id="listaLateral">
-                        <div class="filtros">
-                            <span>Categorias</span>
-                            <li> <a href="/"> Computadores </a></li>
-                            <li> <a href="/"> Notebooks </a></li>
-                            <li> <a href="/"> Headsets </a></li>
-                            <li> <a href="/"> Monitores </a></li>
-                            <li> <a href="/"> Cadeira Gamer </a></li>
-                            <li> <a href="/"> Mouse Gamer </a></li>
-                            <li> <a href="/"> Teclado Gamer </a></li>
-                            <li> <a href="/"> Console </a></li>
-                            <li> <a href="/"> Jogos </a></li>
-                        </div>
-                        <div class="processadores">
-                            <span>Processadores</span><br>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                i3
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                i5
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                i7
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                i9
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                AMD Ryzen™ 5 5600
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                AMD Ryzen™ 7 5800
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                AMD Ryzen™ 9 5900X
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                AMD Ryzen™ 9 5950X
-                            </label>
-                        </div>
-                        <div class="telas">
-                            <span>Tamanho da tela</span><br>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                17” - 24”
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                25” - 32”
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                33” - 39”
-                            </label>
-                        </div>
-                        <div class="teclados">
-                            <span>Tipo de teclado</span><br>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                Mecânico
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                Membrana
-                            </label>
-                        </div>
-                        <div class="memoria-ram">
-                            <span>Memória RAM</span><br>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                8 GB
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                16 GB
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                32 GB
-                            </label>
-                            <label class="filtro">
-                                <input type="checkbox" id="filtrosCategoria"></input>
-                                64 GB
-                            </label>
-                        </div>
-                        <div class="memoria">
-                            <span>Memória</span><br>
-                            <label class="filtro">
-                                    <input type="checkbox" id="filtrosCategoria"></input>
-                                    500 GB
-                                </label>
-                            <label class="filtro">
-                                    <input type="checkbox" id="filtrosCategoria"></input>
-                                    1 TB
-                                </label>
-                            <label class="filtro">
-                                    <input type="checkbox" id="filtrosCategoria"></input>
-                                    2 TB
-                                </label>
-                            <label class="filtro">
-                                    <input type="checkbox" id="filtrosCategoria"></input>
-                                    4 TB
-                                </label>
-                        </div>
-                    </aside>
-                </div>
-                <div class="listagemProdutos">
-                    <div class="ordenar">
-                        <label>Ordenar
+                        <!-- seção lateral contendo os filtros -->
+
+                        <aside id="listaLateral">
+
+                            <div class="filtros">
+                                <span id="categoriaS">Categorias</span>
+                                <li> <a id="links" href="/"> Computadores </a></li>
+                                <li> <a id="links" href="/"> Notebooks </a></li>
+                                <li> <a id="links" href="/"> Headsets </a></li>
+                                <li> <a id="links" href="/"> Monitores </a></li>
+                                <li> <a id="links" href="/"> Cadeira Gamer </a></li>
+                                <li> <a id="links" href="/"> Mouse Gamer </a></li>
+                                <li> <a id="links" href="/"> Teclado Gamer </a></li>
+                                <li> <a id="links" href="/"> Console </a></li>
+                                <li> <a id="links" href="/"> Jogos </a></li>
+                            </div>
+
+                            <div class="processadores">
+                                <span id="processadores">Processadores</span>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">i3</label>
+                                </div>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">i5</label>
+                                </div>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">i7</label>
+                                </div>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">i9</label>
+                                </div>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">AMD Ryzen™ 5 5600</label>
+                                </div>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">AMD Ryzen™ 7 5800</label>
+                                </div>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">AMD Ryzen™ 9 5900X</label>
+                                </div>
+                                <div class="sub-processadores">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">AMD Ryzen™ 9 5950X</label>
+                                </div>
+                            </div>
+
+                            <div class="telas">
+                                <span id="tamanhoTela">Tamanho da tela</span><br>
+                                <div class="sub-tamanhoTela">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro"> 17” - 24”</label>
+                                </div>
+                                <div class="sub-tamanhoTela">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro"> 25” - 32”</label>
+                                </div>
+                                <div class="sub-tamanhoTela">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro"> 33” - 39”</label>
+                                </div>
+                            </div>
+                            <div class="teclados">
+                                <span id="tipoTeclado">Tipo de teclado</span><br>
+                                <div class="sub-tamanhoTeclado">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">Mecânico</label>
+                                </div>
+                                <div class="sub-tamanhoTeclado">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">Membrana</label>
+                                </div>
+                            </div>
+                            <div class="memoria-ram">
+                                <span id="memoriaRam">Memória RAM</span><br>
+                                <div class="sub-memoriaRam">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">8 GB</label>
+                                </div>
+                                <div class="sub-memoriaRam">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">16 GB</label>
+                                </div>
+                                <div class="sub-memoriaRam">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">32 GB</label>
+                                </div>
+                                <div class="sub-memoriaRam">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">64 GB</label>
+                                </div>
+                            </div>
+                            <div class="memoria">
+                                <span id="memoria">Memória</span><br>
+                                <div class="sub-memoria">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">500 GB</label>
+                                </div>
+                                <div class="sub-memoria">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">1 TB</label>
+                                </div>
+                                <div class="sub-memoria">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">2 TB</label>
+                                </div>
+                                <div class="sub-memoria">
+                                    <input type="checkbox" id="filtrosCategoria"><label class="filtro">4 TB</label>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <div class="listagemProdutos">
+                        <div class="ordenar">
+                            <label id="ordenar">Ordenar
                             <select class="dropdown">
                             <option value="maisProcurados" selected>Mais procurados</option>
                             <option value="menorPreco">Menor preço</option>
@@ -187,9 +173,9 @@
                             <option value="maisRecentes">Mais recentes</option>
                             </select>
                         </label>
-                    </div>
-                    <div class="exibir">
-                        <label>Exibir
+                        </div>
+                        <div class="exibir">
+                            <label id="exibir">Exibir
                             <select class="dropdown">
                             <option value="20pag" selected>20 por página</option>
                             <option value="40pag">40 por página</option>
@@ -197,122 +183,187 @@
                             <option value="tudoPag">Todos os produtos</option>
                             </select>
                         </label>
-                    </div>
-                    <div id="contadorProdutos">
-                        <b>45</b> Produtos
-                    </div>
-                    <div class="botoesView">
-                        <a href="/">
-                            <button id="botaolista" type="button"> <img src="/public/img/main/ICON MOSTRAR LISTAS.png"></button>
-                        </a>
-                    </div>
-                    <div class="botoesView">
-                        <a href="/">
-                            <button id="botaolista" type="button"> <img src="/public/img/main/ICON MOSTRAR COLUNAS.png"></button>
-                        </a>
-                    </div>
-                </div>
-                <div class="gridProdutos">
-                    <div class="box1">
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
                         </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                        <div id="contadorProdutos">
+                            <b>20</b> Produtos
                         </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                        <div class="botoesView1">
+                            <a href="/">
+                                <button id="botaolista" type="button"> <img src="/public/img/main/ICON MOSTRAR LISTAS.png"></button>
+                            </a>
                         </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
-                        </div>
-                        <div class="carrossel-box">
-                            <img src="./public/img/carrossel-promo/image 1.png" id="mouse">
-                            <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
-                            <p id="preçoantigo">R$327,90</p>
-                            <p id="preçoreal">R$209,00</p>
-                            <p id="legenda">Em até 10x sem juros</p><br>
-                            <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                        <div class="botoesView2">
+                            <a href="/">
+                                <button id="botaolista" type="button"> <img src="/public/img/main/ICON MOSTRAR COLUNAS.png"></button>
+                            </a>
                         </div>
                     </div>
-            </section>
-        </article>
+                    <div class="gridProdutos">
+                        <div class="box-categorias">
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/1.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/2.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/3.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/4.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/5.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/6.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/7.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/8.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/9.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/10.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/11.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/12.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/13.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/14.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/15.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/16.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/17.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/18.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/19.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                            <div class="boxCategorias">
+                                <img src="./public/img/main/20.png" id="imagecategorias">
+                                <p id="titlebox">Mouse Gamer Logitech G403 HERO - ID #02548752</p>
+                                <p id="preçoantigo">R$327,90</p>
+                                <p id="preçoreal">R$209,00</p>
+                                <p id="legenda">Em até 10x sem juros</p><br>
+                                <button type="button" id="botãobox"><img src="./public/img/logos/Shopping Cart.png" id="carrinhocompras"><h6>COMPRAR</h6></button>
+                            </div>
+                        </div>
+                </section>
+            </article>
+            </div>
     </main>
     <footer>
         <div class=" container ">
