@@ -1733,7 +1733,7 @@ ul.main-category {
     align-items: center;
 }
 
-#button1 {
+#button-pizza {
     width: 267px;
     height: 41px;
     background: #ED1C24;
@@ -2191,6 +2191,10 @@ label {
 
 .cupom {
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .cupom2 {
@@ -2220,7 +2224,10 @@ label {
     margin: 20px;
     border: 1px solid #8135CE;
     cursor: pointer;
-    color: #FFFFFF
+    color: #FFFFFF;
+    position: relative;
+    bottom: 80px;
+    left: 660px;
 }
 
 .revisão {
