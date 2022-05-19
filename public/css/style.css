@@ -496,14 +496,13 @@ input#img-4:checked~.carousel-dots label#img-dot-4 {
     opacity: 1;
 }
 
-<<<<<<< HEAD
-}
 hr {
     opacity: 0.3;
     width: 20%;
     height: 1px;
     background-color: rgb(102, 94, 94);
 }
+
 .barra-divisao-container {
     height: 50px;
     width: 100vw;
@@ -512,23 +511,28 @@ hr {
     justify-content: space-between;
     align-items: center;
 }
+
 .texto-info {
     margin-left: 200px;
     color: #fff;
     font-size: 25px;
 }
+
 .timer-oferta {
     margin-right: 200px;
     color: #fff;
     font-size: 25px;
 }
 
+
 /* CARROSSEL PROMOÇOES - THAY */
+
 .divprincipal {
     width: 100vw;
     display: flex;
     box-sizing: border-box;
 }
+
 .carouselpromo {
     width: 100vw;
     height: 500px;
@@ -540,6 +544,7 @@ hr {
     overflow: hidden;
     box-sizing: border-box;
 }
+
 ul.slides {
     display: flex;
     flex-direction: row;
@@ -551,21 +556,27 @@ ul.slides {
     overflow: hidden;
     list-style: none;
 }
+
 .buttons-carrossel>.box1>.box2>.box3>.box4 {
     transition: all 500ms ease;
 }
+
 .buttons-carrossel>input[type="radio"]:nth-child(1):checked~.box1 {
     transform: translateX(0%);
 }
+
 .buttons-carrossel>input[type=radio]:nth-child(2):checked~.box2 {
     transform: translateX(-100%);
 }
+
 .buttons-carrossel>input[type="radio"]:nth-child(3):checked~.box3 {
     transform: translateX(-200%);
 }
+
 .buttons-carrossel>input[type="radio"]:nth-child(4):checked~.box4 {
     transform: translateX(-300%);
 }
+
 input[type="radio"] {
     all: unset;
     border: #989898 1px solid;
@@ -575,6 +586,7 @@ input[type="radio"] {
     margin: 2px;
     background-color: #989898;
 }
+
 .slides * {
     user-select: none;
     -ms-user-select: none;
@@ -583,15 +595,18 @@ input[type="radio"] {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
 }
+
 ul.slides input {
     display: none;
     box-sizing: border-box;
 }
+
 .slide-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .slide-image {
     display: flex;
     flex-direction: row;
@@ -602,11 +617,13 @@ ul.slides input {
     opacity: 0;
     transition: all .7s ease-in-out;
 }
+
 .slide-image {
     width: 100vw;
     min-width: 100%;
     height: 100%;
 }
+
 .carousel-controls {
     position: absolute;
     top: 0;
@@ -617,6 +634,7 @@ ul.slides input {
     line-height: 600px;
     color: #1E293B;
 }
+
 .carousel-controls label {
     display: none;
     position: absolute;
@@ -625,22 +643,27 @@ ul.slides input {
     transition: opacity .2s;
     cursor: pointer;
 }
+
 .slide-image:hover+.carousel-controls label {
     opacity: 0.5;
 }
+
 .carousel-controls label:hover {
     opacity: 1;
 }
+
 .carousel-controls .prev-slide {
     width: auto;
     text-align: left;
     left: 0;
 }
+
 .carousel-controls .next-slide {
     width: auto;
     text-align: right;
     right: 0;
 }
+
 .carousel-dots {
     position: absolute;
     left: 0;
@@ -649,6 +672,7 @@ ul.slides input {
     z-index: 0;
     text-align: center;
 }
+
 .carousel-dots .carousel-dot {
     display: inline-flex;
     position: relative;
@@ -660,28 +684,35 @@ ul.slides input {
     opacity: 0.5;
     margin: 10px;
 }
+
 .carousel-dot:checked .carousel-dots:checked {
     background-color: #ED1C24;
 }
+
 input:checked+.slide-container .slide-image {
     opacity: 1;
     transform: scale(1);
     transition: opacity 1s ease-in-out;
 }
+
 input:checked+.slide-container .carousel-controls label {
     display: block;
 }
+
 input#img-1:checked~.carousel-dots label#img-dot-1,
 input#img-2:checked~.carousel-dots label#img-dot-2,
 input#img-3:checked~.carousel-dots label#img-dot-3,
 input#img-4:checked~.carousel-dots label#img-dot-4 {
     opacity: 1;
 }
+
 input:checked+.slide-container .nav label {
     display: flex;
 }
 
+
 /* config antiga */
+
 .box1 {
     width: 100%;
     height: 500px;
@@ -693,6 +724,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .box2 {
     width: 100vw;
     height: 500px;
@@ -707,6 +739,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .box3 {
     width: 100vw;
     height: 500px;
@@ -718,6 +751,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .box4 {
     width: 100vw;
     height: 500px;
@@ -729,6 +763,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .carrossel-box {
     width: 288px;
     height: 386px;
@@ -743,14 +778,17 @@ input:checked+.slide-container .nav label {
     justify-content: center;
     justify-items: center;
 }
+
 #mouse {
     width: 125px;
     height: 125px;
 }
+
 #micro #fone #stream #monitor {
     width: 123px;
     height: 123px;
 }
+
 #titlebox {
     color: #000000;
     width: 210px;
@@ -765,6 +803,7 @@ input:checked+.slide-container .nav label {
     display: flex;
     align-items: center;
 }
+
 #preçoantigo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -778,6 +817,7 @@ input:checked+.slide-container .nav label {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #D3D3D3;
 }
+
 #preçoreal {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -790,6 +830,7 @@ input:checked+.slide-container .nav label {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #ED1C24;
 }
+
 #legenda {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -802,6 +843,7 @@ input:checked+.slide-container .nav label {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #D3D3D3;
 }
+
 #botãobox {
     width: 219px;
     height: 46px;
@@ -816,17 +858,21 @@ input:checked+.slide-container .nav label {
     padding: 10px;
     cursor: pointer;
 }
+
 #botãobox:focus {
     outline: #150737 solid 1px;
 }
+
 #botãobox:hover {
     outline: #8135CE solid 1px;
 }
+
 #carrinhocompras {
     position: relative;
     right: 10px;
     top: 3px;
 }
+
 h6 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -840,7 +886,9 @@ h6 {
     color: #FFFFFF;
 }
 
+
 /* CATEGORIAS PRINCIPAIS - DIEGO */
+
 .textoh2 {
     text-transform: uppercase;
     display: flex;
@@ -849,10 +897,12 @@ h6 {
     font-family: 'Raleway', sans-serif;
     padding-bottom: 10px;
 }
+
 .categorias-principais {
     padding: 1.9%;
     width: 100vw;
 }
+
 .cat-principal-flex {
     display: flex;
     border: solid 1px yellow;
@@ -863,6 +913,7 @@ h6 {
     justify-content: space-evenly;
     padding: 1.5%;
 }
+
 .cat {
     display: flex;
     align-items: center;
@@ -871,13 +922,16 @@ h6 {
     flex-wrap: nowrap;
 }
 
+
 /* categorias produtos por ordem da thay*/
+
 .container-categoria-produto {
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: space-evenly;
 }
+
 .categoria-produto1 {
     display: flex;
     align-items: flex-end;
@@ -887,6 +941,7 @@ h6 {
     background: url(/public/img/Xbox\ series\ S\ \(1\).png);
     border-radius: 12px;
 }
+
 .categoria-produto2 {
     display: flex;
     align-items: flex-end;
@@ -896,6 +951,7 @@ h6 {
     background: url(/public/img/FIFA.png);
     border-radius: 12px;
 }
+
 .categoria-produto3 {
     display: flex;
     align-items: flex-end;
@@ -905,6 +961,7 @@ h6 {
     background: url(/public/img/HyperX\ Cloud\ alpha.png);
     border-radius: 12px;
 }
+
 .btn-saiba-mais {
     margin-bottom: 42px;
     background: #ED1C24;
@@ -919,7 +976,9 @@ h6 {
     border-radius: 22px;
 }
 
+
 /* FOOTER - JEF */
+
 footer {
     height: 540px;
     background-color: #150737;
@@ -931,18 +990,22 @@ footer {
     letter-spacing: 0.05em;
     line-height: 26px;
 }
+
 .container-footer {
     width: 60%;
     display: flex;
     align-items: flex-start;
 }
+
 .container-footer ul {
     list-style-type: none;
 }
+
 .container-footer hr {
     margin-bottom: 30px;
     opacity: 0;
 }
+
 .caixaContato {
     width: 40%;
     height: 60px;
@@ -955,6 +1018,7 @@ footer {
     justify-content: space-evenly;
     top: -30px;
 }
+
 .contato {
     display: flex;
     align-items: center;
@@ -964,12 +1028,15 @@ footer {
     width: 50%;
     font-size: 25px;
 }
+
 .contato img {
     height: 32px;
 }
+
 .boxForm {
     width: 100%;
 }
+
 .form {
     width: 100%;
     display: flex;
@@ -982,6 +1049,7 @@ footer {
     border: 30px;
     align-items: center;
 }
+
 .form p {
     width: 20%;
     font-size: 16px;
@@ -991,6 +1059,7 @@ footer {
     letter-spacing: 0.05em;
     font-weight: bolder;
 }
+
 #nome input {
     width: 20vw;
     height: 45px;
@@ -1000,6 +1069,7 @@ footer {
     border: solid 1px #8135CE;
     font-size: 20px;
 }
+
 #mail input {
     width: 20vw;
     height: 45px;
@@ -1009,6 +1079,7 @@ footer {
     border: solid 1px #8135CE;
     font-size: 20px;
 }
+
 .ofertas button {
     width: 100%;
     height: 45px;
@@ -1022,11 +1093,13 @@ footer {
     font-size: 19px;
     font-weight: 500;
 }
+
 .ofertas button:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     border: solid 2px rgb(120, 18, 18);
 }
+
 .links {
     display: flex;
     position: absolute;
@@ -1035,9 +1108,11 @@ footer {
     font-size: 22px;
     font-weight: 400;
 }
+
 .main-category {
     display: flex;
 }
+
 ul.main-category {
     display: flex;
     flex-direction: column;
@@ -1046,40 +1121,47 @@ ul.main-category {
     font-size: 22px;
     font-weight: 400;
 }
+
 .main-category li {
     display: flex;
     padding-bottom: 13px;
     top: 30px;
     justify-content: flex-start;
 }
+
 .main-category h7 {
     color: #ED1C24;
     font-weight: bolder;
     font-size: 28px;
 }
+
 .container-cards {
     margin-left: 40px;
     display: flex;
     flex-direction: column;
     padding: 30px;
 }
+
 .container-cards p {
     font-weight: bolder;
     text-transform: uppercase;
     color: #ED1C24;
     font-size: 28px;
 }
+
 .cards {
     display: grid;
     grid-template-columns: 58px 59px 59px;
     gap: 15px;
 }
+
 .container-cards hr {
     opacity: 0;
     width: 20%;
     height: 1px;
     margin-bottom: 30px;
 }
+
 .social-media {
     display: flex;
     align-content: flex-end;
@@ -1087,12 +1169,14 @@ ul.main-category {
     flex-wrap: wrap;
     padding: 62px;
 }
+
 .logos {
     width: 219px;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
+
 .slogan {
     width: 240px;
     display: flex;
@@ -1104,11 +1188,14 @@ ul.main-category {
     font-weight: bolder;
     font-size: 26px;
 }
+
 input:checked+.slide-container .nav label {
     display: flex;
 }
 
+
 /* config antiga */
+
 .box1 {
     width: 100%;
     height: 500px;
@@ -1120,6 +1207,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .box2 {
     width: 100vw;
     height: 500px;
@@ -1131,6 +1219,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .box3 {
     width: 100vw;
     height: 500px;
@@ -1142,6 +1231,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .box4 {
     width: 100vw;
     height: 500px;
@@ -1153,6 +1243,7 @@ input:checked+.slide-container .nav label {
     flex-wrap: wrap;
     padding: 0;
 }
+
 .carrossel-box {
     width: 288px;
     height: 386px;
@@ -1167,14 +1258,17 @@ input:checked+.slide-container .nav label {
     justify-content: center;
     justify-items: center;
 }
+
 #mouse {
     width: 125px;
     height: 125px;
 }
+
 #micro #fone #stream #monitor {
     width: 123px;
     height: 123px;
 }
+
 #titlebox {
     color: #000000;
     width: 210px;
@@ -1189,6 +1283,7 @@ input:checked+.slide-container .nav label {
     display: flex;
     align-items: center;
 }
+
 #preçoantigo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1202,6 +1297,7 @@ input:checked+.slide-container .nav label {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #D3D3D3;
 }
+
 #preçoreal {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1213,6 +1309,7 @@ input:checked+.slide-container .nav label {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #ED1C24;
 }
+
 #legenda {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1224,6 +1321,7 @@ input:checked+.slide-container .nav label {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #D3D3D3;
 }
+
 #botãobox {
     width: 219px;
     height: 46px;
@@ -1238,17 +1336,21 @@ input:checked+.slide-container .nav label {
     padding: 10px;
     cursor: pointer;
 }
+
 #botãobox:focus {
     outline: #150737 solid 1px;
 }
+
 #botãobox:hover {
     outline: #8135CE solid 1px;
 }
+
 #carrinhocompras {
     position: relative;
     right: 10px;
     top: 3px;
 }
+
 h6 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1262,7 +1364,9 @@ h6 {
     color: #FFFFFF;
 }
 
+
 /* CATEGORIAS PRINCIPAIS - DIEGO */
+
 .textoh2 {
     text-transform: uppercase;
     display: flex;
@@ -1271,10 +1375,12 @@ h6 {
     font-family: 'Raleway', sans-serif;
     padding-bottom: 10px;
 }
+
 .categorias-principais {
     padding: 1.9%;
     width: 100vw;
 }
+
 .cat-principal-flex {
     display: flex;
     border: solid 1px yellow;
@@ -1285,6 +1391,7 @@ h6 {
     justify-content: space-evenly;
     padding: 1.5%;
 }
+
 .cat {
     display: flex;
     align-items: center;
@@ -1293,7 +1400,9 @@ h6 {
     flex-wrap: nowrap;
 }
 
+
 /* div pc gamer Jef */
+
 .pcgamer {
     display: flex;
     height: 40vh;
@@ -1305,6 +1414,7 @@ h6 {
     align-items: center;
     padding: 10px;
 }
+
 .pc1 {
     display: flex;
     justify-content: space-evenly;
@@ -1317,15 +1427,19 @@ h6 {
     line-height: 25px;
     letter-spacing: 0.05em;
 }
+
 .pc1 img {
     padding: 20px;
 }
+
 .pc2 img {
     padding: 20px;
 }
+
 .pc3 img {
     padding: 20px;
 }
+
 .texto-inferior {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -1339,6 +1453,7 @@ h6 {
     color: #FFFFFF;
     width: 60%;
 }
+
 .pc2 {
     display: flex;
     justify-content: space-evenly;
@@ -1351,6 +1466,7 @@ h6 {
     line-height: 25px;
     letter-spacing: 0.05em;
 }
+
 .pc3 {
     display: flex;
     justify-content: space-evenly;
@@ -1364,9 +1480,12 @@ h6 {
     letter-spacing: 0.05em;
 }
 
+
 /* div pc gamer Jef */
 
+
 /* FOOTER - JEF */
+
 footer {
     height: 540px;
     background-color: #150737;
@@ -1378,18 +1497,22 @@ footer {
     letter-spacing: 0.05em;
     line-height: 26px;
 }
+
 .container-footer {
     width: 60%;
     display: flex;
     align-items: flex-start;
 }
+
 .container-footer ul {
     list-style-type: none;
 }
+
 .container-footer hr {
     margin-bottom: 30px;
     opacity: 0;
 }
+
 .caixaContato {
     width: 40%;
     height: 60px;
@@ -1402,6 +1525,7 @@ footer {
     justify-content: space-evenly;
     top: -30px;
 }
+
 .contato {
     display: flex;
     align-items: center;
@@ -1411,12 +1535,15 @@ footer {
     width: 50%;
     font-size: 25px;
 }
+
 .contato img {
     height: 32px;
 }
+
 .boxForm {
     width: 100%;
 }
+
 .form {
     width: 100%;
     display: flex;
@@ -1429,6 +1556,7 @@ footer {
     border: 30px;
     align-items: center;
 }
+
 .form p {
     width: 20%;
     font-size: 16px;
@@ -1438,6 +1566,7 @@ footer {
     letter-spacing: 0.05em;
     font-weight: bolder;
 }
+
 #nome input {
     width: 20vw;
     height: 45px;
@@ -1447,6 +1576,7 @@ footer {
     border: solid 1px #8135CE;
     font-size: 20px;
 }
+
 #mail input {
     width: 20vw;
     height: 45px;
@@ -1456,6 +1586,7 @@ footer {
     border: solid 1px #8135CE;
     font-size: 20px;
 }
+
 .ofertas button {
     width: 100%;
     height: 45px;
@@ -1469,11 +1600,13 @@ footer {
     font-size: 19px;
     font-weight: 500;
 }
+
 .ofertas button:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     border: solid 2px rgb(120, 18, 18);
 }
+
 .links {
     display: flex;
     position: absolute;
@@ -1482,9 +1615,11 @@ footer {
     font-size: 22px;
     font-weight: 400;
 }
+
 .main-category {
     display: flex;
 }
+
 ul.main-category {
     display: flex;
     flex-direction: column;
@@ -1493,40 +1628,47 @@ ul.main-category {
     font-size: 22px;
     font-weight: 400;
 }
+
 .main-category li {
     display: flex;
     padding-bottom: 13px;
     top: 30px;
     justify-content: flex-start;
 }
+
 .main-category h7 {
     color: #ED1C24;
     font-weight: bolder;
     font-size: 28px;
 }
+
 .container-cards {
     margin-left: 40px;
     display: flex;
     flex-direction: column;
     padding: 30px;
 }
+
 .container-cards p {
     font-weight: bolder;
     text-transform: uppercase;
     color: #ED1C24;
     font-size: 28px;
 }
+
 .cards {
     display: grid;
     grid-template-columns: 58px 59px 59px;
     gap: 15px;
 }
+
 .container-cards hr {
     opacity: 0;
     width: 20%;
     height: 1px;
     margin-bottom: 30px;
 }
+
 .social-media {
     display: flex;
     align-content: flex-end;
@@ -1534,12 +1676,14 @@ ul.main-category {
     flex-wrap: wrap;
     padding: 62px;
 }
+
 .logos {
     width: 219px;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
+
 .slogan {
     width: 240px;
     display: flex;
@@ -1551,4 +1695,6 @@ ul.main-category {
     font-weight: bolder;
     font-size: 26px;
 }
->>>>>>>1219d9be877fbb64418388e5f31bcbf734814e39
+
+
+/* página de produtos */
