@@ -23,12 +23,10 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid 1px red;
 }
 
 .grande-divisor1 {
     width: 990px;
-    border: solid 1px blue;
 }
 
 .grande-divisor2 {
@@ -38,7 +36,6 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid 1px purple;
 }
 
 .passo-a-passo {
@@ -50,7 +47,6 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    border: green solid 1px;
 }
 
 #button-pizza {
@@ -510,7 +506,6 @@ label {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: solid 1px black;
 }
 
 .cupom2 {
@@ -614,7 +609,7 @@ label {
     line-height: 21px;
     color: #7C7D7E;
     position: relative;
-    left: 70px;
+    left: 12%;
 }
 
 #frete {
@@ -644,7 +639,7 @@ label {
 
 #frete {
     position: relative;
-    right: 40px;
+    right: 5%;
 }
 
 #valor-revisao1 {
@@ -655,7 +650,7 @@ label {
     line-height: 21px;
     color: #000000;
     position: relative;
-    left: 40px;
+    left: 6%;
 }
 
 #valor-revisao2 {
@@ -667,7 +662,7 @@ label {
     text-align: right;
     color: #000000;
     position: relative;
-    left: 200px;
+    left: 44%;
 }
 
 #ate12x {
@@ -680,7 +675,7 @@ label {
     color: #000000;
     position: relative;
     top: 20px;
-    right: 70px;
+    right: 11%;
     margin-top: 10px;
 }
 
@@ -706,7 +701,7 @@ label {
     line-height: 28px;
     color: #8135CE;
     position: relative;
-    bottom: 40px;
+    top: 5%;
     right: 100px;
 }
 
@@ -718,6 +713,7 @@ label {
     line-height: 56px;
     color: #8135CE;
     position: relative;
+    top: 5%;
     left: 60px;
 }
 
@@ -729,7 +725,7 @@ label {
     line-height: 21px;
     color: #8135CE;
     position: relative;
-    bottom: 20px;
+    bottom: 5%;
     left: 60px;
 }
 
@@ -747,6 +743,8 @@ label {
     width: 384px;
     height: 60px;
     margin-bottom: 10px;
+    position: relative;
+    bottom: 10%;
 }
 
 #button-continuar {
@@ -763,6 +761,8 @@ label {
     height: 60px;
     margin-top: 10px;
     cursor: pointer;
+    position: relative;
+    bottom: 10%;
 }
 
 
