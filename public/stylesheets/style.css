@@ -935,7 +935,6 @@ h6 {
 
 .categoria-produto1 {
     display: flex;
-    align-items: flex-end;
     margin-top: 10px;
     width: 370px;
     height: 180px;
@@ -945,7 +944,6 @@ h6 {
 
 .categoria-produto2 {
     display: flex;
-    align-items: flex-end;
     margin-top: 10px;
     width: 370px;
     height: 180px;
@@ -955,7 +953,6 @@ h6 {
 
 .categoria-produto3 {
     display: flex;
-    align-items: flex-end;
     margin-top: 10px;
     width: 370px;
     height: 180px;
