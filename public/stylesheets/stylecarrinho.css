@@ -13,7 +13,7 @@ main {
 }
 
 
-/* css - page carrinho (finalização da compra) */
+/* CSS - PAGE CARRINHO - FINALIZAÇÃO DE COMPRA (THAY) */
 
 .div-mãe {
     width: 100vw;
@@ -30,7 +30,7 @@ main {
 }
 
 .grande-divisor2 {
-    margin-top: 70px;
+    margin-top: 10%;
     margin-left: 60px;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ main {
 }
 
 .passo-a-passo {
-    width: 100vw;
+    width: 80 vw;
     height: auto;
     margin-top: 80px;
     margin-bottom: 30px;
@@ -110,7 +110,7 @@ hr {
     height: 1px;
 }
 
-#carrinho {
+#carrinhoo {
     width: 20px;
     height: 20px;
     margin: 10px;
@@ -124,7 +124,7 @@ hr {
     font-size: 24px;
     line-height: 28px;
     position: relative;
-    bottom: 10px;
+    bottom: 5%;
 }
 
 #micro {
@@ -136,7 +136,7 @@ hr {
 }
 
 #texto1 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -164,7 +164,7 @@ hr {
 }
 
 #texto2 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -188,8 +188,6 @@ input[type=number]::-webkit-outer-spin-button {
     border: 0;
     display: inline-flex;
     align-items: center;
-    position: relative;
-    left: 35px;
 }
 
 .number-input,
@@ -262,7 +260,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 21px;
     color: #8135CE;
     position: relative;
@@ -275,9 +273,6 @@ input[type=number]::-webkit-outer-spin-button {
     background: #F8FAFC;
     border-radius: 12px;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 #mapa {
@@ -391,7 +386,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #buttonEnd {
     color: 979797;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -463,7 +458,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 label {
     margin: 5px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -492,7 +487,7 @@ label {
 }
 
 #valores {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -510,15 +505,15 @@ label {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .cupom2 {
-    Width: 659px;
+    Width: 60%;
     Height: 61px;
     background: #F8FAFC;
     border-radius: 12px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -528,12 +523,18 @@ label {
     border: #F8FAFC;
 }
 
+.cupom2::placeholder {
+    color: #A4A4B7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
 .cupom2 input:focus {
     outline: none;
 }
 
 #aplicar {
-    width: 310px;
+    width: 30%;
     height: 61px;
     background: #8135CE;
     border-radius: 12px;
@@ -541,9 +542,11 @@ label {
     border: 1px solid #8135CE;
     cursor: pointer;
     color: #FFFFFF;
-    position: relative;
-    bottom: 80px;
-    left: 660px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .revisão {
@@ -606,7 +609,7 @@ label {
     line-height: 21px;
     color: #7C7D7E;
     position: relative;
-    left: 70px;
+    left: 12%;
 }
 
 #frete {
@@ -636,7 +639,7 @@ label {
 
 #frete {
     position: relative;
-    right: 40px;
+    right: 5%;
 }
 
 #valor-revisao1 {
@@ -647,7 +650,7 @@ label {
     line-height: 21px;
     color: #000000;
     position: relative;
-    left: 40px;
+    left: 6%;
 }
 
 #valor-revisao2 {
@@ -659,7 +662,7 @@ label {
     text-align: right;
     color: #000000;
     position: relative;
-    left: 200px;
+    left: 44%;
 }
 
 #ate12x {
@@ -672,7 +675,7 @@ label {
     color: #000000;
     position: relative;
     top: 20px;
-    right: 70px;
+    right: 11%;
     margin-top: 10px;
 }
 
@@ -698,7 +701,7 @@ label {
     line-height: 28px;
     color: #8135CE;
     position: relative;
-    bottom: 40px;
+    top: 5%;
     right: 100px;
 }
 
@@ -710,6 +713,7 @@ label {
     line-height: 56px;
     color: #8135CE;
     position: relative;
+    top: 5%;
     left: 60px;
 }
 
@@ -721,7 +725,7 @@ label {
     line-height: 21px;
     color: #8135CE;
     position: relative;
-    bottom: 20px;
+    bottom: 5%;
     left: 60px;
 }
 
@@ -739,6 +743,8 @@ label {
     width: 384px;
     height: 60px;
     margin-bottom: 10px;
+    position: relative;
+    bottom: 10%;
 }
 
 #button-continuar {
@@ -755,10 +761,12 @@ label {
     height: 60px;
     margin-top: 10px;
     cursor: pointer;
+    position: relative;
+    bottom: 10%;
 }
 
 
-/* css - carrinho */
+/* CSS - PAGE CARRINHO (THAY) */
 
 .div-principal {
     width: 100vw;
@@ -813,6 +821,7 @@ label {
     width: 222px;
     height: 222px;
     position: relative;
+    left: 5%;
     top: 80px;
 }
 
@@ -827,7 +836,7 @@ label {
     color: #000000;
     width: 713px;
     position: relative;
-    left: 200px;
+    left: 10%;
     bottom: 110px;
 }
 
@@ -885,8 +894,11 @@ label {
 
 .valor-item {
     position: relative;
-    top: 100px;
     margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #value {
@@ -908,16 +920,17 @@ label {
 }
 
 #value2 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 56px;
     color: #8135CE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #parenteses2 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -933,7 +946,7 @@ label {
     gap: 10px;
     width: 335px;
     height: 60px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
