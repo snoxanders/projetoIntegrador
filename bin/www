@@ -5,7 +5,11 @@
  */
 
 var app = require('../app');
+<<<<<<< HEAD
 var debug = require('debug')('projetointegrador:server');
+=======
+var debug = require('debug')('projetointegrador2:server');
+>>>>>>> 7012c4a70232e669657543fc6ce6c3436e505b2f
 var http = require('http');
 
 /**
