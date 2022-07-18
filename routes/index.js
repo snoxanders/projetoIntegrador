@@ -1,14 +1,5 @@
 var express = require('express');
 var router = express.Router();
-<<<<<<< HEAD
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-module.exports = router;
-=======
 const db = require('../database/models/index')
 
 /* GET home page. */
@@ -39,4 +30,3 @@ router.get('/cadastro', function(req, res, next) {
 
 
 module.exports = router;
->>>>>>> 7012c4a70232e669657543fc6ce6c3436e505b2f
