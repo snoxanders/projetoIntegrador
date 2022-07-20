@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+=======
 * {
     padding: 0%;
     box-sizing: border-box;
@@ -1698,3 +1708,4 @@ ul.main-category {
 
 
 /* página de produtos */
+>>>>>>> 7012c4a70232e669657543fc6ce6c3436e505b2f
