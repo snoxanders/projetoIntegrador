@@ -4,7 +4,7 @@ const db = require('../database/models/index')
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-    res.render('../views/index');
+    res.render('../views/home');
 });
 
 router.get('/produto', function(req, res, next) {
