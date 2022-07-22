@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('crud', 'root', '', {
+const sequelize = new Sequelize('projetointegrador', 'root', '', {
     dialect: 'mysql',
     host: 'localhost',
     port: 3306

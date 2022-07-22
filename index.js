@@ -1,7 +1,7 @@
 (async() => {
 
     const database = require('./db')
-    const Produto = require('./database/models/Produto')
+    const Produto = require('./database/models/products')
     await database.sync();
 
     const novoProduto = await Produto.create({
