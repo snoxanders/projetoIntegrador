@@ -3,41 +3,42 @@ module.exports = (sequelize, dataTypes) => {
     const Adress = sequelize.define(
         'Adress', {
             // Model attributes are defined here
+            id_endereco: {
+                type: dataTypes.INTEGER,
+                autoincrement: true,
+                allowNull: false
+            },
+            end_rua: {
+                type: dataTypes.STRING,
+                allowNull: false
+            },
+            end_numero: {
+                type: dataTypes.INTEGER,
+                allowNull: false
+            },
+            end_bairro: {
+                type: dataTypes.STRING,
+                allowNull: false
+            },
+            end_cep: {
+                type: dataTypes.INTEGER,
+                allowNull: false
+            },
+            end_cidade: {
+                type: dataTypes.STRING,
+                allowNull: false
+            },
+            end_estado: {
+                type: dataTypes.STRING,
+                allowNull: false
+            },
             id_cliente: {
-                type: dataTypes.INTEGER,
-                for: true,
-                allowNull: false
-            },
-            name_cliente: {
                 type: dataTypes.STRING,
-                allowNull: false
-            },
-            rg_cliente: {
-                type: dataTypes.INTEGER,
-                allowNull: false
-            },
-            cpf_cliente: {
-                type: dataTypes.INTEGER,
-                allowNull: false
-            },
-            email_cliente: {
-                type: dataTypes.STRING,
-                allowNull: false
-            },
-            dtnasc_cliente: {
-                type: dataTypes.INTEGER,
-                allowNull: false
-            },
-            senha_cliente: {
-                type: dataTypes.STRING,
-                allowNull: false
-            },
-            sexo_cliente: {
-                type: dataTypes.STRING,
-                allowNull: false
+                allowNull: false,
+                //CHAVE ESTRANGEIRA, CONECTAR NO BANCO DE DADOS USERS.
             }
         }, {
-            tableName: 'Adress',
+            tableName: 'adress',
             timestamps: false
         }
     )
