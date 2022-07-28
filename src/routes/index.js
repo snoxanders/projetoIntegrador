@@ -4,28 +4,33 @@ const db = require('../database/models/index')
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-    res.render('../views/home');
+    res.render("../src/views/home");
 });
 
 router.get('/produto', function(req, res, next) {
-    //res.render('../views/produto');
-    res.send(db.Produto.findAll())
+    res.render('../src/views/produto');
 });
 
 router.get('/carrinho', function(req, res, next) {
-    res.render('../views/carrinho');
+    res.render('../src/views/carrinho');
 });
 
 router.get('/main', function(req, res, next) {
-    res.render('../views/main');
+    res.render('../src/views/main');
 });
 
 router.get('/finalizarcompra', function(req, res, next) {
-    res.render('../views/finalizarCompra');
+    res.render('../src/views/finalizarCompra');
 });
 
 router.get('/cadastro', function(req, res, next) {
-    res.render('../views/cadastro');
+    res.render('../src/views/cadastro');
+});
+
+const dbProduto = require("../controller/product")
+    // router.post('/teste', dbProduto.createdProd);
+router.get('/teste', function(req, res, next) {
+    res.send(dbProduto.findAll())
 });
 
 

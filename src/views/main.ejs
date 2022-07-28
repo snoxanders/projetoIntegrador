@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheets/stylemain.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <%- include('./partials/navheader.ejs') %>
+
+    </header>
+
+
+
+    <div class="cabecalho">
+        <div class="dropdown">
+            <label class="ordenar" for="opcoes">Ordenar </label>
+            <select name="opcoes" id="opcoes">
+                <option value="mais-procurados">Mais procurados</option>
+                <option value="mais-recentes">Mais recentes</option>
+                <option value="maior-preco">Maior preço</option>
+                <option value="menor-preco">Menor preço</option>
+            
+            </select>
+        </div>
+    </div>
+
+    <main>
+
+
+
+        <aside>
+            <div class="filtros">
+                <div class="processador">
+                    <h3 class="h3-filtro">Processador</h3>
+                    <form class="filtragem-checkbox">
+                        <label for="i3"><input type="checkbox" id="i3" name="processador" value="i3"> i3
+                        <br>
+                        <label for="i5"><input type="checkbox" id="i5" name="processador" value="i5"> i5
+                        <br>
+                        <label for="i7"><input type="checkbox" id="i7" name="processador" value="i7"> i7 
+                        <br>
+                        <label for="i9"> <input type="checkbox" id="i9" name="processador" value="i9"> i9 
+                        <br>
+                        <label for="amd"><input type="checkbox" id="amd" name="processador" value="amd"> AMD Ryzen™ 
+                        <br>
+                        <label for="apple-m1"><input type="checkbox" id="apple-m1" name="processador" value="apple-m1"> APPLE M1
+                    </form>
+                </div>
+
+                <div class="processador">
+                    <h3 class="h3-filtro">Tamanho de tela</h3>
+                    <form class="filtragem-checkbox">
+                        <label for="11-15"><input type="checkbox" id="11-15" name="tamano-de-tela" value="11-15"> 11" - 15"
+                        <br>
+                        <label for="17-21"><input type="checkbox" id="17-21" name="tamanho-de-tela" value="17-21"> 17" - 21"
+                    </form>
+                </div> 
+                
+                <div class="processador">
+                    <h3 class="h3-filtro">Sistema operacional</h3>
+                    <form class="filtragem-checkbox">
+                        <label for="linux"><input type="checkbox" id="linux" name="processador" value="linux"> Linux
+                        <br>
+                        <label for="macos"><input type="checkbox" id="macos" name="processador" value="macos"> MacOs
+                        <br>
+                        <label for="windows"><input type="checkbox" id="windows" name="processador" value="windows"> Windows
+                     </form>
+                </div>
+
+                <div class="processador">
+                    <h3 class="h3-filtro">Armazenamento</h3>
+                    <form class="filtragem-checkbox">
+                        <label for="500gb"><input type="checkbox" id="500gb" name="processador" value="500gb"> 500 GB
+                        <br>
+                        <label for="1tb"><input type="checkbox" id="1tb" name="processador" value="1tb"> 1 TB
+                        <br>
+                        <label for="2tb"><input type="checkbox" id="2tb" name="processador" value="2tb"> 2 TB
+                        <br>
+                        <label for="4tb"> <input type="checkbox" id="4tb" name="processador" value="4tb"> 4 TB
+                    </form>
+                </div>
+
+                <div class="processador">
+                    <h3 class="h3-filtro">Memória RAM</h3>
+                    <form class="filtragem-checkbox">
+                        <label for="8gb"><input type="checkbox" id="8gb" name="processador" value="8gb"> 8 GB
+                        <br>
+                        <label for="16gb"><input type="checkbox" id="16gb" name="processador" value="16gb"> 16 GB
+                        <br>
+                        <label for="32gb"><input type="checkbox" id="32gb" name="processador" value="32gb"> 32 GB 
+                        <br>
+                        <label for="64gb"> <input type="checkbox" id="64gb" name="processador" value="64gb"> 64 GB
+                        
+                    </form>
+                </div>
+
+        </aside>
+        <section>
+            <div class="all-content">
+                <div class="line-1">
+                    <img src="images/imagesProdutos/note1.png" alt="">
+                    <div class="conteudo-card-meio">
+                        <p class="titulo-card">Mackbookv Air Apple 13.3', Processador M! <br> 16gb, SSD 1TB, Space Grey MGQN3BZ/A</p>
+                        <ul class="lista-atributos">
+                            <li>PROCESSADOR M1</li>
+                            <li>ATÉ 18 HORAS DE BATERIA</li>
+                            <li>USB4</li>
+                            <li>TOUCH ID</li>
+                        </ul>
+                        <P class="paragrafo-a-partir-de">A partir de</P>
+                        <h3 class="valor-note">R$670,00</h3>
+                        <p class="paragrafo-a-partir-de">por mês</p>
+                    </div>
+                    <button class="btn-reserva">RESERVAR</button>
+                </div>
+
+                <div class="line-1">
+                    <img src="images/imagesProdutos/note2.png" alt="">
+                    <div class="conteudo-card-meio">
+                        <p class="titulo-card">Mackbookv Air Apple 13.3', Processador M! <br> 16gb, SSD 1TB, Space Grey MGQN3BZ/A</p>
+                        <ul class="lista-atributos">
+                            <li>PROCESSADOR M1</li>
+                            <li>ATÉ 18 HORAS DE BATERIA</li>
+                            <li>USB4</li>
+                            <li>TOUCH ID</li>
+                        </ul>
+                        <P class="paragrafo-a-partir-de">A partir de</P>
+                        <h3 class="valor-note">R$670,00</h3>
+                        <p class="paragrafo-a-partir-de">por mês</p>
+                    </div>
+                    <button class="btn-reserva">RESERVAR</button>
+                </div>
+
+                <div class="line-1">
+                    <img src="images/imagesProdutos/note3.png" alt="">
+                    <div class="conteudo-card-meio">
+                        <p class="titulo-card">Mackbookv Air Apple 13.3', Processador M! <br> 16gb, SSD 1TB, Space Grey MGQN3BZ/A</p>
+                        <ul class="lista-atributos">
+                            <li>PROCESSADOR M1</li>
+                            <li>ATÉ 18 HORAS DE BATERIA</li>
+                            <li>USB4</li>
+                            <li>TOUCH ID</li>
+                        </ul>
+                        <P class="paragrafo-a-partir-de">A partir de</P>
+                        <h3 class="valor-note">R$670,00</h3>
+                        <p class="paragrafo-a-partir-de">por mês</p>
+                    </div>
+                    <button class="btn-reserva">RESERVAR</button>
+                </div>
+
+                <div class="line-1">
+                    <img src="images/imagesProdutos/note4.png" alt="">
+                    <div class="conteudo-card-meio">
+                        <p class="titulo-card">Mackbookv Air Apple 13.3', Processador M! <br> 16gb, SSD 1TB, Space Grey MGQN3BZ/A</p>
+                        <ul class="lista-atributos">
+                            <li>PROCESSADOR M1</li>
+                            <li>ATÉ 18 HORAS DE BATERIA</li>
+                            <li>USB4</li>
+                            <li>TOUCH ID</li>
+                        </ul>
+                        <P class="paragrafo-a-partir-de">A partir de</P>
+                        <h3 class="valor-note">R$670,00</h3>
+                        <p class="paragrafo-a-partir-de">por mês</p>
+                    </div>
+                    <button class="btn-reserva">RESERVAR</button>
+                </div>
+
+                <div class="line-1">
+                    <img src="images/imagesProdutos/note5.png" alt="">
+                    <div class="conteudo-card-meio">
+                        <p class="titulo-card">Mackbookv Air Apple 13.3', Processador M! <br> 16gb, SSD 1TB, Space Grey MGQN3BZ/A</p>
+                        <ul class="lista-atributos">
+                            <li>PROCESSADOR M1</li>
+                            <li>ATÉ 18 HORAS DE BATERIA</li>
+                            <li>USB4</li>
+                            <li>TOUCH ID</li>
+                        </ul>
+                        <P class="paragrafo-a-partir-de">A partir de</P>
+                        <h3 class="valor-note">R$670,00</h3>
+                        <p class="paragrafo-a-partir-de">por mês</p>
+                    </div>
+                    <button class="btn-reserva">RESERVAR</button>
+                </div>
+                <div class="line-1">
+                    <img src="images/imagesProdutos/note6.png" alt="">
+                    <div class="conteudo-card-meio">
+                        <p class="titulo-card">Mackbookv Air Apple 13.3', Processador M! <br> 16gb, SSD 1TB, Space Grey MGQN3BZ/A</p>
+                        <ul class="lista-atributos">
+                            <li>PROCESSADOR M1</li>
+                            <li>ATÉ 18 HORAS DE BATERIA</li>
+                            <li>USB4</li>
+                            <li>TOUCH ID</li>
+                        </ul>
+                        <P class="paragrafo-a-partir-de">A partir de</P>
+                        <h3 class="valor-note">R$670,00</h3>
+                        <p class="paragrafo-a-partir-de">por mês</p>
+                    </div>
+                    <button class="btn-reserva">RESERVAR</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <script type="text/javascript" src="javascripts/mobile-navbar.js"></script>
+
+    </main>
+
+    <footer>
+        <%- include('./partials/footer.ejs') %>
+    </footer>
+
+</body>
+
+</html>

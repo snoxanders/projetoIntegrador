@@ -4,8 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require("./src/routes/index");
+var usersRouter = require("./src/routes/users");
 
 const app = express();
 
@@ -19,10 +19,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const db = require("./database/models/index")
-app.get('/teste', (req, res) => {
-    res.send(db.Produto.findAll())
-})
 
 
 app.use('/', indexRouter);
