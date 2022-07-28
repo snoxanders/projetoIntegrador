@@ -5,7 +5,7 @@ module.exports = (sequelize, dataTypes) => {
             // Model attributes are defined here
             id_endereco: {
                 type: dataTypes.INTEGER,
-                autoincrement: true,
+
                 allowNull: false
             },
             end_rua: {

@@ -5,7 +5,7 @@ module.exports = (sequelize, dataTypes) => {
             // Model attributes are defined here
             id_pedido: {
                 type: dataTypes.INTEGER,
-                autoIncrement: true,
+
                 allowNull: false
             },
             id_cliente: {
