@@ -24,7 +24,8 @@ section {
     right: 125px;
 }
 
-@media (max-width: 1000px) {
+
+/* @media (max-width: 1000px) {
     section {
         display: flex;
         flex-direction: column;
@@ -36,7 +37,7 @@ section {
     .cadastro {
         width: 100%;
     }
-}
+} */
 
 aside {
     box-sizing: border-box;

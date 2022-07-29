@@ -1,4 +1,4 @@
-const dbProduct = require("../database/models/product")
+const db = require("../database/models/index")
 
 const createdProd = {
     criarProduct: async(req, res) => {
@@ -11,6 +11,10 @@ const createdProd = {
         }
 
 
+    },
+    buscarProduto: async(req, res) => {
+        const produtos = await db.Products.findAll()
+        res.send(produtos)
     }
 };
 
