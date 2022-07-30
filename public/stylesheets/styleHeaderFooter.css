@@ -24,7 +24,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #150737;
+    background: #0B3047;
     height: 8vh;
     width: 100vw;
 }
@@ -65,7 +65,7 @@ nav {
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #150737;
+        background: #0B3047;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -115,7 +115,7 @@ nav {
 .container-footer {
     height: 150px;
     width: 100vw;
-    background: #150737;
+    background: #0B3047;
     display: flex;
     justify-content: space-around;
     padding: 40px;

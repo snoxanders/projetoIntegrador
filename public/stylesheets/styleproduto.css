@@ -1,5 +1,6 @@
                     * {
                         margin: 0;
+                        box-sizing: border-box;
                         padding: 0;
                         font-family: 'PT Sans Caption', sans-serif;
                     }
@@ -9,17 +10,20 @@
                         justify-content: center;
                         align-items: center;
                         width: 100vw;
+                        overflow-x: hidden;
                     }
                     
-                    main {
+                    body {
                         background: #eaeaea;
                         width: 75%;
                         height: 100%;
+                        overflow-x: hidden;
                     }
                     
                     .main-produto {
                         display: flex;
                         justify-content: space-evenly;
+                        align-items: center;
                     }
                     
                     .produto {
@@ -30,19 +34,10 @@
                         height: 734px;
                         display: flex;
                         flex-direction: column;
-                    }
-                    
-                    .foto-produto {
-                        box-sizing: border-box;
-                        border-radius: 8px;
-                        width: 748px;
-                        height: 734px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
                         align-items: center;
-                        padding: 1.8rem;
-                        margin: 3.5rem;
+                        justify-content: center;
+                        margin-top: 140px;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     }
                     
                     h3 {
@@ -63,6 +58,7 @@
                         width: 400px;
                         padding: 1.0rem;
                         margin: 3.5rem;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
                     }
                     
                     .escolha-plano {
@@ -71,7 +67,7 @@
                         line-height: 24px;
                         display: flex;
                         align-items: center;
-                        color: #8135CE;
+                        color: #2F546B;
                         justify-content: center;
                         margin: 1.2rem;
                     }
@@ -89,15 +85,15 @@
                     .botao-plano {
                         width: 146px;
                         height: 44px;
-                        border: 3px solid #9f9f9f;
+                        border: 2px solid #9f9f9f;
                         border-radius: 7px;
                         background: #ffff;
                         cursor: pointer;
                     }
                     
                     .botao-plano:active {
-                        background: #ed1c24;
-                        border: 3px solid #ed1c24;
+                        background: #DF5B43;
+                        border: 3px solid #DF5B43;
                         color: #ffff;
                     }
                     
@@ -110,7 +106,7 @@
                     }
                     
                     .valor {
-                        color: #ed1c24;
+                        color: #DF5B43;
                         line-height: 59px;
                         font-size: 48px;
                         font-weight: 700;
@@ -121,17 +117,17 @@
                     }
                     
                     .botao-alugar {
-                        background: #ed1c24;
+                        background: #DF5B43;
                         display: flex;
                         flex-direction: row;
                         flex-wrap: nowrap;
                         align-items: center;
-                        justify-content: space-evenly;
+                        justify-content: center;
                         color: #ffff;
                         width: 347px;
                         height: 56px;
                         border-radius: 12px;
-                        border: 3px solid #ed1c24;
+                        border: 3px solid #DF5B43;
                         font-weight: 700;
                         font-size: 20px;
                         line-height: 24px;
@@ -152,6 +148,7 @@
                         width: 400px;
                         padding: 1.0rem;
                         margin: 3.5rem;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
                     }
                     
                     .frete {
@@ -160,7 +157,7 @@
                         line-height: 24px;
                         display: flex;
                         align-items: center;
-                        color: #8135CE;
+                        color: #2F546B;
                     }
                     
                     #cep {
@@ -170,7 +167,7 @@
                         font-size: 16px;
                         line-height: 20px;
                         border-radius: 6px;
-                        border: 2px solid #8135CE;
+                        border: 2px solid #2F546B;
                         background: #f2f2f2;
                         text-align: center;
                         opacity: 0.7;
@@ -181,10 +178,10 @@
                         gap: 10px;
                         width: 56px;
                         height: 49px;
-                        background: #8135CE;
+                        background: #2F546B;
                         color: #ffff;
                         border-radius: 8px;
-                        border: 2px solid #8135CE;
+                        border: 2px solid #2F546B;
                         letter-spacing: 00.05rem;
                         font-size: larger;
                     }
@@ -196,7 +193,7 @@
                         font-size: 13px;
                         line-height: 16px;
                         text-decoration: underline;
-                        color: #8135CE;
+                        color: #2F546B;
                         margin-left: 2.7rem;
                         margin-bottom: 3rem;
                     }
@@ -208,7 +205,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        color: #8135CE;
+                        color: #2F546B;
                         margin: 2.5rem;
                     }
                     
@@ -221,6 +218,7 @@
                         text-align: justify;
                         width: 1025px;
                         margin: 2.5rem;
+                        color: #707070;
                     }
                     
                     .descricao-produto {

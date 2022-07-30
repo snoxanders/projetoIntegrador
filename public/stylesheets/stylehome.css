@@ -43,7 +43,7 @@ body {
 .banner2 {
     width: 100vw;
     height: 1020px;
-    background-image: url(/public/images/home/fundobanner2.png);
+    background-image: url(/images/imagesHome/fundobanner2.png);
     background-repeat: round;
     background-size: contain;
     display: flex;
@@ -368,7 +368,7 @@ body {
 }
 
 .div-neta2 {
-    background-image: url(/public/images/home/image2.png);
+    background-image: url(/images/imagesHome/image2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -473,7 +473,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    background-image: url(/public/images/home/checkbox.png);
+    background-image: url(/images/imagesHome/checkbox.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -639,7 +639,7 @@ input[type="radio"]:checked {
     .banner2 {
         width: 1023px;
         height: 600px;
-        background-image: url(/public/images/home/fundobanner2.png);
+        background-image: url(/images/imagesHome/fundobanner2.png);
         background-repeat: round;
         background-size: cover;
         display: flex;
@@ -813,7 +813,7 @@ input[type="radio"]:checked {
         width: 600px;
     }
     .div-neta2 {
-        background-image: url(/public/images/home/image2.png);
+        background-image: url(/images/imagesHome/image2.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -990,7 +990,7 @@ input[type="radio"]:checked {
     .banner2 {
         width: 100vw;
         height: 800px;
-        background-image: url(/public/images/home/fundobanner2.png);
+        background-image: url(/images/imagesHome/fundobanner2.png);
         background-repeat: round;
         background-size: cover;
         display: flex;
