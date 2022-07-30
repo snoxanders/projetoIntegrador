@@ -4,6 +4,11 @@
     font-family: 'PT Sans Caption', sans-serif;
 }
 
+#icontheme {
+    width: 46px;
+    height: 46px;
+}
+
 a {
     color: #fff;
     text-decoration: none;
