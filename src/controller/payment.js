@@ -1,17 +1,21 @@
-const dbpayment = require("../database/models/payment")
+const db = require("../database/models/index")
 
-const createpayment = {
-    createPayment: async(req, res) => {
-        const { numero_cartao, nome_titular, validade_cartao } = req.body;
+const createPayment = {
+    criarPayment: async(req, res) => {
+        const { id_cliente, id_cartao, numero_cartao, nome_titular, validade_cartao } = req.body;
         try {
-            const createpayment = await dbpayment.create({ numero_cartao, nome_titular, validade_cartao })
+            const createPayment = await dbPayment.create({ id_cliente, id_cartao, numero_cartao, nome_titular, validade_cartao })
 
         } catch (error) {
             console.log("deu ruim aqui")
         }
 
 
+    },
+    buscarPayment: async(req, res) => {
+        const payment = await db.Payment.findAll()
+        res.send(payment)
     }
 };
 
-module.exports = createpayment
+module.exports = createPayment
