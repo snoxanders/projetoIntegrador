@@ -9,8 +9,6 @@ const pedidosController = require("../controller/order")
 
 
 
-
-/* GET home page. */
 router.get('/home', function(req, res, next) {
     res.render("../src/views/home");
 });
