@@ -1,7 +1,7 @@
 const db = require("../database/models/index")
 
 const createdProd = {
-    criarProduct: async(req, res) => {
+    criarProduto: async(req, res) => {
         const { name, description, available, price } = req.body;
         try {
             const createdProd = await dbProduct.create({ name, description, available, price })

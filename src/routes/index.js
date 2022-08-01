@@ -36,13 +36,18 @@ router.get('/cadastro', function(req, res, next) {
 // const dbProduct = require("../controller/product")
 // router.post('/teste', dbProduto.createdProd);
 router.get('/usuarios', usuarioController.buscarUsuario)
+router.post('/criarusuarios', usuarioController.criarUsuario)
 
 router.get('/pagamentos', pagamentoController.buscarPagamento)
+router.post('/criarpagamentos', pagamentoController.criarPagamento)
 
 router.get('/enderecos', enderecoController.buscarEnd)
+router.post('/criarenderecos', enderecoController.criarEnd)
 
 router.get('/pedidos', pedidosController.buscarPedido)
+router.post('/criarpedidos', pedidosController.criarPedido)
 
 router.get('/produtos', produtoController.buscarProduto)
+router.post('/criarprodutos', produtoController.criarProduto)
 
 module.exports = router;
