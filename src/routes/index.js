@@ -2,6 +2,13 @@ var express = require('express');
 var router = express.Router();
 const db = require('../database/models/index')
 const produtoController = require('../controller/product')
+const usuarioController = require("../controller/users")
+const pagamentoController = require("../controller/payment")
+const enderecoController = require("../controller/adress")
+const pedidosController = require("../controller/order")
+
+
+
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
@@ -30,7 +37,14 @@ router.get('/cadastro', function(req, res, next) {
 
 // const dbProduct = require("../controller/product")
 // router.post('/teste', dbProduto.createdProd);
-router.get('/produtos', produtoController.buscarProduto)
+router.get('/usuarios', usuarioController.buscarUsuario)
 
+router.get('/pagamentos', pagamentoController.buscarPagamento)
+
+router.get('/enderecos', enderecoController.buscarEnd)
+
+router.get('/pedidos', pedidosController.buscarPedido)
+
+router.get('/produtos', produtoController.buscarProduto)
 
 module.exports = router;

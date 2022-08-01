@@ -13,8 +13,8 @@ const createAdress = {
 
     },
     buscarEnd: async(req, res) => {
-        const adress = await db.Adress.findAll()
-        res.send(adress)
+        const endereco = await db.Adress.findAll()
+        res.send(endereco)
     }
 };
 

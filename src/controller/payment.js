@@ -12,9 +12,9 @@ const createPayment = {
 
 
     },
-    buscarPayment: async(req, res) => {
-        const payment = await db.Payment.findAll()
-        res.send(payment)
+    buscarPagamento: async(req, res) => {
+        const pagamento = await db.Payment.findAll()
+        res.send(pagamento)
     }
 };
 
