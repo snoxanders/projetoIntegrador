@@ -55,6 +55,6 @@ module.exports = (sequelize, dataTypes) => {
             timestamps: false
         }
     )
-
+    Order.sync();
     return Order
 }

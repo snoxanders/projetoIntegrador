@@ -43,5 +43,6 @@ module.exports = (sequelize, dataTypes) => {
         }
     )
 
+    Adress.sync();
     return Adress
 }

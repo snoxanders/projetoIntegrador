@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
 
     const Product = sequelize.define(
-        'Products', {
+        'Product', {
             // Model attributes are defined here
             id: {
                 type: dataTypes.INTEGER,
@@ -29,5 +29,6 @@ module.exports = (sequelize, dataTypes) => {
             timestamps: false
         }
     )
+    Product.sync();
     return Product
 }

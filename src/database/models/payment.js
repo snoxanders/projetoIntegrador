@@ -32,6 +32,6 @@ module.exports = (sequelize, dataTypes) => {
             timestamps: false
         }
     )
-
+    Payment.sync();
     return Payment
 }

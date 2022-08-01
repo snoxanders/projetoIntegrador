@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
 
     const User = sequelize.define(
-        'Users', {
+        'User', {
             // Model attributes are defined here
             id_cliente: {
                 type: dataTypes.INTEGER,
@@ -42,5 +42,6 @@ module.exports = (sequelize, dataTypes) => {
         }
     )
 
+    User.sync();
     return User
 }
