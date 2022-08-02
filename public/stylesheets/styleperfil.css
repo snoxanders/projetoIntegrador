@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CSS DO CARD DE PRODUTO //////////////////////////////////////////////////////////////////////////////// */
+
+.tudao-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 367px;
+    width: 484px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.item-info {
+    background: #ffff;
+    width: 100%;
+}
+
+.ul-order {
+    background: #ffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.item-content {
+    background: #ffff;
+    gap: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-item {
+    width: 190px;
+    height: auto;
+}
+
+.img-item2 {
+    width: 160px;
+    height: auto;
+}
+
+.item-description {
+    background: #ffff;
+    height: 106px;
+    width: 166px;
+}
+
+.item-info {
+    background: #ffff;
+}
+
+.btn-and-value {
+    margin-right: 0;
+    margin-top: 5px;
+    background: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-dias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 31px;
+    gap: 10px;
+    width: 74px;
+    height: 21px;
+    left: 982px;
+    top: 392px;
+    background: #DF5B43;
+    border: 3px solid #DF5B43;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+#value {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    color: #DF5B43;
+}
+
+.time-promo {
+    margin-left: 50px;
+}
+
+.time-value {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-container-search {
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 96px 12px 87px;
+    gap: 12px;
+    width: 300px;
+    height: 56px;
+    left: 808px;
+    color: #ffff;
+    font-size: 20px;
+    cursor: pointer;
+    top: 524px;
+    background: #DF5B43;
+    box-shadow: 0px 10px 15px rgba(124, 7, 12, 0.15), 0px 4px 6px rgba(124, 7, 12, 0.05);
+    border-radius: 12px;
+    border: none;
+}
+
+
+/*CSS DA PARTE DA ESQUERDA DA PAGINA DE PRODUTO /////////////////////////////////////////////////////////////////////////*/
+
+.all-page-container {
+    background: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container {
+    border-radius: 12px;
+    background: #ffff;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 79px;
+    margin-bottom: 64px;
+    margin-left: 170px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 839px;
+    width: 487px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.box-user-img {}
+
+.user-img {
+    height: 170.97px;
+    width: 162px;
+}
+
+.user-name {
+    height: 41px;
+    width: 160;
+    left: 334px;
+    top: 427.62px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    color: #DF5B43;
+    margin-bottom: 35px;
+    margin-top: 22px;
+}
+
+.addres-info {
+    margin-bottom: 40px;
+    padding-top: 16px;
+    padding-left: 27px;
+    height: 222px;
+    width: 400px;
+    background: #F1F1F1;
+    /* shadow-base */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+}
+
+.addres {
+    margin-top: 10PX;
+    margin-bottom: 17PX;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #DF5B43;
+}
+
+.services {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #5B809C;
+    margin-top: 10PX;
+    margin-bottom: 17PX;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #5B809C;
+}
+
+.services-info {
+    padding-top: 16px;
+    padding-left: 27px;
+    height: 222px;
+    width: 400px;
+    background: #F1F1F1;
+    /* shadow-base */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10PX;
+}
+
+
+/* CSS DA PARTE DA DIREITA DA PAGINA //////////////////////////////////////////////////////// */
+
+.right-container {
+    margin-top: 79px;
+    margin-left: 20px;
+    height: auto;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.signatures-title {
+    margin-bottom: 33px;
+    margin-left: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #5B809C;
+}
+
+.ul-order {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.2425px;
+    line-height: 16px;
+    color: #939598;
+}
+
+.signatures-title h3 {}
+
+.products-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: auto;
+    gap: 42px;
+    margin-bottom: 80px;
+}
+
+.time-promo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 10px;
+    color: #939598;
+}
+
+.time-value {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #5B809C;
+}
+
+.item-info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9.26975px;
+    line-height: 20px;
+    color: #5B809C;
+}
+
+a {
+    text-decoration: none;
+    color: #0000;
+}
