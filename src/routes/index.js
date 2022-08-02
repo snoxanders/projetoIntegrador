@@ -33,8 +33,13 @@ router.get('/cadastro', function(req, res, next) {
     res.render('../src/views/cadastro');
 });
 
+router.get('/perfil', function(req, res, next) {
+    res.render('../src/views/perfil')
+});
+
 // const dbProduct = require("../controller/product")
 // router.post('/teste', dbProduto.createdProd);
+
 router.get('/usuarios', usuarioController.buscarUsuario)
 router.post('/criarusuarios', usuarioController.criarUsuario)
 
