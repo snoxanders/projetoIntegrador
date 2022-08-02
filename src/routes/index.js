@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 const db = require('../database/models/index')
-const produtoController = require('../controller/product')
-const usuarioController = require("../controller/users")
-const pagamentoController = require("../controller/payment")
-const enderecoController = require("../controller/adress")
-const pedidosController = require("../controller/order")
+const produtoController = require('../controller/productController')
+const usuarioController = require("../controller/usersController")
+const pagamentoController = require("../controller/paymentController")
+const enderecoController = require("../controller/adressController")
+const pedidosController = require("../controller/orderController")
 
 
 
