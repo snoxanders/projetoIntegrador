@@ -40,7 +40,28 @@ module.exports = (sequelize, dataTypes) => {
             tableName: 'users',
             timestamps: false
         }
-    )
+    );
+
+    User.associate = (models) => {
+        User.hasMany(models.Adress, {
+            foreignKey: 'id_cliente',
+            as: 'adress',
+        });
+    }
+
+    User.associate = (models) => {
+        User.hasMany(models.Payment, {
+            foreignKey: 'id_cliente',
+            as: 'payment',
+        });
+    }
+
+    User.associate = (models) => {
+        User.hasMany(models.Order, {
+            foreignKey: 'id_cliente',
+            as: 'order',
+        });
+    }
 
     User.sync();
     return User

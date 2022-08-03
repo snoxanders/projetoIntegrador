@@ -28,7 +28,14 @@ module.exports = (sequelize, dataTypes) => {
             tableName: 'products',
             timestamps: false
         }
-    )
+    );
+
+    Product.associate = (models) => {
+        Product.hasMany(models.Order, {
+            foreignKey: "id_produto",
+            as: "order"
+        });
+    }
     Product.sync();
     return Product
 }

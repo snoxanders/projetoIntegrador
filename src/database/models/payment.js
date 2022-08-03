@@ -31,7 +31,16 @@ module.exports = (sequelize, dataTypes) => {
             tableName: 'payment',
             timestamps: false
         }
-    )
+    );
+
+
+    Payment.associate = (models) => {
+        Payment.hasOne(models.Order, {
+            foreignKey: "id_cartao",
+            as: "order"
+        });
+    }
+
     Payment.sync();
     return Payment
 }
