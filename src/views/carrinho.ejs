@@ -1,75 +1,139 @@
-<html lang="pt-BR">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylecarrinho.css" media="screen" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylecarrinho.css" />
-    <link rel="icon" href="images/logos/gamer-logo-about 1.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <script src="javascripts/script.js"></script>
-
-    <title>Foxxer - de gamers para gamers</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/stylecarrinho.css">
+    <link rel="shortcut icon" type="imagem/x-icon" href="/img/icon.png">
+    <title>EASE TOGETHER</title>
 </head>
 
-<%- include('./partials/navheader.ejs') %>
+<body>
+
+    <header>
+        <%- include('./partials/navheader.ejs') %>
+    </header>
 
 
+    <div class="div-mae">
 
-    <body>
+        <span class="section1"><h1>Está tudo certo?</h1></span>
 
-
-
-
-        <main>
-
-            <!-- navbar -->
-
-
-            <!-- carrinho -->
-
-            <div class="div-principal">
-
-                <span id="title"><img src="images/carrinhopage/carrinho.png" alt="carrinho" id="carrinho"> Produto adicionado ao seu carrinho!</span>
-
-                <div class="box-white">
-
-                    <div class="item-Comprado">
-                        <img id="produto" src="images/carrinhopage/micro.png" alt="produto">
-                        <span id="text">HyperX<br><br>Microfone Gamer HyperX QuadCast, Antivibração, LED, Preto e Vermelho, Compatível com PC, Mac e Consoles - ID XXXXXXX</span>
-                        <button id="button1" type="button">REMOVER</button><button id="button2" type="button">CONTINUAR COMPRANDO</button>
+        <section class="section2">
+            <div class="box">
+                <div id="div-content"><img id="img" src="/images/imagesCarrinho/ICON CARRINHO.png" alt="carrinho">
+                    <h2 id="product">PRODUTO</h2>
+                    <h3>Plano Selecionado</h3>
+                    <h3>Subtotal</h3>
+                </div>
+                <hr>
+                <div class="div-content2">
+                    <span><img id='note' src="/images/imagesCarrinho/image 8.png" alt="notebook"></span>
+                    <div class="sub-div">
+                        <h5>Macbook Air Apple 13.3', Processador M1, 16GB, <br>SSD 1TB, Space Grey - MGQN3BZ/A</h5>
+                        <button type="button" id="button-remove"><img src="/images/imagesCarrinho/Vector.png" alt="lixo">REMOVER</button>
                     </div>
-
-                    <div class="valor-item">
-                        <span id="value">R$941,06</span>
-                        <p><span id="parenteses">(EM 12X SEM JUROS DE R$78,42)</span></p><br>
-                        <span id="value2">R$799,90</span><br>
-                        <span id="parenteses2">(À vista no PIX)</span><br><br>
-                        <button id="button3" type="button">FINALIZAR COMPRA</button>
-
-                    </div>
-
+                    <button type="button" id="button1">Mensal</button>
+                    <p id="value">R$670,00</p>
                 </div>
             </div>
 
+            <section class="section3">
+                <div class="box">
+                    <div id="div-content"><img class="img2" src="/images/imagesCarrinho/image 18.png" alt="MAP">
+                        <h2 id="end">ENDEREÇO</h2>
+                    </div>
+                    <hr>
+                    <div class="div-content2">
+                        <div class="div-end">
+                            <h5 id="title">MINHA CASA</h5>
+                            <p id="text">Rua: Sete de Setembro <br> Número: 4336 <br> CEP: 57480-095 <br> Cidade: Barretos <br> Estado: São Paulo </p>
+                        </div>
+
+                        <div class="div-end">
+                            <h5 id="title">TRABALHO</h5>
+                            <p id="text">Rua: Carlos Costa <br> Número: 36 <br> CEP: 57484-098 <br> Cidade: Barretos <br> Estado: São Paulo </p>
+                        </div>
 
 
-        </main>
+                        <div class="div-buttons">
+                            <button type="button" id="button2">EDITAR</button>
+                            <button type="button" id="button2">SELECIONAR OUTRO</button>
+                            <button type="button" id="button3">NOVO ENDEREÇO</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    </body>
+            <section class="section4">
 
-    <%- include('./partials/footer.ejs') %>
+                <div class="boxcontent">
+
+                    <h2 id="frete">Calcule seu frete:</h2>
+                    <div class="form">
+                        <form action="post" id="form-frete">
+                            <input name="cep" id="cep" placeholder="  Insira seu CEP"><button type="submit" id="button-ok">OK</button>
+                        </form>
+                        <a id='link' href="#">Não lembro do meu CEP</a>
+                        <hr>
+                        <div class="resto">
+                            <div>
+                                <h3>Rua Sete de Setembro<br>Barretos<br>São Paulo</h3>
+                            </div>
+                            <div>
+                                <h4>Valor</h4>
+                                <h5>R$33,78</h5>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="boxcontent">
+                    <div class="seila">
+                        <img src="/images/imagesCarrinho/image 20.png" alt="revisao" id="revisao">
+                        <h2 id="title-revisao">REVISÃO</h2>
+                    </div>
+                    <div class="seila2">
+                        <h4>Valor dos produtos:</h4>
+                        <h5>R$670,00</h5>
+                    </div>
+                    <hr>
+                    <div class="seila">
+                        <h4>Frete:</h4>
+                        <h5>R$33,78</h5>
+                    </div>
+                    <div class="seila">
+                        <h4>total à prazo:</h4>
+                        <h5>R$703,78</h5>
+                    </div>
+                    <div>
+                        <p id="detail">(Em até 12x de R$58,64 sem juros)</p>
+                    </div>
+                    <div class="seila">
+                        <button type="button" id="pagamento">IR PARA O PAGAMENTO</button>
+                        <button type="button" id="continuar">CONTINUAR COMPRANDO</button>
+                    </div>
+
+                </div>
+
+            </section>
 
 
 
+    </div>
+    </section>
 
 
+    </div>
+    <footer>
+        <%- include('./partials/footer.ejs') %>
+    </footer>
 
+
+</body>
 
 </html>
