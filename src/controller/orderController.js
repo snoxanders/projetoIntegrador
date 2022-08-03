@@ -16,11 +16,11 @@ const createOrder = {
         const pedidos = await db.Order.findAll()
         res.send(pedidos)
     },
-    editarOrder: async(req, res) => {
+    editarPedido: async(req, res) => {
         const editarPedidos = await db.Order.update(users, { where: { id } })
     },
 
-    deletarOrder: async(req, res) => {
+    deletarPedido: async(req, res) => {
         const deletatPedidos = await db.Order.destroy({ where: { id } })
     },
 
