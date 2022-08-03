@@ -15,7 +15,15 @@ const createPayment = {
     buscarPagamento: async(req, res) => {
         const pagamento = await db.Payment.findAll()
         res.send(pagamento)
-    }
+    },
+    editarPagamento: async(req, res) => {
+        const editarPagamentos = await db.Payment.update(users, { where: { id } })
+    },
+
+    deletarPagamento: async(req, res) => {
+        const deletatPagamentos = await db.Payment.destroy({ where: { id } })
+    },
+
 };
 
 module.exports = createPayment

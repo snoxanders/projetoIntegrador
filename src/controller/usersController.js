@@ -15,7 +15,18 @@ const createUser = {
     buscarUsuario: async(req, res) => {
         const usuario = await db.Users.findAll()
         res.send(usuario)
-    }
+    },
+
+    editarUsuario: async(req, res) => {
+        const editarUser = await db.Users.update(users, { where: { id } })
+    },
+
+    deletarUsuario: async(req, res) => {
+        const deletarUser = await db.Users.destroy({ where: { id } })
+    },
+
+
+
 };
 
 module.exports = createUser

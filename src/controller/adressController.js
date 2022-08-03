@@ -15,7 +15,14 @@ const createAdress = {
     buscarEnd: async(req, res) => {
         const endereco = await db.Adress.findAll()
         res.send(endereco)
-    }
+    },
+    editarEnd: async(req, res) => {
+        const editarEndereco = await db.Adress.update(users, { where: { id } })
+    },
+
+    deletarEnd: async(req, res) => {
+        const deletarEndereco = await db.Adress.destroy({ where: { id } })
+    },
 };
 
 module.exports = createAdress

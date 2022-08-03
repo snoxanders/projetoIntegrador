@@ -15,7 +15,15 @@ const createOrder = {
     buscarPedido: async(req, res) => {
         const pedidos = await db.Order.findAll()
         res.send(pedidos)
-    }
+    },
+    editarPedido: async(req, res) => {
+        const editarPedidos = await db.Order.update(users, { where: { id } })
+    },
+
+    deletarPedido: async(req, res) => {
+        const deletatPedidos = await db.Order.destroy({ where: { id } })
+    },
+
 };
 
 module.exports = createOrder

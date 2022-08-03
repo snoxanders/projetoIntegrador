@@ -42,17 +42,27 @@ router.get('/perfil', function(req, res, next) {
 
 router.get('/usuarios', usuarioController.buscarUsuario)
 router.post('/criarusuarios', usuarioController.criarUsuario)
+router.post('/editarusuarios', usuarioController.editarUsuario)
+router.post('/deletarusuarios', usuarioController.deletarUsuario)
 
 router.get('/pagamentos', pagamentoController.buscarPagamento)
 router.post('/criarpagamentos', pagamentoController.criarPagamento)
+router.post('/editarpagamentos', pagamentoController.editarPagamento)
+router.post('/deletarrpagamentos', pagamentoController.deletarPagamento)
 
 router.get('/enderecos', enderecoController.buscarEnd)
 router.post('/criarenderecos', enderecoController.criarEnd)
+router.post('/editarenderecos', enderecoController.editarEnd)
+router.post('/deletarenderecos', enderecoController.deletarEnd)
 
 router.get('/pedidos', pedidosController.buscarPedido)
 router.post('/criarpedidos', pedidosController.criarPedido)
+router.post('/editarpedidos', pedidosController.editarPedido)
+router.post('/deletarpedidos', pedidosController.deletarPedido)
 
 router.get('/produtos', produtoController.buscarProduto)
 router.post('/criarprodutos', produtoController.criarProduto)
+router.post('/editarprodutos', produtoController.editarProduto)
+router.post('/deletarprodutos', produtoController.deletarProduto)
 
 module.exports = router;
