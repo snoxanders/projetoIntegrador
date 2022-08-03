@@ -175,8 +175,6 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.box-user-img {}
-
 .user-img {
     height: 170.97px;
     width: 162px;
@@ -306,8 +304,6 @@ p {
     line-height: 16px;
     color: #939598;
 }
-
-.signatures-title h3 {}
 
 .products-cards {
     display: flex;
