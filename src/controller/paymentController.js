@@ -22,7 +22,7 @@ const createPayment = {
 
     deletarPagamento: async(req, res) => {
         const deletatPagamentos = await db.Payment.destroy({ where: { id } })
-    }
+    },
 
 };
 

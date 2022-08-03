@@ -22,7 +22,7 @@ const createOrder = {
 
     deletarOrder: async(req, res) => {
         const deletatPedidos = await db.Order.destroy({ where: { id } })
-    }
+    },
 
 };
 

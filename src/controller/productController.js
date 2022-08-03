@@ -22,7 +22,7 @@ const createdProd = {
 
     deletarProduto: async(req, res) => {
         const deletarProdutos = await db.Products.destroy({ where: { id } })
-    }
+    },
 
 };
 

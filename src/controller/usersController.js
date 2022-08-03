@@ -23,7 +23,7 @@ const createUser = {
 
     deletarUsuario: async(req, res) => {
         const deletarUser = await db.Users.destroy({ where: { id } })
-    }
+    },
 
 
 

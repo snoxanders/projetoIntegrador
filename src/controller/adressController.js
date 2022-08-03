@@ -22,7 +22,7 @@ const createAdress = {
 
     deletarEnd: async(req, res) => {
         const deletarEndereco = await db.Adress.destroy({ where: { id } })
-    }
+    },
 };
 
 module.exports = createAdress
