@@ -3,17 +3,12 @@ module.exports = (sequelize, dataTypes) => {
     const Product = sequelize.define(
         'Product', {
             // Model attributes are defined here
-            id: {
-                type: dataTypes.INTEGER,
-                primaryKey: true,
-                allowNull: false
-            },
             name: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
             description: {
-                type: dataTypes.STRING,
+                type: dataTypes.TEXT('long'),
                 allowNull: false
             },
             available: {

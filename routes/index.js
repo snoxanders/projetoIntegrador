@@ -13,9 +13,9 @@ router.get('/home', function(req, res, next) {
     res.render("../src/views/home");
 });
 
-router.get('/produto', function(req, res, next) {
-    res.render('../src/views/produto');
-});
+// router.get('/produto', function(req, res, next) {
+//     res.render('../src/views/produto');
+// });
 
 router.get('/carrinho', function(req, res, next) {
     res.render('../src/views/carrinho');
@@ -60,9 +60,12 @@ router.post('/criarpedidos', pedidosController.criarPedido)
 router.post('/editarpedidos', pedidosController.editarPedido)
 router.post('/deletarpedidos', pedidosController.deletarPedido)
 
-router.get('/produtos', produtoController.buscarProduto)
-router.post('/criarprodutos', produtoController.criarProduto)
-router.post('/editarprodutos', produtoController.editarProduto)
-router.post('/deletarprodutos', produtoController.deletarProduto)
+// router.get('/produtos', produtoController.buscarProduto)
+
+// router.get('/produto/:produtoId', produtoController.buscarProdutoPorId)
+
+// router.post('/criarprodutos', produtoController.criarProduto)
+// router.post('/editarprodutos', produtoController.editarProduto)
+// router.post('/deletarprodutos', produtoController.deletarProduto)
 
 module.exports = router;
