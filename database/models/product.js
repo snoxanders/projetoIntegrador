@@ -25,12 +25,12 @@ module.exports = (sequelize, dataTypes) => {
         }
     );
 
-    Product.associate = (models) => {
-        Product.hasMany(models.Order, {
-            foreignKey: "id_produto",
-            as: "order"
-        });
-    }
+    // Product.associate = (models) => {
+    //     Product.hasMany(models.Order, {
+    //         foreignKey: "id_produto",
+    //         as: "order"
+    //     });
+    // }
     Product.sync();
     return Product
 }
