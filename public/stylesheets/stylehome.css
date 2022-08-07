@@ -83,7 +83,7 @@ body {
     width: 245px;
     height: 71px;
     background-color: #DF5B43;
-    ;
+    cursor: pointer;
     box-shadow: 0px 7px 12px #831C20;
     border-radius: 12px;
     display: flex;
@@ -260,6 +260,7 @@ body {
     align-items: center;
     padding: 20px 69px;
     gap: 10px;
+    cursor: pointer;
     position: relative;
     top: 45%;
     border: #DF5B43 solid 1px;
@@ -272,6 +273,7 @@ body {
 }
 
 #button-card2 {
+    cursor: pointer;
     width: 255px;
     height: 68.72px;
     background: #DF5B43;
@@ -432,6 +434,11 @@ form {
     line-height: 68px;
     text-align: center;
     color: #FFFFFF;
+}
+
+a {
+    appearance: none;
+    text-decoration: none;
 }
 
 #name,
