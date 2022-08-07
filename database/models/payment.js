@@ -34,12 +34,12 @@ module.exports = (sequelize, dataTypes) => {
     );
 
 
-    Payment.associate = (models) => {
-        Payment.hasOne(models.Order, {
-            foreignKey: "id_cartao",
-            as: "order"
-        });
-    }
+    // Payment.associate = (models) => {
+    //     Payment.hasOne(models.Order, {
+    //         foreignKey: "id_cartao",
+    //         as: "order"
+    //     });
+    // }
 
     Payment.sync();
     return Payment

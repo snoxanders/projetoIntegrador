@@ -3,17 +3,12 @@ module.exports = (sequelize, dataTypes) => {
     const Product = sequelize.define(
         'Product', {
             // Model attributes are defined here
-            id: {
-                type: dataTypes.INTEGER,
-                primaryKey: true,
-                allowNull: false
-            },
             name: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
             description: {
-                type: dataTypes.STRING,
+                type: dataTypes.TEXT('long'),
                 allowNull: false
             },
             available: {
@@ -30,12 +25,12 @@ module.exports = (sequelize, dataTypes) => {
         }
     );
 
-    Product.associate = (models) => {
-        Product.hasMany(models.Order, {
-            foreignKey: "id_produto",
-            as: "order"
-        });
-    }
+    // Product.associate = (models) => {
+    //     Product.hasMany(models.Order, {
+    //         foreignKey: "id_produto",
+    //         as: "order"
+    //     });
+    // }
     Product.sync();
     return Product
 }

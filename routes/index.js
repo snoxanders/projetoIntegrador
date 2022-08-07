@@ -10,31 +10,31 @@ const pedidosController = require("../controller/orderController")
 
 
 router.get('/home', function(req, res, next) {
-    res.render("../src/views/home");
+    res.render("../views/home");
 });
 
-router.get('/produto', function(req, res, next) {
-    res.render('../src/views/produto');
-});
+// router.get('/produto', function(req, res, next) {
+//     res.render('../src/views/produto');
+// });
 
 router.get('/carrinho', function(req, res, next) {
-    res.render('../src/views/carrinho');
+    res.render('../views/carrinho');
 });
 
 router.get('/main', function(req, res, next) {
-    res.render('../src/views/main');
+    res.render('../views/main');
 });
 
 router.get('/finalizarcompra', function(req, res, next) {
-    res.render('../src/views/finalizarCompra');
+    res.render('../views/finalizarCompra');
 });
 
 router.get('/cadastro', function(req, res, next) {
-    res.render('../src/views/cadastro');
+    res.render('../views/cadastro');
 });
 
 router.get('/perfil', function(req, res, next) {
-    res.render('../src/views/perfil')
+    res.render('../views/perfil')
 });
 
 // const dbProduct = require("../controller/product")
@@ -60,9 +60,12 @@ router.post('/criarpedidos', pedidosController.criarPedido)
 router.post('/editarpedidos', pedidosController.editarPedido)
 router.post('/deletarpedidos', pedidosController.deletarPedido)
 
-router.get('/produtos', produtoController.buscarProduto)
-router.post('/criarprodutos', produtoController.criarProduto)
-router.post('/editarprodutos', produtoController.editarProduto)
-router.post('/deletarprodutos', produtoController.deletarProduto)
+// router.get('/produtos', produtoController.buscarProduto)
+
+// router.get('/produto/:produtoId', produtoController.buscarProdutoPorId)
+
+// router.post('/criarprodutos', produtoController.criarProduto)
+// router.post('/editarprodutos', produtoController.editarProduto)
+// router.post('/deletarprodutos', produtoController.deletarProduto)
 
 module.exports = router;

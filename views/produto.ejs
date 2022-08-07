@@ -4,9 +4,9 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>EASE TOGETHER - DETALHE DE PRODUTO</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='stylesheets/styleproduto.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/stylesheets/styleproduto.css'>
 
 </head>
 
@@ -20,7 +20,9 @@
         <main>
             <div class="main-produto">
                 <div class="produto">
-                    <h3 class="titulo-produto"> Macbook Air Apple 13.3', Processador M1,<br> 16GB, SSD 1TB, Space Gray - MGQN3BZ/A</h3>
+                    <h3 class="titulo-produto">
+                        <%= produto.name %>
+                    </h3>
                     <img class="foto-produto" src="/images/imagesDetalheProduto/imgProduto.png" alt="mackbook">
                 </div>
                 <aside>
@@ -35,7 +37,9 @@
                             <button type="button" class="botao-plano">12 meses</button>
                         </div>
                         <div class="valor-pagar">Valor a pagar:</div>
-                        <div class="valor">R$ 670,00</div>
+                        <div class="valor">R$
+                            <%= produto.price %>
+                        </div>
                         <button type="button" class="botao-alugar"> <img src="/images/imagesDetalheProduto/vector.png">QUERO ALUGAR</button>
                     </div>
                     <div class="main-frete">
@@ -52,12 +56,7 @@
                 <h3 class="titulo-descricao">Descrição do produto</h3>
                 <div class="descricao-produto">
                     <div class="texto-descricao">
-                        Uma potência no ar Com o chip M1 da Apple, nosso notebook mais fino e leve ficou irreconhecível. Por dentro. A CPU e a GPU estão mais rápidas, até 3,5 vezes e até cinco vezes, respectivamente. Nosso Neural Engine mais avançado deixa o aprendizado de máquina
-                        até nove vezes mais veloz. A bateria oferece mais tempo de duração. E trocamos a ventoinha pelo silêncio. Nunca tanto desempenho esteve reunido em um MacBook Air. Um pequeno chip, uma grande revolução Nosso primeiro chip projetado
-                        especialmente para o Mac acaba de chegar. Com impressionantes 16 bilhões de transistores, o M1 da Apple é um sistema em um chip (SoC). Isso quer dizer que ele reúne CPU, GPU, Neural Engine, conexões e outros recursos em uma peça
-                        só, e minúscula. Ele traz desempenho incrível, tecnologias exclusivas e o consumo de energia mais eficiente da indústria. O chip M1 é mais do que um avanço. É uma nova categoria. CPU de 8 núcleos Trabalha muito. A bateria, quase
-                        nada O M1 tem a CPU mais rápida que já produzimos. Com tanto processamento, o MacBook Air agora é capaz de realizar tarefas pesadas, como editar vídeos com qualidade profissional e rodar jogos cheios de ação. Além de ter velocidade
-                        até 3,5 vezes maior do que a geração anterior, a CPU de oito núcleos do chip M1 combina núcleos de alto desempenho e núcleos de eficiência para fazer trabalhos do dia a dia com apenas um décimo da energia.
+                        <%= produto.description %>
                     </div>
                 </div>
                 <div class="imagens-descricao">
