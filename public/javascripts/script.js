@@ -47,21 +47,31 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-// HOME
+// home
 
-// formulário
+// form
 
-let buttonForm = document.getElementById('button-form');
+// const submit = document.getElementById("button-form");
 
-function msg() {
-    alert('Obrigada por enviar sua solicitação. Em breve retornamos o contato!')
-}
+// submit.addEventListener("click", validate);
 
-buttonForm.addEventListener('click', msg);
+// function validate(e) {
+//     e.preventDefault();
 
-function noRedirect(e) {
-    e.preventDefault();
-    window.URL = "localhost:3000/home"
-    alert('Obrigado! Em breve retornamos seu contato')
-    return false
+//     const nameField = document.getElementById("name");
+//     let valid = true;
+
+//     if (!nameField.value) {
+//         const nameError = document.getElementById("nameError");
+//         nameError.classList.add("visible");
+//         nameField.classList.add("invalid");
+//         nameError.setAttribute("aria-hidden", false);
+//         nameError.setAttribute("aria-invalid", true);
+//     }
+//     return valid;
+// }
+
+
+function oi() {
+    alert('e ai trouxa')
 }

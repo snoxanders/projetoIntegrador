@@ -8,6 +8,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='stylesheets/styleCadastro.css'>
     <link rel="shortcut icon" type="imagem/x-icon" href="/img/icon.png" />
+    <script type="text/javascript" src="../../public/javascripts/mobile-navbar.js"></script>
+    <script type="text/javascript" src="../../public/javascripts/script.js"></script>
+
 
 </head>
 
@@ -23,16 +26,16 @@
 
         <section class="section">
 
+
             <div class="cadastro">
                 <h3>JÁ TENHO UMA CONTA</h3>
-                <form method='post' action='/usuarios' class="campo">
+                <form method='post' action="/usuarios" class="campo" onsubmit="redirectUser()">
                     <input type="text" id="email" nome="email" required placeholder="E-mail">
                     <input type='password' id='senha' name='senha' required placeholder="Senha">
 
                     <a href="/" class="esqueci">ESQUECI MINHA SENHA</a>
 
-
-                    <button type="submit" class="btn-entrar"> ENTRAR </button>
+                    <button type="submit" class="btn-entrar" onclik=""> ENTRAR </button>
 
                 </form>
 
@@ -52,8 +55,7 @@
         </section>
     </main>
 
-    <script type="text/javascript" src="../../public/javascripts/mobile-navbar.js"></script>
-    <script type="text/javascript" src="../../public/javascripts/script.js"></script>
+
 </body>
 
 
