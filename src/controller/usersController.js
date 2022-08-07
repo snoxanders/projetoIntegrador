@@ -14,7 +14,9 @@ const createUser = {
     },
     buscarUsuario: async(req, res) => {
         const usuario = await db.Users.findAll()
-        res.send(usuario)
+        res.send(usuario);
+
+        res.redirect('/perfil')
     },
 
     editarUsuario: async(req, res) => {

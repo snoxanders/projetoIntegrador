@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/stylecarrinho.css">
     <link rel="shortcut icon" type="imagem/x-icon" href="/img/icon.png">
+    <script type="text/javascript" src="/javascripts/script.js"></script>
     <title>EASE TOGETHER</title>
 </head>
 
@@ -74,7 +75,7 @@
                     <h2 id="frete">Calcule seu frete:</h2>
                     <div class="form">
                         <form action="post" id="form-frete">
-                            <input name="cep" id="cep" placeholder="  Insira seu CEP"><button type="submit" id="button-ok">OK</button>
+                            <input name="cep" id="cep" required placeholder="  Insira seu CEP"><button for='cep' type="button" id="button-ok">OK</button>
                         </form>
                         <a id='link' href="#">Não lembro do meu CEP</a>
                         <hr>
@@ -133,7 +134,7 @@
         <%- include('./partials/footer.ejs') %>
     </footer>
 
-
+    <script type="text/javascript" src="../../public/javascripts/script.js"></script>
 </body>
 
 </html>
