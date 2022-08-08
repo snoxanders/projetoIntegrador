@@ -94,19 +94,20 @@
             <!-- banner 4 -->
             <div class="banner4">
                 <div class="div-form">
-                    <form method="post" target="_blank">
+                    <form method="post" onsubmit="alert('formulário enviado com sucesso')" action="/usuarios">
                         <legend id="legend-form">Solicite seu orçamento</legend>
                         <p>
-                            <input type="text" required name="name" id="name" pattern="[A-Za-z]" placeholder=" Seu nome completo*">
+                            <input type="text" required name="name" id="name" placeholder=" Seu nome completo*">
                             <input type="email" name="email" required id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder=" Seu e-mail*">
-                            <input type="tel" name="phone" pattern="[0-9]" required id="phone" placeholder=" Seu telefone*">
+                            <input type="tel" name="phone" required id="phone" placeholder=" Seu telefone*">
                             <input type="text" name="cep" id="cep" pattern="[0-9]{8}" required size="8" maxlength="8" placeholder=" CEP do local da entrega*">
 
                         </p>
 
 
+
                         <span id="title-form">Por quanto tempo você precisa?</span>
-                        <div class="radiodiv">
+                        <div class="radiodiv">''
                             <span id="inputradio"><input type="radio" checked name="checkbox"><label id="label-form">1 a 3 meses</label></span>
                             <span id="inputradio"><input type="radio" name="checkbox"><label id="label-form">3 meses</label></span>
                             <span id="inputradio"><input type="radio" name="checkbox"><label id="label-form">6 meses</label></span>
@@ -116,7 +117,7 @@
                         <textarea rows="5" cols="50" name="messageform" id="message-form"> Nos conte o que você precisa</textarea>
                         <!-- <input type="text" id="message-form" name="messageform" maxlength="200" placeholder=" Nos conte o que você precisa"> -->
                         <br>
-                        <button type="submit" id="button-form">Enviar</button>
+                        <button type="submit" onclick="redirect(event)" id="button-form">Enviar</button>
 
                     </form>
 
@@ -132,6 +133,16 @@
                         nameField.addEventListener("invalid", () => {
                             nameField.setCustomValidity("Por favor, preencha um campo válido");
                         });
+
+                        function redirect(event) {
+                            event.preventDefault();
+                            const form = document.querySelector('form');
+                            if (form.onsubmit == true) {
+                                window.location.replace('/home');
+                            } else {
+                                alert('algo deu errado, por favor, tente de novo')
+                            }
+                        }
                     </script>
 
                 </div>
