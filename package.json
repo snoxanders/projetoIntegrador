@@ -29,5 +29,8 @@
     "url": "https://github.com/snoxanders/projetoIntegrador/issues"
   },
   "homepage": "https://github.com/snoxanders/projetoIntegrador#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "husky": "^4.3.8"
+  }
 }
