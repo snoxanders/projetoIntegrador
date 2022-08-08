@@ -15,7 +15,13 @@ const createUser = {
     buscarUsuario: async(req, res) => {
         const usuario = await db.Users.findAll()
         res.send(usuario);
-        res.redirect('/perfil')
+        res.redirect('/perfil');
+
+
+        if (usuario == null) {
+            alert('usuário não cadastrado')
+        };
+
     },
 
     editarUsuario: async(req, res) => {

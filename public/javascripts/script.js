@@ -47,31 +47,4 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-// home
-
-// form
-
-// const submit = document.getElementById("button-form");
-
-// submit.addEventListener("click", validate);
-
-// function validate(e) {
-//     e.preventDefault();
-
-//     const nameField = document.getElementById("name");
-//     let valid = true;
-
-//     if (!nameField.value) {
-//         const nameError = document.getElementById("nameError");
-//         nameError.classList.add("visible");
-//         nameField.classList.add("invalid");
-//         nameError.setAttribute("aria-hidden", false);
-//         nameError.setAttribute("aria-invalid", true);
-//     }
-//     return valid;
-// }
-
-
-function oi() {
-    alert('e ai trouxa')
-}
+//cadastro
