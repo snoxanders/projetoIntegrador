@@ -29,8 +29,8 @@
 
             <div class="cadastro">
                 <h3>JÁ TENHO UMA CONTA</h3>
-                <form method='post' class="campo">
-                    <input type="text" id="email" nome="email" required placeholder="E-mail">
+                <form method='post' onsubmit="check()" action="/usuarios" class="campo">
+                    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" nome="email" required placeholder="E-mail">
                     <input type='password' id='senha' name='senha' required placeholder="Senha">
 
                     <a href="/" class="esqueci">ESQUECI MINHA SENHA</a>
@@ -38,6 +38,33 @@
                     <button type="submit" class="btn-entrar"> ENTRAR </button>
 
                 </form>
+
+                <script>
+                    const nameField = document.querySelector("input");
+
+                    nameField.addEventListener("input", () => {
+                        nameField.setCustomValidity("");
+                        nameField.checkValidity();
+                        console.log(nameField.checkValidity());
+                    });
+
+                    nameField.addEventListener("invalid", () => {
+                        nameField.setCustomValidity("Por favor, preencha um campo válido");
+                    });
+
+
+                    function check(event) {
+                        event.preventDefault();
+                        const login = document.querySelector('email').value;
+                        const password = document.querySelector('senha').value;
+                        if (login && password == true) {
+                            window.location.replace('/perfil')
+                        } else {
+                            alert('usuário não cadastrado. Por favor, cadastre-se')
+                        }
+
+                    }
+                </script>
 
 
             </div>

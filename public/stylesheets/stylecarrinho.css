@@ -69,13 +69,19 @@ h1 {
     right: 250px;
 }
 
-h3 {
+#endereco,
+#estado,
+#cidade,
+#bairro {
+    border: none;
+    background-color: #F4F4F5;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 10px;
     line-height: 12px;
     color: #979797;
+    width: 200px;
 }
 
 #note {
@@ -109,6 +115,23 @@ h5 {
     color: #000000;
     text-align: center;
     margin: 10px;
+}
+
+#freteValor {
+    border: none;
+    width: 200px;
+    font-size: 13px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Montserrat';
+    background-color: #F4F4F5;
+}
+
+.box-invisible {
+    display: none;
 }
 
 #button-remove {
@@ -212,7 +235,7 @@ h5 {
 }
 
 .div-end:hover {
-    background-image: url('/IMG/divend.png');
+    background-image: url('../images/imagesCarrinho/divend.png');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;

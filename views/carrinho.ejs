@@ -38,10 +38,19 @@
                             <h5>Macbook Air Apple 13.3', Processador M1, 16GB, <br>SSD 1TB, Space Grey - MGQN3BZ/A</h5>
                             <button type="button" id="button-remove"><img src="/images/imagesCarrinho/Vector.png" alt="lixo">REMOVER</button>
                         </div>
-                        <button type="button" id="button1">Mensal</button>
+                        <button type="button" onclick="event" id="button1">Mensal</button>
                         <p id="value">R$670,00</p>
                     </div>
                 </div>
+
+                <script>
+                    const box = document.getElementsByClassName('box');
+                    let button = document.getElementById('button-remove');
+
+                    const event = button.addEventListener('click', () => {
+                        box.classList.add = '-invisible'
+                    });
+                </script>
 
                 <section class="section3">
                     <div class="box">
@@ -79,17 +88,67 @@
                             <form action="post" id="form-frete">
                                 <input name="cep" id="cep" required placeholder="  Insira seu CEP"><button for='cep' type="button" id="button-ok">OK</button>
                             </form>
-                            <a id='link' href="#">Não lembro do meu CEP</a>
+                            <a id='link' href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não lembro do meu CEP</a>
                             <hr>
                             <div class="resto">
                                 <div>
-                                    <h3>Rua Sete de Setembro<br>Barretos<br>São Paulo</h3>
+                                    <input type="text" name="rua" id="endereco"><br>
+                                    <input type="text" name="bairro" id="bairro"><br>
+                                    <input type="text" name="cidade" id="cidade"><br>
+                                    <input type="text" name="estado" id="estado"><br>
+
+
                                 </div>
+
+
                                 <div>
                                     <h4>Valor</h4>
-                                    <h5>R$33,78</h5>
+                                    <input type='text' id="freteValor">
+                                    </input>
                                 </div>
                             </div>
+
+                            <script>
+                                const validaCep = (endereco) => {
+                                    document.getElementById('endereco').value = endereco.logradouro;
+                                    document.getElementById('bairro').value = endereco.bairro;
+                                    document.getElementById('cidade').value = endereco.localidade;
+                                    document.getElementById('estado').value = endereco.uf;
+                                }
+
+                                const pesquisarCep = async() => {
+                                    const cep = document.getElementById('cep').value;
+                                    const url = `http://viacep.com.br/ws/${cep}/json/`;
+
+                                    const dados = await fetch(url);
+                                    const endereco = await dados.json();
+                                    validaCep(endereco);
+
+
+                                };
+
+                                document.getElementById('cep').addEventListener('focusout', pesquisarCep);
+                            </script>
+
+                            <script>
+                                const cep = document.querySelector('cep');
+                                const iniCepNumber = cep.length[0];
+                                const valor = document.querySelector('freteValor');
+
+                                function calculoCepValor(number) {
+                                    if (number <= 3) {
+                                        number * 3
+                                    }
+                                    if (number > 3 || number <= 6) {
+                                        number * 4
+                                    } else {
+                                        number * 5
+                                    }
+
+                                }
+                                let resultadoFrete = calculoCepValor(iniCepNumber);
+                                valor.value = resultadoFrete;
+                            </script>
 
 
                         </div>
