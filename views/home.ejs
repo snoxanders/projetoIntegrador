@@ -97,9 +97,9 @@
                     <form method="post" onsubmit="alert('formulário enviado com sucesso')" action="/usuarios">
                         <legend id="legend-form">Solicite seu orçamento</legend>
                         <p>
-                            <input type="text" required name="name" id="name" placeholder=" Seu nome completo*">
+                            <input type="text" required name="name" minlength="3" id="name" placeholder=" Seu nome completo*">
                             <input type="email" name="email" required id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder=" Seu e-mail*">
-                            <input type="tel" name="phone" required id="phone" placeholder=" Seu telefone*">
+                            <input type="tel" name="phone" pattern="[0-9]{11}" maxlength="11" required id="phone" placeholder=" Seu telefone com DDD">
                             <input type="text" name="cep" id="cep" pattern="[0-9]{8}" required size="8" maxlength="8" placeholder=" CEP do local da entrega*">
 
                         </p>

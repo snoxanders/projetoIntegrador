@@ -3,6 +3,9 @@
 module.exports = {
   up (queryInterface, Sequelize) {
     return queryInterface.createTable('produto', {
+      id: {
+        type: Sequelize.INTEGER
+      },
       name: {
         type: Sequelize.STRING,
         allowNull: false
@@ -17,6 +20,10 @@ module.exports = {
       },
       price: {
         type: Sequelize.FLOAT,
+        allowNull: false
+      },
+      rotaImg: {
+        type: Sequelize.STRING,
         allowNull: false
       }
        });
