@@ -36,19 +36,24 @@
                         <span><img id='note' src="/images/imagesCarrinho/image 8.png" alt="notebook"></span>
                         <div class="sub-div">
                             <h5>Macbook Air Apple 13.3', Processador M1, 16GB, <br>SSD 1TB, Space Grey - MGQN3BZ/A</h5>
-                            <button type="button" id="button-remove"><img src="/images/imagesCarrinho/Vector.png" alt="lixo">REMOVER</button>
+                            <button type="button" id="button-remove" onclick="event"><img src="/images/imagesCarrinho/Vector.png" alt="lixo">REMOVER</button>
                         </div>
-                        <button type="button" onclick="event" id="button1">Mensal</button>
+                        <button type="button" id="button1">Mensal</button>
                         <p id="value">R$670,00</p>
                     </div>
                 </div>
 
+                <div class="letter">O SEU CARRINHO ESTÁ VAZIO :(</div>
+
                 <script>
                     const box = document.getElementsByClassName('box');
                     let button = document.getElementById('button-remove');
+                    let texto = document.getElementsByClassName('letter');
 
                     const event = button.addEventListener('click', () => {
-                        box.classList.add = '-invisible'
+                        box.classList.replace('box-invisible');
+                        texto.classList.replace('letter-ative');
+
                     });
                 </script>
 
