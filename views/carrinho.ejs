@@ -136,9 +136,9 @@
                             </script>
 
                             <script>
-                                const cep = document.querySelector('cep');
-                                const iniCepNumber = cep.length[0];
-                                const valor = document.querySelector('freteValor');
+                                const cep = document.getElementById('cep');
+                                const iniCepNumber = cep.length;
+                                const valor = document.getElementById('freteValor');
 
                                 function calculoCepValor(number) {
                                     if (number <= 3) {
@@ -151,7 +151,7 @@
                                     }
 
                                 }
-                                let resultadoFrete = calculoCepValor(iniCepNumber);
+                                let resultadoFrete = calculoCepValor(iniCepNumber[0]);
                                 valor.value = resultadoFrete;
                             </script>
 
@@ -181,8 +181,8 @@
                             <p id="detail">(Em até 12x de R$58,64 sem juros)</p>
                         </div>
                         <div class="seila">
-                            <button type="button" id="pagamento">IR PARA O PAGAMENTO</button>
-                            <button type="button" id="continuar">CONTINUAR COMPRANDO</button>
+                            <button type="button" id="pagamento" onclick="window.location.href='/finalizarcompra'">IR PARA O PAGAMENTO</button>
+                            <button type="button" id="continuar" onclick="window.location.href='/main'">CONTINUAR COMPRANDO</button>
                         </div>
 
                     </div>

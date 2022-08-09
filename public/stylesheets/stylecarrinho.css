@@ -58,6 +58,10 @@ h1 {
     align-items: center;
 }
 
+input:focus {
+    outline: 0;
+}
+
 .letter {
     display: none;
 }
