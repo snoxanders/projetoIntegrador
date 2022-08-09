@@ -132,7 +132,7 @@ h3 {
     margin-top: 0.75rem;
 }
 
-.tb-entrar:hover {
+.btn-entrar:hover {
     transition: 0.3ms;
     opacity: 0.7;
 }
