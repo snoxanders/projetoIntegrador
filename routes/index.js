@@ -13,9 +13,15 @@ router.get('/home', function(req, res, next) {
     res.render("../views/home");
 });
 
-// router.get('/produto', function(req, res, next) {
-//     res.render('../src/views/produto');
-// });
+router.get('/produto', function(req, res, next) {
+     res.render('../views/produto');
+ });
+
+ router.get('/produto/:id',async function(req, res, next) {
+    const produto = await db.Product.findByPk(req.params.id)
+    console.log(produto)
+    res.render('../views/produto',{produto});
+});
 
 router.get('/carrinho', function(req, res, next) {
     res.render('../views/carrinho');
