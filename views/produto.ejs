@@ -21,24 +21,24 @@
             <div class="main-produto">
                 <div class="produto">
                     <h3 class="titulo-produto">
-                        <%=produto.name%>
+                        <%= produto.name%>
                     </h3>
-                    
+                    <img class="foto-produto" src='<%=produto.rotaImg %>' alt="notebook">
                 </div>
                 <aside>
                     <div class="planos-produto">
                         <div class="escolha-plano">Selecione abaixo o seu plano:</div>
                         <div class="botoes">
-                            <button type="button" class="botao-plano">7 dias</button>
-                            <button type="button" class="botao-plano">15 dias</button>
-                            <button type="button" class="botao-plano">Mensal</button>
-                            <button type="button" class="botao-plano">3 meses</button>
-                            <button type="button" class="botao-plano">6 meses</button>
-                            <button type="button" class="botao-plano">12 meses</button>
+                            <button type="button" class="botao-plano" onclick="semanal()">7 dias</button>
+                            <button type="button" class="botao-plano" onclick="quizenal()">15 dias</button>
+                            <button type="button" class="botao-plano" onclick="mensal()">Mensal</button>
+                            <button type="button" class="botao-plano" onclick="trimestral()">3 meses</button>
+                            <button type="button" class="botao-plano" onclick="semestral()">6 meses</button>
+                            <button type="button" class="botao-plano" onclick="anual()">12 meses</button>
                         </div>
                         <div class="valor-pagar">Valor a pagar:</div>
                         <div class="valor">R$
-                            <%=produto.price%>
+                            <%= produto.price%>
                         </div>
                         <button type="button" class="botao-alugar"> <img src="/images/imagesDetalheProduto/vector.png">QUERO ALUGAR</button>
                     </div>
@@ -56,19 +56,20 @@
                 <h3 class="titulo-descricao">Descrição do produto</h3>
                 <div class="descricao-produto">
                     <div class="texto-descricao">
-                        <%=produto.description%>  
+                        <%= produto.description%>
                     </div>
                 </div>
-                <div class="imagens-descricao">
+                <!-- <div class="imagens-descricao">
                     <img src="/images/imagesDetalheProduto/image 12.png" alt="">
                     <img src="/images/imagesDetalheProduto/image 13.png" alt="">
-                </div>
+                </div> -->
             </div>
         </main>
     </div>
 </body>
 
 <script type="text/javascript" src="javascripts/mobile-navbar.js"></script>
+<script type="text/javascript" src="../controller/precoController.js"></script>
 
 <footer>
     <%- include('./partials/footer.ejs') %>

@@ -18,6 +18,10 @@ module.exports = (sequelize, dataTypes) => {
             price: {
                 type: dataTypes.FLOAT,
                 allowNull: false
+            },
+            rotaImg: {
+                type: dataTypes.STRING,
+                allowNull: false
             }
         }, {
             tableName: 'produto',
