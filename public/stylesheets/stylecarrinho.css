@@ -45,6 +45,27 @@ h1 {
     flex-direction: column;
 }
 
+.box-invisible {
+    display: none;
+}
+
+.letter-ative {
+    color: #2F546B;
+    font-size: 26px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.letter {
+    display: none;
+}
+
 #div-content {
     display: flex;
     justify-content: space-around;

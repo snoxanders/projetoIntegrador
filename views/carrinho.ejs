@@ -36,19 +36,24 @@
                         <span><img id='note' src="/images/imagesCarrinho/image 8.png" alt="notebook"></span>
                         <div class="sub-div">
                             <h5>Macbook Air Apple 13.3', Processador M1, 16GB, <br>SSD 1TB, Space Grey - MGQN3BZ/A</h5>
-                            <button type="button" id="button-remove"><img src="/images/imagesCarrinho/Vector.png" alt="lixo">REMOVER</button>
+                            <button type="button" id="button-remove" onclick="event"><img src="/images/imagesCarrinho/Vector.png" alt="lixo">REMOVER</button>
                         </div>
-                        <button type="button" onclick="event" id="button1">Mensal</button>
+                        <button type="button" id="button1">Mensal</button>
                         <p id="value">R$670,00</p>
                     </div>
                 </div>
 
+                <div class="letter">O SEU CARRINHO ESTÁ VAZIO :(</div>
+
                 <script>
                     const box = document.getElementsByClassName('box');
                     let button = document.getElementById('button-remove');
+                    let texto = document.getElementsByClassName('letter');
 
                     const event = button.addEventListener('click', () => {
-                        box.classList.add = '-invisible'
+                        box.classList.replace('box-invisible');
+                        texto.classList.replace('letter-ative');
+
                     });
                 </script>
 
@@ -131,9 +136,9 @@
                             </script>
 
                             <script>
-                                const cep = document.querySelector('cep');
-                                const iniCepNumber = cep.length[0];
-                                const valor = document.querySelector('freteValor');
+                                const cep = document.getElementById('cep');
+                                const iniCepNumber = cep.length;
+                                const valor = document.getElementById('freteValor');
 
                                 function calculoCepValor(number) {
                                     if (number <= 3) {
@@ -146,7 +151,7 @@
                                     }
 
                                 }
-                                let resultadoFrete = calculoCepValor(iniCepNumber);
+                                let resultadoFrete = calculoCepValor(iniCepNumber[0]);
                                 valor.value = resultadoFrete;
                             </script>
 
@@ -176,8 +181,8 @@
                             <p id="detail">(Em até 12x de R$58,64 sem juros)</p>
                         </div>
                         <div class="seila">
-                            <button type="button" id="pagamento">IR PARA O PAGAMENTO</button>
-                            <button type="button" id="continuar">CONTINUAR COMPRANDO</button>
+                            <button type="button" id="pagamento" onclick="window.location.href='/finalizarcompra'">IR PARA O PAGAMENTO</button>
+                            <button type="button" id="continuar" onclick="window.location.href='/main'">CONTINUAR COMPRANDO</button>
                         </div>
 
                     </div>

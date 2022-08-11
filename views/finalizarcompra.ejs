@@ -29,16 +29,18 @@
                 <img id="section1" src="/images/imagesFinalizarCompra/img.png" alt="notebook">
             </div>
 
+            <span class="invisible">PEDIDO EXCLUÍDO</span>
+
             <div class="section2">
                 <p class="text1">Plano escolhido</p>
-                <button type="button" id="button1">Mensal</button>
-                <button type="button" id="button2">CONTINUAR COMPRANDO</button>
+                <div id="button1">Mensal</div>
+                <button type="button" onclick="window.location.href='/main'" id="button2">CONTINUAR COMPRANDO</button>
             </div>
 
             <div class="section3">
                 <p class="text1">Valor</p>
                 <p class="value">R$670,00</p>
-                <button class="button3" type="button">Finalizar Compra</button>
+                <button class="button3" onclick="window.location.href='/home'" type="button">Finalizar Compra</button>
             </div>
 
         </div>
@@ -49,6 +51,9 @@
     <footer>
         <%- include('./partials/footer.ejs') %>
     </footer>
+
+    <script>
+    </script>
 
 </body>
 
