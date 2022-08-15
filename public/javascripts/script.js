@@ -40,6 +40,15 @@ class MobileNavbar {
     }
 }
 
+const mudarValor = (dias, desconto) =>{
+     const valor = dias * 22.36 
+     const _desconto = valor * desconto
+     const preco = valor - _desconto
+     console.log(valor, preco, _desconto)
+    document.querySelector('.preco').innerHTML = preco.toFixed(2)
+    
+}
+
 const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".nav-list",

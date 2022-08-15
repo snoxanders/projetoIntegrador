@@ -4,6 +4,7 @@ module.exports = {
     up: async(queryInterface) => queryInterface.bulkInsert('pedido_cliente', [{
             idPedido: 1,
             idCliente: 1,
+            idProduto: 301,
             dataPedido: 110722,
             idCartao: 1,
             valorProduto: 670.00,

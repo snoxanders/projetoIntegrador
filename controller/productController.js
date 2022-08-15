@@ -1,5 +1,7 @@
 const { Product } = require("../database/models")
 
+
+
 const createdProd = {
     criarProduto: async(req, res) => {
         const { name, description, available, price } = req.body;

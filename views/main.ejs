@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagem/x-icon" href="/img/icon.png">
-    <script type="text/javascript" src="javascripts/mobile-navbar.js"></script>
+
     <title>EASE TOGETHER - TODOS OS PRODUTOS </title>
 </head>
 
@@ -108,18 +108,18 @@
         </aside>
         <section>
             <div class="all-content">
-                <div class="line-1">
+                <!-- <div class="line-1">
                     <img id='notebooks' src="images/imagesProdutos/note1.png" alt="">
                     <div class="conteudo-card-meio">
                         <p class="titulo-card">Mackbookv Air Apple 13.3', Processador M! <br> 16gb, SSD 1TB, Space Grey MGQN3BZ/A</p></p>
                         <ul class="lista-atributos">
-                            <!-- <li>PROCESSADOR M1</li>
+                            <li>PROCESSADOR M1</li>
                             <li>ATÉ 18 HORAS DE BATERIA</li>
                             <li>USB4</li>
                             <li>TOUCH ID</li> -->
-                        </ul>
+                        <!-- </ul>
                         <P class="paragrafo-a-partir-de">A partir de</P>
-                        <h3 class="valor-note">R$670,00</h3>
+                        <h3 class="valor-note">R$670,80</h3>
                         <p class="paragrafo-a-partir-de">por mês</p>
                     </div>
                     <button class="btn-reserva" onclick="window.location.href='/produto/301'">RESERVAR</button>
@@ -129,14 +129,14 @@
                     <img id='notebooks' src="images/imagesProdutos/note2.png" alt="">
                     <div class="conteudo-card-meio">
                         <p class="titulo-card">Notebook Acer Aspire 5 Intel Core i5-10210U, 8GB RAM, SSD 256GB, 15.6 Full HD, Windows 11 Home, Prata - A515-54-57CS</p>
-                        <ul class="lista-atributos">
+                        <ul class="lista-atributos"> --> 
                             <!-- <li>PROCESSADOR M1</li>
                             <li>ATÉ 18 HORAS DE BATERIA</li>
                             <li>USB4</li>
-                            <li>TOUCH ID</li> -->
+                            <li>TOUCH ID</li>
                         </ul>
                         <P class="paragrafo-a-partir-de">A partir de</P>
-                        <h3 class="valor-note">R$390,00</h3>
+                        <h3 class="valor-note">R$670,80</h3>
                         <p class="paragrafo-a-partir-de">por mês</p>
                     </div>
                     <button class="btn-reserva" onclick="window.location.href='/produto/302'">RESERVAR</button>
@@ -150,10 +150,10 @@
                             <!-- <li>PROCESSADOR M1</li>
                             <li>ATÉ 18 HORAS DE BATERIA</li>
                             <li>USB4</li>
-                            <li>TOUCH ID</li> -->
+                            <li>TOUCH ID</li>
                         </ul>
                         <P class="paragrafo-a-partir-de">A partir de</P>
-                        <h3 class="valor-note">R$570,00</h3>
+                        <h3 class="valor-note">R$670,80</h3>
                         <p class="paragrafo-a-partir-de">por mês</p>
                     </div>
                     <button class="btn-reserva" onclick="document.location.href='/produto/303'">RESERVAR</button>
@@ -167,10 +167,10 @@
                             <!-- <li>PROCESSADOR M1</li>
                             <li>ATÉ 18 HORAS DE BATERIA</li>
                             <li>USB4</li>
-                            <li>TOUCH ID</li> -->
+                            <li>TOUCH ID</li>
                         </ul>
                         <P class="paragrafo-a-partir-de">A partir de</P>
-                        <h3 class="valor-note">R$590,00</h3>
+                        <h3 class="valor-note">R$670,80</h3>
                         <p class="paragrafo-a-partir-de">por mês</p>
                     </div>
                     <button class="btn-reserva" onclick="document.location.href='/produto/304'">RESERVAR</button>
@@ -184,10 +184,10 @@
                             <!-- <li>PROCESSADOR M1</li>
                             <li>ATÉ 18 HORAS DE BATERIA</li>
                             <li>USB4</li>
-                            <li>TOUCH ID</li> -->
+                            <li>TOUCH ID</li> 
                         </ul>
                         <P class="paragrafo-a-partir-de">A partir de</P>
-                        <h3 class="valor-note">R$370,00</h3>
+                        <h3 class="valor-note">R$670,80</h3>
                         <p class="paragrafo-a-partir-de">por mês</p>
                     </div>
                     <button class="btn-reserva" onclick="document.location.href='/produto/305'">RESERVAR</button>
@@ -200,15 +200,44 @@
                             <!-- <li>PROCESSADOR M1</li>
                             <li>ATÉ 18 HORAS DE BATERIA</li>
                             <li>USB4</li>
-                            <li>TOUCH ID</li> -->
+                            <li>TOUCH ID</li> 
                         </ul>
                         <P class="paragrafo-a-partir-de">A partir de</P>
-                        <h3 class="valor-note">R$330,00</h3>
+                        <h3 class="valor-note">R$670,80</h3>
                         <p class="paragrafo-a-partir-de">por mês</p>
                     </div>
                     <button class="btn-reserva" onclick="document.location.href='/produto/306'">RESERVAR</button>
 
-                </div>
+                </div> -->
+
+                <% result.forEach(function(produto) { %>
+                    <div class="line-1">
+                     <img id="notebooks" src='<%=produto.rotaImg %>' alt="notebook">
+                        <div class="conteudo-card-meio">
+                            <p class="titulo-card"><%=produto.name%></p>
+                            <ul class="lista-atributos">
+                                <!-- <li>PROCESSADOR M1</li>
+                                <li>ATÉ 18 HORAS DE BATERIA</li>
+                                <li>USB4</li>
+                                <li>TOUCH ID</li> -->
+                            </ul>
+                            <P class="paragrafo-a-partir-de">A partir de</P>
+                            <h3 class="valor-note">R$ <%=produto.price%> </h3>
+                            <p class="paragrafo-a-partir-de">por mês</p>
+                        </div>
+                        <!-- <button class="btn-reserva" onclick="document.location.href='/produto/id'">RESERVAR</button> -->
+                        <form action="/produto/<%= produto.id %> " method="get">
+
+                        <input type="hidden" name="id" value="<%= produto.id %>">
+                        <input type="hidden" name="name" value="<%= produto.name %>">
+                        <input type="hidden" name="price" value="<%= produto.price %>">
+                        <input type="hidden" name="img" value="<%= produto.rotaImg %>">
+                        <input type="submit" value="RESERVAR" class="btn-reserva">
+
+                        </form>
+    
+                    </div>
+                <% }) %>    
 
 
             </div>

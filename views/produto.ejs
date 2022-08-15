@@ -30,18 +30,20 @@
                     <div class="planos-produto">
                         <div class="escolha-plano">Selecione abaixo o seu plano:</div>
                         <div class="botoes">
-                            <button type="button" class="botao-plano" onclick="semanal()">7 dias</button>
-                            <button type="button" class="botao-plano" onclick="quizenal()">15 dias</button>
-                            <button type="button" class="botao-plano" onclick="mensal()">Mensal</button>
-                            <button type="button" class="botao-plano" onclick="trimestral()">3 meses</button>
-                            <button type="button" class="botao-plano" onclick="semestral()">6 meses</button>
-                            <button type="button" class="botao-plano" onclick="anual()">12 meses</button>
+                            <button type="button" class="botao-plano" onclick="mudarValor(7,0)">7 dias</button>
+                            <button type="button" class="botao-plano" onclick="mudarValor(15,0)">15 dias</button>
+                            <button type="button" class="botao-plano" onclick="mudarValor(30,0.05)">Mensal</button>
+                            <button type="button" class="botao-plano" onclick="mudarValor(90,0.15)">3 meses</button>
+                            <button type="button" class="botao-plano" onclick="mudarValor(180,0.20)">6 meses</button>
+                            <button type="button" class="botao-plano" onclick="mudarValor(365,0.30)">12 meses</button>
                         </div>
                         <div class="valor-pagar">Valor a pagar:</div>
-                        <div class="valor">R$
-                            <%= produto.price%>
+                        <div class="valor"><span class="moeda">R$</span>
+                            <span class="preco"><%= produto.price%></span>
                         </div>
                         <button type="button" class="botao-alugar"> <img src="/images/imagesDetalheProduto/vector.png">QUERO ALUGAR</button>
+                        <form action="/carrinho/<%= produto.id %> " method="get"></form>
+
                     </div>
                     <div class="main-frete">
                         <div class="frete"> Calcule seu frete: </div>
@@ -69,7 +71,10 @@
     </div>
 </body>
 
+
 <script type="text/javascript" src="javascripts/mobile-navbar.js"></script>
+
+<script type="text/javascript" src="/javascripts/script.js"></script>
 
 
 <footer>

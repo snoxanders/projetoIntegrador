@@ -3,6 +3,10 @@ module.exports = (sequelize, dataTypes) => {
     const Product = sequelize.define(
         'Product', {
             // Model attributes are defined here
+            // idProduto: {
+            //     type: dataTypes.INTEGER,
+            //     allowNull: false
+            // },
             name: {
                 type: dataTypes.STRING,
                 allowNull: false
@@ -29,12 +33,12 @@ module.exports = (sequelize, dataTypes) => {
         }
     );
 
-    // Product.associate = (models) => {
-    //     Product.hasMany(models.Order, {
-    //         foreignKey: "id_produto",
-    //         as: "order"
-    //     });
-    //}
+    Product.associate = (models) => {
+        Product.hasMany(models.Order, {
+            foreignKey: "idProduto",
+            as: "order"
+        });
+    }
 
     return Product
 }

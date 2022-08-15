@@ -6,7 +6,15 @@ const usuarioController = require("../controller/usersController")
 const pagamentoController = require("../controller/paymentController")
 const enderecoController = require("../controller/adressController")
 const pedidosController = require("../controller/orderController")
+const mysql = require('mysql')
+    // const session = require('express-session')
 
+mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'projetointegrador'
+})
 
 router.get('/home', function(req, res, next) {
     res.render("../views/home");
@@ -23,13 +31,30 @@ router.get('/produto/:id', async function(req, res, next) {
 });
 
 
+// router.get('/main', function(req, res, next) {
+//     res.render('../views/main');
+// });
+
+router.get('/main', function(req, res, next) {
+
+    var con = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'projetointegrador'
+    })
+
+    con.query("SELECT * FROM produto", (err, result) => {
+        res.render('../views/main', { result: result })
+    });
+
+});
+
+
 router.get('/carrinho', function(req, res, next) {
     res.render('../views/carrinho');
 });
 
-router.get('/main', function(req, res, next) {
-    res.render('../views/main');
-});
 
 router.get('/finalizarcompra', function(req, res, next) {
     res.render('../views/finalizarCompra');
