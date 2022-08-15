@@ -1,9 +1,10 @@
-const preco = document.getElementsByClassName("valor")
+const preco = produto.price
 
 //7 dias
 
 function semanal(preco) {
     return preco.innerHTML / 4
+    console(semanal)
 };
 
 //15 dias
