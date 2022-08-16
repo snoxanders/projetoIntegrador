@@ -3,36 +3,36 @@ module.exports = (sequelize, dataTypes) => {
     const Adress = sequelize.define(
         'Adress', {
             // Model attributes are defined here
-            id_endereco: {
+            idEndereco: {
                 type: dataTypes.INTEGER,
 
                 allowNull: false
             },
-            end_rua: {
+            endRua: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            end_numero: {
+            endNumero: {
                 type: dataTypes.INTEGER,
                 allowNull: false
             },
-            end_bairro: {
+            endBairro: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            end_cep: {
+            endCep: {
                 type: dataTypes.INTEGER,
                 allowNull: false
             },
-            end_cidade: {
+            endCidade: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            end_estado: {
+            endEstado: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            id_cliente: {
+            idCliente: {
                 type: dataTypes.STRING,
                 allowNull: false,
                 //CHAVE ESTRANGEIRA, CONECTAR NO BANCO DE DADOS USERS.

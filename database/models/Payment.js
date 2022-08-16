@@ -3,26 +3,26 @@ module.exports = (sequelize, dataTypes) => {
     const Payment = sequelize.define(
         'Payment', {
             // Model attributes are defined here
-            id_cliente: {
+            idCliente: {
                 type: dataTypes.INTEGER,
                 allowNull: false
                     //CHAVE ESTRANGEIRA, CONECTAR NO BANCO DE DADOS USERS.
             },
-            id_cartao: {
+            idCartao: {
                 type: dataTypes.STRING,
                 primaryKey: true,
                 allowNull: false
             },
-            numero_cartao: {
+            numeroCartao: {
                 type: dataTypes.INTEGER,
                 allowNull: false
             },
 
-            nome_titular: {
+            nomeTitular: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            validade_cartao: {
+            validadeCartao: {
                 type: dataTypes.DATE,
                 allowNull: false
 
@@ -36,7 +36,7 @@ module.exports = (sequelize, dataTypes) => {
 
     Payment.associate = (models) => {
         Payment.hasOne(models.Order, {
-            foreignKey: "id_cartao",
+            foreignKey: "idCartao",
             as: "order"
         });
     }
