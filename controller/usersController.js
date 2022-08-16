@@ -1,13 +1,15 @@
-const db = require("../database/models/index")
+const db = require("../database/models/index") 
 
 const createUser = {
     criarUsuario: async(req, res) => {
-        const { name_cliente, rg_cliente, cpf_cliente, email_cliente, dtnasc_cliente, senha_cliente, sexo_cliente } = req.body;
         try {
-            const createUser = await dbUsers.create({ name_cliente, rg_cliente, cpf_cliente, email_cliente, dtnasc_cliente, senha_cliente, sexo_cliente })
+            console.log('DB MODELS', await db.User.create(req.body))
+            
 
         } catch (error) {
-            console.log("deu ruim aqui")
+            console.log("deu ruim aqui", error)
+
+            
         }
 
 

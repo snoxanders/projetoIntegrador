@@ -8,7 +8,7 @@ module.exports = {
             idCliente: {
                 type: Sequelize.INTEGER,
                 primaryKey: true,
-                allowNull: false
+                autoIncrement: true,
             },
             nameCliente: {
                 type: Sequelize.STRING,

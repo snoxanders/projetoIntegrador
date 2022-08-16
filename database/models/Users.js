@@ -3,41 +3,41 @@ module.exports = (sequelize, dataTypes) => {
     const User = sequelize.define(
         'User', {
             // Model attributes are defined here
-            id_cliente: {
+            idCliente: {
                 type: dataTypes.INTEGER,
                 primaryKey: true,
-                allowNull: false
+                autoIncrement: true,
             },
-            name_cliente: {
+            nameCliente: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            rg_cliente: {
+            rgCliente: {
                 type: dataTypes.INTEGER,
                 allowNull: false
             },
-            cpf_cliente: {
+            cpfCliente: {
                 type: dataTypes.INTEGER,
                 allowNull: false
             },
-            email_cliente: {
+            emailCliente: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            dtnasc_cliente: {
+            dtnascCliente: {
                 type: dataTypes.DATE,
                 allowNull: false
             },
-            senha_cliente: {
+            senhaCliente: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            sexo_cliente: {
+            sexoCliente: {
                 type: dataTypes.STRING,
                 allowNull: false
             }
         }, {
-            tableName: 'users',
+            tableName: 'usuario_cliente',
             timestamps: false
         }
     );
