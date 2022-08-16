@@ -35,16 +35,16 @@
                     </div>
                     <hr>
                     <div class="div-content2">
-                        <span><img id='note' src="" alt="notebook"></span>
+                        <span><img id='note' src="<%=produto.rotaImg%>" alt="notebook"></span>
                         <div class="sub-div">
                             <h5>
-
+                              <%=produto.name%>      
                             </h5>
                             <button type="button" id="button-remove" onclick="event"><img src="/images/imagesCarrinho/Vector.png" alt="lixo">REMOVER</button>
                         </div>
                         <button type="button" id="button1">Mensal</button>
                         <p id="value">
-
+                            <%=produto.price%>
                         </p>
                     </div>
 
@@ -143,25 +143,7 @@
                                 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
                             </script>
 
-                            <script>
-                                const cep = document.getElementById('cep');
-                                const iniCepNumber = cep.length;
-                                const valor = document.getElementById('freteValor');
-
-                                function calculoCepValor(number) {
-                                    if (number <= 3) {
-                                        number * 3
-                                    }
-                                    if (number > 3 || number <= 6) {
-                                        number * 4
-                                    } else {
-                                        number * 5
-                                    }
-
-                                }
-                                let resultadoFrete = calculoCepValor(iniCepNumber[0]);
-                                valor.value = resultadoFrete;
-                            </script>
+                           
 
 
                         </div>
@@ -175,7 +157,7 @@
                         <div class="seila2">
                             <h4>Valor dos produtos:</h4>
                             <h5>
-
+                                 <%=produto.price%>
                             </h5>
                         </div>
                         <hr>
@@ -186,15 +168,24 @@
                         <div class="seila">
                             <h4>total à prazo:</h4>
                             <h5>
-
+                                <%=produto.price%>
                             </h5>
                         </div>
                         <div>
 
                         </div>
                         <div class="seila">
-                            <button type="button" id="pagamento" onclick="window.location.href='/finalizarcompra'">IR PARA O PAGAMENTO</button>
-                            <button type="button" id="continuar" onclick="window.location.href='/main'">CONTINUAR COMPRANDO</button>
+                            <!-- <button type="button" id="pagamento" onclick="window.location.href='/finalizarcompra'">IR PARA O PAGAMENTO</button> -->
+                            <!-- <button type="button" id="continuar" onclick="window.location.href='/main'">CONTINUAR COMPRANDO</button> -->
+                            <form action="/finalizarcompra/<%=produto.id%>" method="get">
+
+                                <input type="hidden" name="id" value="<%= produto.id %>">
+                                <input type="hidden" name="name" value="<%= produto.name %>">
+                                <input type="hidden" name="price" value="<%= produto.price %>">
+                                <input type="hidden" name="img" value="<%= produto.rotaImg %>">
+                                <input type="submit" value="RESERVAR" id="pagamento">
+        
+                                </form>
                         </div>
 
                     </div>

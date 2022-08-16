@@ -30,6 +30,18 @@ router.get('/produto/:id', async function(req, res, next) {
     res.render('../views/produto', { produto });
 });
 
+router.get('/carrinho/:id', async function(req, res, next) {
+    const produto = await db.Product.findByPk(req.params.id)
+    console.log(produto)
+    res.render('../views/carrinho', { produto });
+});
+
+router.get('/finalizarcompra/:id', async function(req, res, next) {
+    const produto = await db.Product.findByPk(req.params.id)
+    console.log(produto)
+    res.render('../views/finalizarcompra', { produto });
+});
+
 
 // router.get('/main', function(req, res, next) {
 //     res.render('../views/main');
@@ -56,9 +68,7 @@ router.get('/carrinho', function(req, res, next) {
 });
 
 
-router.get('/finalizarcompra', function(req, res, next) {
-    res.render('../views/finalizarCompra');
-});
+
 
 router.get('/cadastro', function(req, res, next) {
     res.render('../views/cadastro');
@@ -71,10 +81,10 @@ router.get('/perfil', function(req, res, next) {
 // const dbProduct = require("../controller/product")
 // router.post('/teste', dbProduto.createdProd);
 
-router.get('/usuarios', usuarioController.buscarUsuario),
+router.post('/usuarios', usuarioController.buscarUsuario),
     router.post('/criarusuarios', usuarioController.criarUsuario),
-    router.post('/editarusuarios', usuarioController.editarUsuario),
-    router.post('/deletarusuarios', usuarioController.deletarUsuario)
+    router.put('/editarusuarios/:id', usuarioController.editarUsuario),
+    router.delete('/deletarusuarios/:id', usuarioController.deletarUsuario)
 
 router.get('/pagamentos', pagamentoController.buscarPagamento),
     router.post('/criarpagamentos', pagamentoController.criarPagamento),

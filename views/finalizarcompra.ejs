@@ -21,12 +21,12 @@
     <div class="box-sizing">
 
         <div class="section">
-            <span class="title2"></span>
+            <span class="title2"><%=produto.name%></span>
             <button type="button" class="lixeira"><img src="/images/imagesFinalizarCompra/Vector.png" alt=""></button>
         </div>
         <div class="box-sizing2">
             <div>
-                <img id="section1" src="/images/imagesFinalizarCompra/img.png" alt="notebook">
+                <img id="section1" src="<%=produto.rotaImg%>" alt="notebook">
             </div>
 
             <span class="invisible">PEDIDO EXCLUÍDO</span>
@@ -39,7 +39,7 @@
 
             <div class="section3">
                 <p class="text1">Valor</p>
-                <p class="value">R$670,00</p>
+                <p class="value"><%=produto.price%></p>
                 <button class="button3" onclick="window.location.href='/home'" type="button">Finalizar Compra</button>
             </div>
 

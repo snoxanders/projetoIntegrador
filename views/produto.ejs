@@ -41,8 +41,16 @@
                         <div class="valor"><span class="moeda">R$</span>
                             <span class="preco"><%= produto.price%></span>
                         </div>
-                        <button type="button" class="botao-alugar"> <img src="/images/imagesDetalheProduto/vector.png">QUERO ALUGAR</button>
-                        <form action="/carrinho/<%= produto.id %> " method="get"></form>
+                        <!-- <button type="button" class="botao-alugar"> <img src="/images/imagesDetalheProduto/vector.png">QUERO ALUGAR</button> -->
+                        <form action="/carrinho/<%= produto.id %> " method="get">
+
+                            <input type="hidden" name="id" value="<%= produto.id %>">
+                            <input type="hidden" name="name" value="<%= produto.name %>">
+                            <input type="hidden" name="price" value="<%= produto.price %>">
+                            <input type="hidden" name="img" value="<%= produto.rotaImg %>">
+                            <input type="submit" value="RESERVAR" class="botao-alugar">
+    
+                            </form>
 
                     </div>
                     <div class="main-frete">

@@ -12,11 +12,11 @@ module.exports = {
             },
             nameCliente: {
                 type: Sequelize.STRING,
-                allowNull: false
+                allowNull: true
             },
             rgCliente: {
                 type: Sequelize.STRING,
-                allowNull: false
+                allowNull: true
             },
             cpfCliente: {
                 type: Sequelize.STRING,
@@ -28,7 +28,7 @@ module.exports = {
             },
             dtnascCliente: {
                 type: Sequelize.DATE,
-                allowNull: false
+                allowNull: true
             },
             senhaCliente: {
                 type: Sequelize.STRING,
@@ -36,7 +36,7 @@ module.exports = {
             },
             sexoCliente: {
                 type: Sequelize.STRING,
-                allowNull: false
+                allowNull: true
             }
         });
 

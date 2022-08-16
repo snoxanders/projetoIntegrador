@@ -10,11 +10,11 @@ module.exports = (sequelize, dataTypes) => {
             },
             nameCliente: {
                 type: dataTypes.STRING,
-                allowNull: false
+                allowNull: true
             },
             rgCliente: {
                 type: dataTypes.INTEGER,
-                allowNull: false
+                allowNull: true
             },
             cpfCliente: {
                 type: dataTypes.INTEGER,
@@ -26,7 +26,7 @@ module.exports = (sequelize, dataTypes) => {
             },
             dtnascCliente: {
                 type: dataTypes.DATE,
-                allowNull: false
+                allowNull: true
             },
             senhaCliente: {
                 type: dataTypes.STRING,
@@ -34,7 +34,7 @@ module.exports = (sequelize, dataTypes) => {
             },
             sexoCliente: {
                 type: dataTypes.STRING,
-                allowNull: false
+                allowNull: true
             }
         }, {
             tableName: 'usuario_cliente',

@@ -29,9 +29,9 @@
 
             <div class="cadastro">
                 <h3>JÁ TENHO UMA CONTA</h3>
-                <form method='post' action="/usuarios" onsubmit="verificaCadastro()" class="campo">
-                    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="email" required placeholder="E-mail">
-                    <input type='password' id='senha' name='senha' required placeholder="Senha">
+                <form method='post' action="/usuarios"  class="campo">
+                    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="emailCliente" required placeholder="E-mail">
+                    <input type='password' id='senha' name='senhaCliente' required placeholder="Senha">
 
                     <a href="/" class="esqueci">ESQUECI MINHA SENHA</a>
 
@@ -39,43 +39,18 @@
 
                 </form>
 
-                <script>
-                    const nameField = document.querySelector("input");
-
-                    nameField.addEventListener("input", () => {
-                        nameField.setCustomValidity("");
-                        nameField.checkValidity();
-                        console.log(nameField.checkValidity());
-                    });
-
-                    nameField.addEventListener("invalid", () => {
-                        nameField.setCustomValidity("Por favor, preencha um campo válido");
-                    });
-
-                    const button = document.getElementsByClassName('btn-entrar').onclick;
-                    const login = document.getElementById('email').value;
-                    const password = document.getElementById('senha').value;
-
-                    function verificaCadastro() {
-                        if (login && password == true) {
-                            window.location.href = '/perfil'
-                        } else {
-                            alert('Usuário não cadastrado')
-                            return window.location.replace('/cadastro');
-                        }
-                    };
-                </script>
+                
 
 
             </div>
             <div class="cadastro">
                 <h3>QUERO ME CADASTRAR</h3>
                 <form action='/criarusuarios' method='post' class="campo">
-                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" required placeholder="E-mail ou Id">
-                    <input type='password' id='senha' name='senha' required placeholder="Crie sua senha">
+                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="emailCliente" required placeholder="E-mail ou Id">
+                    <input type='password' id='senha' name='senhaCliente' required placeholder="Crie sua senha">
                     <input type='password' id='senha' name='senha' required placeholder="Confirme sua senha">
-                    <input type="text" id="cpf" name="cpf" required placeholder="Insira seu CPF">
-                    <input type="text" id="cep" name="cep" required placeholder="CEP">
+                    <input type="text" id="cpf" name="cpfCliente" required placeholder="Insira seu CPF">
+                    
                     <button type="submit" class="btn-cadastrar"> CADASTRAR </button>
 
                 </form>
