@@ -5,12 +5,12 @@ module.exports = (sequelize, dataTypes) => {
     const Order = sequelize.define(
         'Order', {
             // Model attributes are defined here
-            id_pedido: {
+            idPedido: {
                 type: dataTypes.INTEGER,
 
                 allowNull: false
             },
-            id_cliente: {
+            idCliente: {
                 type: dataTypes.STRING,
                 allowNull: false
                     //CHAVE ESTRANGEIRA, CONECTAR NO BANCO DE DADOS USERS.
@@ -20,40 +20,40 @@ module.exports = (sequelize, dataTypes) => {
                 allowNull: false
             },
 
-            data_pedido: {
+            dataPedido: {
                 type: dataTypes.DATE,
                 allowNull: false
             },
-            id_cartao: {
+            idCartao: {
                 type: dataTypes.INTEGER,
                 allowNull: false
                     //CHAVE ESTRANGEIRA, CONECTAR NO BANCO DE DADOS USERS.
             },
-            valor_produto: {
+            valorProduto: {
                 type: dataTypes.DECIMAL,
                 allowNull: false
             },
-            nome_destinatario: {
+            nomeDestinatario: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            user_endereco: {
+            userEndereco: {
                 type: dataTypes.STRING,
                 allowNull: false
             },
-            user_cidade: {
+            userCidade: {
                 type: dataTypes.STRING,
                 allowNull: false,
             },
-            user_estado: {
+            userEstado: {
                 type: dataTypes.STRING,
                 allowNull: false,
             },
-            user_cep: {
+            userCep: {
                 type: dataTypes.INTEGER,
                 allowNull: false,
             },
-            status_pedido: {
+            statusPedido: {
                 type: dataTypes.TINYINT(1),
                 allowNull: false,
             }
@@ -63,8 +63,8 @@ module.exports = (sequelize, dataTypes) => {
         }
     )
 
-    Produto.associate = (models) => {
-        Produto.hasMany(models.Product, {
+    Order.associate = (models) => {
+        Order.hasMany(models.Product, {
             foreignKey: "idProduto",
             as: "produto"
         });
