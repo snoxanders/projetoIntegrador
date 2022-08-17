@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser')
 var logger = require('morgan');
+const session = require('express-session')
+const { validationResult, check } = require('express-validator')
+
 const mysql = require('mysql')
 
 mysql.createConnection({

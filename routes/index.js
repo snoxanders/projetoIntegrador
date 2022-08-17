@@ -7,6 +7,8 @@ const pagamentoController = require("../controller/paymentController")
 const enderecoController = require("../controller/adressController")
 const pedidosController = require("../controller/orderController")
 const mysql = require('mysql')
+const loginAuth = require('../database/models/middlewares/validateUIser')
+
     // const session = require('express-session')
 
 mysql.createConnection({
@@ -68,9 +70,10 @@ router.get('/carrinho', function(req, res, next) {
 });
 
 
-
-
-router.get('/cadastro', function(req, res, next) {
+router.get('/finalizarcompra', function(req, res, next) {
+    res.render('../views/finalizarCompra');
+});
+router.get('/cadastro',loginAuth, function(req, res, next) {
     res.render('../views/cadastro');
 });
 
