@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser')
 var logger = require('morgan');
 const mysql = require('mysql')
+var session = require('express-session')
 
 mysql.createConnection({
     host: 'localhost',
@@ -34,6 +35,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/produto', produtoRouter);
 app.use('/users', usersRouter);
+
+
+app.set('trust proxy', 1) // trust first proxy
+app.use(session({
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function isProductInCart(cart, id) {
     for (let i = 0; i < cart.length; i++) {
