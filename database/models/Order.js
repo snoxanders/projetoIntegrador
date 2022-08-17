@@ -15,10 +15,10 @@ module.exports = (sequelize, dataTypes) => {
                 allowNull: false
                     //CHAVE ESTRANGEIRA, CONECTAR NO BANCO DE DADOS USERS.
             },
-            idProduto: {
-                type: dataTypes.INTEGER,
-                allowNull: false
-            },
+            // id: {
+            //     type: dataTypes.INTEGER,
+            //     allowNull: false
+            // },
 
             dataPedido: {
                 type: dataTypes.DATE,
@@ -63,12 +63,12 @@ module.exports = (sequelize, dataTypes) => {
         }
     )
 
-    Order.associate = (models) => {
-        Order.hasMany(models.Product, {
-            foreignKey: "idProduto",
-            as: "produto"
-        });
-    }
+    // Order.associate = (models) => {
+    //     Order.hasMany(models.Product, {
+    //         foreignKey: "id",
+    //         as: "produto"
+    //     });
+    // }
 
     return Order
 }

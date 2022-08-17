@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser')
 var logger = require('morgan');
-const mysql = require('mysql')
-var session = require('express-session')
+const session = require('express-session');
+const { validationResult, check } = require('express-validator');
+const mysql = require('mysql');
+
 
 mysql.createConnection({
     host: 'localhost',
@@ -43,7 +45,25 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: { secure: true }
-}))
+}));
+
+app.post('/usuarios', (req, res) => {
+    const { user, pass } = req.body;
+
+    if (user === 'emailCliente' && pass === 'senhaCliente') {
+        req.session.usuario = 123456;
+
+        return res.redirect('/home');
+    }
+
+    req.session.usuario = undefined;
+    return res.redirect('/cadastro');
+});
+
+app.get('/logout', (req, res) => {
+    req.session.destroy();
+    res.redirect('/cadastro');
+})
 
 
 
